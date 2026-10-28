@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Account — FORME</title>
+  <meta name="description" content="Explore the FORME account preview, update your local profile, and find your order history.">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/account.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- ==================== SHARED HEADER START ==================== -->
+  <div id="site-header"></div>
+  <!-- ==================== SHARED HEADER END ==================== -->
+  <main id="main-content" class="container account-page">
+    <!-- ==================== ACCOUNT INTRODUCTION START ==================== -->
+    <div class="account-intro">
+      <p class="eyebrow">YOUR PERSONAL EDIT</p>
+      <h1>A little more<br><em>you.</em></h1>
+      <p>A space for your details and the pieces that make your everyday.</p>
+      <a href="product.html" class="account-text-link">Discover the collection <span aria-hidden="true">↗</span></a>
+    </div>
+    <!-- ==================== ACCOUNT INTRODUCTION END ==================== -->
+    <!-- ==================== ACCOUNT FORMS START ==================== -->
+    <section class="account-panel" aria-label="Your account">
+      <p class="notice">Frontend demo. No secure authentication or real accounts are connected. Only your demo profile is saved in this browser; passwords are never saved or verified. Use sample details.</p>
+      <div id="account-feedback" class="account-feedback" role="status" aria-live="polite"></div>
+      <div id="account-auth">
+        <div class="account-tabs" role="tablist" aria-label="Account options">
+          <button type="button" id="login-tab" role="tab" aria-selected="true" aria-controls="login-panel" data-account-tab="login">Login</button>
+          <button type="button" id="register-tab" role="tab" aria-selected="false" aria-controls="register-panel" tabindex="-1" data-account-tab="register">Create account</button>
+        </div>
+        <div id="login-panel" role="tabpanel" aria-labelledby="login-tab">
+          <h2>Welcome back.</h2>
+          <p class="account-muted">Try the account experience with any sample email.</p>
+          <form id="login-form" class="account-form">
+            <label class="field">Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="150"></label>
+            <label class="field">Demo password<input name="password" type="password" autocomplete="off" placeholder="For this preview only" required minlength="8" maxlength="128" aria-describedby="login-password-help"></label>
+            <small id="login-password-help">Enter any 8+ characters. This demo does not check credentials.</small>
+            <button class="button" type="submit">Open demo profile <span aria-hidden="true">↗</span></button>
+          </form>
+        </div>
+        <div id="register-panel" role="tabpanel" aria-labelledby="register-tab" hidden>
+          <h2>Make yourself at home.</h2>
+          <p class="account-muted">Create a profile preview on this device.</p>
+          <form id="register-form" class="account-form">
+            <label class="field">Full name<input name="name" autocomplete="name" placeholder="Your name" required minlength="2" maxlength="80"></label>
+            <label class="field">Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="150"></label>
+            <label class="field">Demo password<input name="password" type="password" autocomplete="off" placeholder="At least 8 characters" required minlength="8" maxlength="128"></label>
+            <small>Use a sample password. It is discarded immediately and never stored.</small>
+            <button class="button" type="submit">Create local demo profile <span aria-hidden="true">↗</span></button>
+          </form>
+        </div>
+      </div>
+      <div id="account-profile" hidden>
+        <div class="account-profile-heading"><div><p class="eyebrow">LOCAL DEMO PROFILE</p><h2 id="profile-greeting">Your profile</h2></div><button type="button" class="account-text-link" id="sign-out">Sign out</button></div>
+        <form id="profile-form" class="account-form">
+          <label class="field">Full name<input name="name" autocomplete="name" required minlength="2" maxlength="80"></label>
+          <label class="field">Email address<input name="email" type="email" autocomplete="email" required maxlength="150"></label>
+          <label class="field">Phone <span class="account-muted">(optional)</span><input name="phone" type="tel" autocomplete="tel" maxlength="30"></label>
+          <button class="button" type="submit">Save local profile</button>
+        </form>
+        <section class="account-order-history" aria-labelledby="orders-heading"><h3 id="orders-heading">Order history</h3><p>Your order history will appear here once a real account and order service are connected.</p><a class="button button-secondary" href="product.html">Explore the collection</a></section>
+        <button class="account-text-link account-delete" id="clear-profile" type="button">Delete this local demo profile</button>
+      </div>
+    </section>
+    <!-- ==================== ACCOUNT FORMS END ==================== -->
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="js/header.js"></script>
+  <script type="module" src="js/account.js"></script>
+</body>
+</html>

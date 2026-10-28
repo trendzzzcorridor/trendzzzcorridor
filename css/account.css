@@ -1,0 +1,183 @@
+/* ==================== ACCOUNT LAYOUT START ==================== */
+
+.account-page {
+  display: grid;
+  gap: 3rem;
+  padding-block: 4rem 6rem;
+}
+
+.account-intro h1 {
+  font-size: clamp(3.4rem, 7vw, 6.8rem);
+  line-height: .98;
+  font-weight: 400;
+  letter-spacing: -.055em;
+  margin: 1.3rem 0 1.8rem;
+}
+
+.account-intro h1 em, .account-panel h2 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.account-intro > p:not(.eyebrow) {
+  max-width: 24rem;
+  color: #66665f;
+  line-height: 1.8;
+}
+
+.account-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: transparent;
+  border: 0;
+  padding: .7rem 0;
+  text-decoration: underline;
+  text-underline-offset: .3rem;
+  font: inherit;
+  font-size: .85rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.account-panel {
+  border: 1px solid #deded6;
+  padding: clamp(1.25rem, 3.5vw, 3rem);
+  align-self: start;
+}
+
+.account-panel h2 {
+  font-size: 1.65rem;
+  font-weight: 400;
+  margin: 1.8rem 0 .65rem;
+}
+
+.account-panel .notice {
+  font-size: .75rem;
+  line-height: 1.65;
+  margin-top: 0;
+}
+
+.account-tabs {
+  display: flex;
+  border-bottom: 1px solid #deded6;
+  margin: 1.5rem 0;
+  gap: 1.8rem;
+}
+
+.account-tabs button {
+  padding: .85rem 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: #72726c;
+  font: inherit;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.account-tabs button[aria-selected="true"] {
+  border-color: #303e32;
+  color: #252821;
+}
+
+.account-form {
+  display: grid;
+  gap: 1.15rem;
+  margin-top: 1.5rem;
+}
+
+.account-form .field {
+  display: grid;
+  gap: .5rem;
+  font-size: .8rem;
+}
+
+.account-form input {
+  width: 100%;
+  min-width: 0;
+  padding: .85rem 1rem;
+  border: 1px solid #cecec6;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  min-height: 48px;
+}
+
+.account-form small, .account-muted {
+  color: #72726c;
+  font-size: .8rem;
+  line-height: 1.6;
+}
+
+.account-form .button {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: .5rem;
+}
+
+.account-feedback:empty {
+  display: none;
+}
+
+.account-feedback {
+  margin: 1rem 0;
+  color: #303e32;
+  font-size: .85rem;
+  line-height: 1.6;
+}
+
+.account-feedback[data-error="true"] {
+  color: #a02e22;
+}
+
+.account-profile-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.account-profile-heading h2 {
+  margin-top: .5rem;
+  overflow-wrap: anywhere;
+}
+
+.account-order-history {
+  border-top: 1px solid #deded6;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.account-order-history h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.account-order-history p {
+  color: #72726c;
+  font-size: .85rem;
+  line-height: 1.7;
+}
+
+.account-delete {
+  color: #8b3f32;
+  margin-top: 1rem;
+}
+
+@media (min-width: 800px) {
+  .account-page {
+    grid-template-columns: 1fr 1fr;
+    gap: 6vw;
+    padding-top: 5.5rem;
+  }
+
+  .account-intro {
+    padding-top: 1.5rem;
+  }
+
+}
+
+/* ==================== ACCOUNT LAYOUT END ==================== */

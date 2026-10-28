@@ -1,0 +1,184 @@
+/* ==================== SHARED CAROUSEL START ==================== */
+
+.product-slider {
+  position: relative;
+  background: #d9dbcc;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.slider-images {
+  position: absolute;
+  inset: 0 0 60px;
+}
+
+.slider-image-link {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .8s,visibility .8s;
+}
+
+.slider-image-link.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.slider-image-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.slider-product-caption {
+  position: absolute;
+  bottom: 76px;
+  left: 22px;
+  right: 22px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: .68rem;
+  padding: 10px 13px;
+  background: #f7f8f0e8;
+  pointer-events: none;
+}
+
+.slider-controls {
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 25px;
+  border-top: 1px solid #cccdbf;
+  background: #e7e8de;
+}
+
+.slider-number {
+  font-size: .65rem;
+  letter-spacing: .1em;
+}
+
+.slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.slider-dot {
+  width: 24px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  position: relative;
+}
+
+.slider-dot::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #abb09e;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.slider-dot.active::after {
+  background: var(--olive);
+  width: 7px;
+  height: 7px;
+}
+
+.slider-arrows {
+  display: flex;
+  gap: 4px;
+}
+
+.slider-arrows button {
+  width: 36px;
+  min-height: 44px;
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  color: var(--ink);
+}
+
+.slider-arrows [data-pause] {
+  font-size: 13px;
+}
+
+.slider-empty {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-height: 300px;
+}
+
+.slider-empty h2 {
+  font-size: 38px;
+  font-family: var(--display-font);
+  margin-block: 20px;
+}
+
+.slider-empty a {
+  align-self: flex-start;
+}
+
+@media(max-width:600px) {
+  .slider-controls {
+    padding: 0 15px;
+    gap: 9px;
+  }
+
+  .slider-dot {
+    width: 18px;
+  }
+
+  .slider-number {
+    font-size: .6rem;
+  }
+
+  .slider-arrows {
+    gap: 0;
+  }
+
+  .slider-arrows button {
+    width: 30px;
+  }
+
+  .slider-product-caption {
+    left: 14px;
+    right: 14px;
+    font-size: .6rem;
+    gap: 10px;
+    padding: 8px 10px;
+  }
+
+  .slider-dots:has(.slider-dot:nth-child(9)) {
+    display: none;
+  }
+
+}
+
+/* ==================== SHARED CAROUSEL END ==================== */
+
+@media(min-width:601px) and (max-width:1000px) {
+  .slider-dots {
+    display: none;
+  }
+
+}

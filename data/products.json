@@ -1,0 +1,6106 @@
+[
+  {
+    "id": "tshirt1",
+    "name": "Essential Relaxed Tee",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshir.jpeg",
+    "images": [
+      "images/tshir.jpeg",
+      "images/tshirt1.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1379,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive",
+      "dark black"
+    ],
+    "stock": 12,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "tshirt-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-14",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshir.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt1.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt1.jpeg"
+      },
+      {
+        "name": "dark black",
+        "image": "images/tshirt1.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt2",
+    "name": "Essential Relaxed Tee — Studio",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt2.jpeg",
+    "images": [
+      "images/tshirt2.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1379,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 19,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "tshirt-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-11",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt2.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt2.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt3",
+    "name": "Essential Relaxed Tee — Weekender",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt3.jpeg",
+    "images": [
+      "images/tshirt3.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1679,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 26,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "tshirt-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-08",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt3.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt3.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt3.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt4",
+    "name": "Essential Relaxed Tee — Daily",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt4.jpeg",
+    "images": [
+      "images/tshirt4.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1679,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 33,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-05",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt4.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt4.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt4.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt5",
+    "name": "Essential Relaxed Tee — Signature",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt5.jpeg",
+    "images": [
+      "images/tshirt5.jpeg"
+    ],
+    "price": 1279,
+    "originalPrice": 1779,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 40,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-02",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt5.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt5.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt5.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt6",
+    "name": "Essential Relaxed Tee — Classic",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt6.jpeg",
+    "images": [
+      "images/tshirt6.jpeg"
+    ],
+    "price": 879,
+    "originalPrice": 1479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 12,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-30",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt6.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt6.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt6.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt7",
+    "name": "Essential Relaxed Tee — Modern",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt7.jpeg",
+    "images": [
+      "images/tshirt7.jpeg"
+    ],
+    "price": 799,
+    "originalPrice": 1379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 19,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-27",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt7.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt7.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt7.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt8",
+    "name": "Essential Relaxed Tee — Essential",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt8.jpeg",
+    "images": [
+      "images/tshirt8.jpeg"
+    ],
+    "price": 1079,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 26,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-24",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt8.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt8.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt8.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt9",
+    "name": "Essential Relaxed Tee — Soft",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt9.jpeg",
+    "images": [
+      "images/tshirt9.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1779,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 33,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-21",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt9.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt9.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt9.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt10",
+    "name": "Essential Relaxed Tee — Refined",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt10.jpeg",
+    "images": [
+      "images/tshirt10.jpeg"
+    ],
+    "price": 1279,
+    "originalPrice": 1679,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 40,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-18",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt10.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt10.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt10.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt11",
+    "name": "Essential Relaxed Tee — Daylight",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt11.jpeg",
+    "images": [
+      "images/tshirt11.jpeg"
+    ],
+    "price": 879,
+    "originalPrice": 1379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 12,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-15",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt11.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt11.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt11.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt12",
+    "name": "Essential Relaxed Tee — Edition",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt12.jpeg",
+    "images": [
+      "images/tshirt12.jpeg"
+    ],
+    "price": 799,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 19,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-12",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt12.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt12.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt12.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt13",
+    "name": "Essential Relaxed Tee — Core",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt13.jpeg",
+    "images": [
+      "images/tshirt13.jpeg"
+    ],
+    "price": 1079,
+    "originalPrice": 1479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 3,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-09",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt13.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt13.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt13.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt14",
+    "name": "Essential Relaxed Tee — Utility",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt14.jpeg",
+    "images": [
+      "images/tshirt14.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1679,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 0,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-06",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt14.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt14.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt14.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt15",
+    "name": "Essential Relaxed Tee — Archive",
+    "category": "tshirt",
+    "subcategory": "relaxed",
+    "image": "images/tshirt15.jpeg",
+    "images": [
+      "images/tshirt15.jpeg"
+    ],
+    "price": 1279,
+    "originalPrice": 1879,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru",
+      "Black",
+      "Olive"
+    ],
+    "stock": 40,
+    "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-03",
+    "material": "100% cotton jersey, 220 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/tshirt15.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt15.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/tshirt15.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt16",
+    "name": "Everyday Oversized Tee",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt16.jpeg",
+    "images": [
+      "images/tshirt16.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1579,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 15,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "main-index",
+      "new-arrival",
+      "product-image",
+      "tshirt-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-13",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt16.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt16.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt16.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt17",
+    "name": "Everyday Oversized Tee — Studio",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt17.jpeg",
+    "images": [
+      "images/tshirt17.jpeg"
+    ],
+    "price": 1279,
+    "originalPrice": 1779,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 22,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "tshirt-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-10",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt17.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt17.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt17.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt18",
+    "name": "Everyday Oversized Tee — Weekender",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt18.jpeg",
+    "images": [
+      "images/tshirt18.jpeg"
+    ],
+    "price": 1379,
+    "originalPrice": 1979,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 29,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "tshirt-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-07",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt18.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt18.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt18.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt19",
+    "name": "Everyday Oversized Tee — Daily",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt19.jpeg",
+    "images": [
+      "images/tshirt19.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 36,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-04",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt19.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt19.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt19.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt20",
+    "name": "Everyday Oversized Tee — Signature",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt20.jpeg",
+    "images": [
+      "images/tshirt20.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 1799,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 43,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-01",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt20.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt20.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt20.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt21",
+    "name": "Everyday Oversized Tee — Classic",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt21.jpeg",
+    "images": [
+      "images/tshirt21.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1679,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 15,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-29",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt21.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt21.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt21.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt22",
+    "name": "Everyday Oversized Tee — Modern",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt22.jpeg",
+    "images": [
+      "images/tshirt22.jpeg"
+    ],
+    "price": 1279,
+    "originalPrice": 1579,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 22,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-26",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt22.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt22.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt22.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt23",
+    "name": "Everyday Oversized Tee — Essential",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt23.jpeg",
+    "images": [
+      "images/tshirt23.jpeg"
+    ],
+    "price": 1379,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 29,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-23",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt23.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt23.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt23.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt24",
+    "name": "Everyday Oversized Tee — Soft",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt24.jpeg",
+    "images": [
+      "images/tshirt24.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 36,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-20",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt24.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt24.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt24.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt25",
+    "name": "Everyday Oversized Tee — Refined",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt25.jpeg",
+    "images": [
+      "images/tshirt25.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 1879,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 43,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-17",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt25.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt25.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt25.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt26",
+    "name": "Everyday Oversized Tee — Daylight",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt26.jpeg",
+    "images": [
+      "images/tshirt26.jpeg"
+    ],
+    "price": 1179,
+    "originalPrice": 1579,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 15,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-14",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt26.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt26.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt26.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt27",
+    "name": "Everyday Oversized Tee — Edition",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt27.jpeg",
+    "images": [
+      "images/tshirt27.jpeg"
+    ],
+    "price": 1279,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 22,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-11",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt27.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt27.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt27.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt28",
+    "name": "Everyday Oversized Tee — Core",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt28.jpeg",
+    "images": [
+      "images/tshirt28.jpeg"
+    ],
+    "price": 1379,
+    "originalPrice": 1679,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 3,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-08",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt28.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt28.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt28.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt29",
+    "name": "Everyday Oversized Tee — Utility",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt29.jpeg",
+    "images": [
+      "images/tshirt29.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": 1879,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 0,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-05",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt29.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt29.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt29.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "tshirt30",
+    "name": "Everyday Oversized Tee — Archive",
+    "category": "tshirt",
+    "subcategory": "oversized",
+    "image": "images/tshirt30.jpeg",
+    "images": [
+      "images/tshirt30.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 2079,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Olive",
+      "Ecru",
+      "Black"
+    ],
+    "stock": 43,
+    "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-02",
+    "material": "100% cotton jersey, 260 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "INACTIVE",
+    "colorVariants": [
+      {
+        "name": "Olive",
+        "image": "images/tshirt30.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/tshirt30.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/tshirt30.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger1",
+    "name": "Off-Duty Joggers",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger1.jpeg",
+    "images": [
+      "images/jogger1.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": 1779,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 18,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "main-index",
+      "new-arrival",
+      "product-image",
+      "bottom-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-12",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger1.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger1.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger1.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger2",
+    "name": "Off-Duty Joggers — Studio",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger2.jpeg",
+    "images": [
+      "images/jogger2.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 25,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "bottom-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-09",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger2.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger2.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger3",
+    "name": "Off-Duty Joggers — Weekender",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger3.jpeg",
+    "images": [
+      "images/jogger3.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 2179,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 32,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "bottom-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-06",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger3.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger3.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger3.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger4",
+    "name": "Off-Duty Joggers — Daily",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger4.jpeg",
+    "images": [
+      "images/jogger4.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 39,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-03",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger4.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger4.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger4.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger5",
+    "name": "Off-Duty Joggers — Signature",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger5.jpeg",
+    "images": [
+      "images/jogger5.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2279,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 46,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-31",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger5.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger5.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger5.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger6",
+    "name": "Off-Duty Joggers — Classic",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger6.jpeg",
+    "images": [
+      "images/jogger6.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 18,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-28",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger6.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger6.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger6.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger7",
+    "name": "Off-Duty Joggers — Modern",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger7.jpeg",
+    "images": [
+      "images/jogger7.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 1879,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 25,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-25",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger7.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger7.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger7.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger8",
+    "name": "Off-Duty Joggers — Essential",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger8.jpeg",
+    "images": [
+      "images/jogger8.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 32,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-22",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger8.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger8.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger8.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger9",
+    "name": "Off-Duty Joggers — Soft",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger9.jpeg",
+    "images": [
+      "images/jogger9.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2279,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 39,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-19",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger9.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger9.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger9.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger10",
+    "name": "Off-Duty Joggers — Refined",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger10.jpeg",
+    "images": [
+      "images/jogger10.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2179,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 46,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-16",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger10.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger10.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger10.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger11",
+    "name": "Off-Duty Joggers — Daylight",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger11.jpeg",
+    "images": [
+      "images/jogger11.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": 1879,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 18,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-13",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger11.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger11.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger11.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger12",
+    "name": "Off-Duty Joggers — Edition",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger12.jpeg",
+    "images": [
+      "images/jogger12.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 25,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-10",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger12.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger12.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger12.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger13",
+    "name": "Off-Duty Joggers — Core",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger13.jpeg",
+    "images": [
+      "images/jogger13.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 3,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-07",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger13.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger13.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger13.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger14",
+    "name": "Off-Duty Joggers — Utility",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger14.jpeg",
+    "images": [
+      "images/jogger14.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2179,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 0,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-04",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger14.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger14.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger14.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jogger15",
+    "name": "Off-Duty Joggers — Archive",
+    "category": "bottom-wear",
+    "subcategory": "joggers",
+    "image": "images/jogger15.jpeg",
+    "images": [
+      "images/jogger15.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2379,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Stone"
+    ],
+    "stock": 46,
+    "description": "Comfortable tapered joggers with an adjustable drawstring waist, useful side pockets and soft ribbed ankle cuffs. Made for unhurried days and everyday movement.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-01",
+    "material": "80% cotton, 20% polyester French terry",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Charcoal",
+        "image": "images/jogger15.jpeg"
+      },
+      {
+        "name": "Black",
+        "image": "images/jogger15.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/jogger15.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans1",
+    "name": "Straight-Leg Denim",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans1.jpeg",
+    "images": [
+      "images/jeans1.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2279,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 21,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "bottom-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-11",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans1.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans1.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans2",
+    "name": "Straight-Leg Denim — Studio",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans2.jpeg",
+    "images": [
+      "images/jeans2.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": 2479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 28,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "bottom-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-08",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans2.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans3",
+    "name": "Straight-Leg Denim — Weekender",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans3.jpeg",
+    "images": [
+      "images/jeans3.jpeg"
+    ],
+    "price": 2179,
+    "originalPrice": 2679,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 35,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "bottom-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-05",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans3.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans3.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans4",
+    "name": "Straight-Leg Denim — Daily",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans4.jpeg",
+    "images": [
+      "images/jeans4.jpeg"
+    ],
+    "price": 2279,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 42,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-02",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans4.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans4.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans5",
+    "name": "Straight-Leg Denim — Signature",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans5.jpeg",
+    "images": [
+      "images/jeans5.jpeg"
+    ],
+    "price": 2379,
+    "originalPrice": 2779,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 14,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-30",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans5.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans5.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans6",
+    "name": "Straight-Leg Denim — Classic",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans6.jpeg",
+    "images": [
+      "images/jeans6.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 21,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-27",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans6.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans6.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans7",
+    "name": "Straight-Leg Denim — Modern",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans7.jpeg",
+    "images": [
+      "images/jeans7.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": 2379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 28,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-24",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans7.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans7.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans8",
+    "name": "Straight-Leg Denim — Essential",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans8.jpeg",
+    "images": [
+      "images/jeans8.jpeg"
+    ],
+    "price": 2179,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 35,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-21",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans8.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans8.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans9",
+    "name": "Straight-Leg Denim — Soft",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans9.jpeg",
+    "images": [
+      "images/jeans9.jpeg"
+    ],
+    "price": 2279,
+    "originalPrice": 2779,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 42,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-18",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans9.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans9.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans10",
+    "name": "Straight-Leg Denim — Refined",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans10.jpeg",
+    "images": [
+      "images/jeans10.jpeg"
+    ],
+    "price": 2379,
+    "originalPrice": 2679,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 14,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-15",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans10.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans10.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans11",
+    "name": "Straight-Leg Denim — Daylight",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans11.jpeg",
+    "images": [
+      "images/jeans11.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 21,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-12",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans11.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans11.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans12",
+    "name": "Straight-Leg Denim — Edition",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans12.jpeg",
+    "images": [
+      "images/jeans12.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 28,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-09",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans12.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans12.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans13",
+    "name": "Straight-Leg Denim — Core",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans13.jpeg",
+    "images": [
+      "images/jeans13.jpeg"
+    ],
+    "price": 2179,
+    "originalPrice": 2479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 3,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-06",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans13.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans13.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans14",
+    "name": "Straight-Leg Denim — Utility",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans14.jpeg",
+    "images": [
+      "images/jeans14.jpeg"
+    ],
+    "price": 2279,
+    "originalPrice": 2679,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 0,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-03",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans14.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans14.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jeans15",
+    "name": "Straight-Leg Denim — Archive",
+    "category": "bottom-wear",
+    "subcategory": "jeans",
+    "image": "images/jeans15.jpeg",
+    "images": [
+      "images/jeans15.jpeg"
+    ],
+    "price": 2379,
+    "originalPrice": 2879,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Indigo",
+      "Washed Black"
+    ],
+    "stock": 14,
+    "description": "A straight-leg denim silhouette with a comfortable mid rise and classic five-pocket construction. A versatile washed finish makes styling simple.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-31",
+    "material": "99% cotton denim, 1% elastane",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Indigo",
+        "image": "images/jeans15.jpeg"
+      },
+      {
+        "name": "Washed Black",
+        "image": "images/jeans15.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie1",
+    "name": "Cloud Fleece Hoodie",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie1.jpeg",
+    "images": [
+      "images/hoodie1.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2179,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 24,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "main-index",
+      "new-arrival",
+      "product-image",
+      "winter-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-10",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie1.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie1.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie1.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie2",
+    "name": "Cloud Fleece Hoodie — Studio",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie2.jpeg",
+    "images": [
+      "images/hoodie2.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 31,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "winter-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-07",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie2.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie2.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie3",
+    "name": "Cloud Fleece Hoodie — Weekender",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie3.jpeg",
+    "images": [
+      "images/hoodie3.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": 2579,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 38,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "winter-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-04",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie3.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie3.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie3.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie4",
+    "name": "Cloud Fleece Hoodie — Daily",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie4.jpeg",
+    "images": [
+      "images/hoodie4.jpeg"
+    ],
+    "price": 2179,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 45,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-01",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie4.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie4.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie4.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie5",
+    "name": "Cloud Fleece Hoodie — Signature",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie5.jpeg",
+    "images": [
+      "images/hoodie5.jpeg"
+    ],
+    "price": 2279,
+    "originalPrice": 2679,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 17,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-29",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie5.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie5.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie5.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie6",
+    "name": "Cloud Fleece Hoodie — Classic",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie6.jpeg",
+    "images": [
+      "images/hoodie6.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 24,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-26",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie6.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie6.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie6.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie7",
+    "name": "Cloud Fleece Hoodie — Modern",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie7.jpeg",
+    "images": [
+      "images/hoodie7.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2279,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 31,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-23",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie7.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie7.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie7.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie8",
+    "name": "Cloud Fleece Hoodie — Essential",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie8.jpeg",
+    "images": [
+      "images/hoodie8.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 38,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-20",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie8.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie8.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie8.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie9",
+    "name": "Cloud Fleece Hoodie — Soft",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie9.jpeg",
+    "images": [
+      "images/hoodie9.jpeg"
+    ],
+    "price": 2179,
+    "originalPrice": 2679,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 45,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-17",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie9.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie9.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie9.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie10",
+    "name": "Cloud Fleece Hoodie — Refined",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie10.jpeg",
+    "images": [
+      "images/hoodie10.jpeg"
+    ],
+    "price": 2279,
+    "originalPrice": 2579,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 17,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-14",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie10.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie10.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie10.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie11",
+    "name": "Cloud Fleece Hoodie — Daylight",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie11.jpeg",
+    "images": [
+      "images/hoodie11.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2279,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 24,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-11",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie11.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie11.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie11.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie12",
+    "name": "Cloud Fleece Hoodie — Edition",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie12.jpeg",
+    "images": [
+      "images/hoodie12.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 31,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-08",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie12.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie12.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie12.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie13",
+    "name": "Cloud Fleece Hoodie — Core",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie13.jpeg",
+    "images": [
+      "images/hoodie13.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": 2379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 3,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-05",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie13.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie13.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie13.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie14",
+    "name": "Cloud Fleece Hoodie — Utility",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie14.jpeg",
+    "images": [
+      "images/hoodie14.jpeg"
+    ],
+    "price": 2179,
+    "originalPrice": 2579,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 0,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-02",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie14.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie14.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie14.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "hoodie15",
+    "name": "Cloud Fleece Hoodie — Archive",
+    "category": "winter-wear",
+    "subcategory": "hoodies",
+    "image": "images/hoodie15.jpeg",
+    "images": [
+      "images/hoodie15.jpeg"
+    ],
+    "price": 2279,
+    "originalPrice": 2779,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Stone",
+      "Charcoal",
+      "Olive"
+    ],
+    "stock": 17,
+    "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-30",
+    "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Stone",
+        "image": "images/hoodie15.jpeg"
+      },
+      {
+        "name": "Charcoal",
+        "image": "images/hoodie15.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/hoodie15.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket1",
+    "name": "Everyday Bomber Jacket",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket1.jpeg",
+    "images": [
+      "images/jacket1.jpeg"
+    ],
+    "price": 2799,
+    "originalPrice": 3279,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 27,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "winter-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-09",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket1.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket1.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket2",
+    "name": "Everyday Bomber Jacket — Studio",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket2.jpeg",
+    "images": [
+      "images/jacket2.jpeg"
+    ],
+    "price": 3079,
+    "originalPrice": 3479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 34,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "winter-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-06",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket2.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket3",
+    "name": "Everyday Bomber Jacket — Weekender",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket3.jpeg",
+    "images": [
+      "images/jacket3.jpeg"
+    ],
+    "price": 3179,
+    "originalPrice": 3679,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 41,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "winter-wear-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-03",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket3.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket3.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket4",
+    "name": "Everyday Bomber Jacket — Daily",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket4.jpeg",
+    "images": [
+      "images/jacket4.jpeg"
+    ],
+    "price": 3279,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 13,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-31",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket4.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket4.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket5",
+    "name": "Everyday Bomber Jacket — Signature",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket5.jpeg",
+    "images": [
+      "images/jacket5.jpeg"
+    ],
+    "price": 3379,
+    "originalPrice": 3779,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 20,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-28",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket5.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket5.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket6",
+    "name": "Everyday Bomber Jacket — Classic",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket6.jpeg",
+    "images": [
+      "images/jacket6.jpeg"
+    ],
+    "price": 2799,
+    "originalPrice": 3479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 27,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-25",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket6.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket6.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket7",
+    "name": "Everyday Bomber Jacket — Modern",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket7.jpeg",
+    "images": [
+      "images/jacket7.jpeg"
+    ],
+    "price": 3079,
+    "originalPrice": 3379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 34,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-22",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket7.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket7.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket8",
+    "name": "Everyday Bomber Jacket — Essential",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket8.jpeg",
+    "images": [
+      "images/jacket8.jpeg"
+    ],
+    "price": 3179,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 41,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-19",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket8.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket8.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket9",
+    "name": "Everyday Bomber Jacket — Soft",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket9.jpeg",
+    "images": [
+      "images/jacket9.jpeg"
+    ],
+    "price": 3279,
+    "originalPrice": 3779,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 13,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-16",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket9.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket9.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket10",
+    "name": "Everyday Bomber Jacket — Refined",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket10.jpeg",
+    "images": [
+      "images/jacket10.jpeg"
+    ],
+    "price": 3379,
+    "originalPrice": 3679,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 20,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-13",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket10.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket10.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket11",
+    "name": "Everyday Bomber Jacket — Daylight",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket11.jpeg",
+    "images": [
+      "images/jacket11.jpeg"
+    ],
+    "price": 2799,
+    "originalPrice": 3379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 27,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-10",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket11.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket11.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket12",
+    "name": "Everyday Bomber Jacket — Edition",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket12.jpeg",
+    "images": [
+      "images/jacket12.jpeg"
+    ],
+    "price": 3079,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 34,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-07",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket12.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket12.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket13",
+    "name": "Everyday Bomber Jacket — Core",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket13.jpeg",
+    "images": [
+      "images/jacket13.jpeg"
+    ],
+    "price": 3179,
+    "originalPrice": 3479,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 3,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-04",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket13.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket13.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket14",
+    "name": "Everyday Bomber Jacket — Utility",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket14.jpeg",
+    "images": [
+      "images/jacket14.jpeg"
+    ],
+    "price": 3279,
+    "originalPrice": 3679,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 0,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-01",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket14.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket14.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "jacket15",
+    "name": "Everyday Bomber Jacket — Archive",
+    "category": "winter-wear",
+    "subcategory": "jackets",
+    "image": "images/jacket15.jpeg",
+    "images": [
+      "images/jacket15.jpeg"
+    ],
+    "price": 3379,
+    "originalPrice": 3879,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Olive"
+    ],
+    "stock": 20,
+    "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-29",
+    "material": "100% nylon outer; 100% polyester lining",
+    "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Black",
+        "image": "images/jacket15.jpeg"
+      },
+      {
+        "name": "Olive",
+        "image": "images/jacket15.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt1",
+    "name": "Botanical Resort Shirt",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt1.jpeg",
+    "images": [
+      "images/shirt1.jpeg"
+    ],
+    "price": 1379,
+    "originalPrice": 1679,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 30,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-08",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt1.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt1.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt2",
+    "name": "Botanical Resort Shirt — Studio",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt2.jpeg",
+    "images": [
+      "images/shirt2.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": 1879,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 37,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-05",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt2.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt2.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt3",
+    "name": "Botanical Resort Shirt — Weekender",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt3.jpeg",
+    "images": [
+      "images/shirt3.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 2079,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 44,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-02",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt3.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt3.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt4",
+    "name": "Botanical Resort Shirt — Daily",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt4.jpeg",
+    "images": [
+      "images/shirt4.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 16,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-30",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt4.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt4.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt5",
+    "name": "Botanical Resort Shirt — Signature",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt5.jpeg",
+    "images": [
+      "images/shirt5.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2179,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 23,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-27",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt5.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt5.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt6",
+    "name": "Botanical Resort Shirt — Classic",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt6.jpeg",
+    "images": [
+      "images/shirt6.jpeg"
+    ],
+    "price": 1379,
+    "originalPrice": 1879,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 30,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-24",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt6.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt6.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt7",
+    "name": "Botanical Resort Shirt — Modern",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt7.jpeg",
+    "images": [
+      "images/shirt7.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": 1779,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 37,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-21",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt7.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt7.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt8",
+    "name": "Botanical Resort Shirt — Essential",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt8.jpeg",
+    "images": [
+      "images/shirt8.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 44,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-18",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt8.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt8.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt9",
+    "name": "Botanical Resort Shirt — Soft",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt9.jpeg",
+    "images": [
+      "images/shirt9.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 2179,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 16,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-15",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt9.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt9.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt10",
+    "name": "Botanical Resort Shirt — Refined",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt10.jpeg",
+    "images": [
+      "images/shirt10.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2079,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 23,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-12",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt10.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt10.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt11",
+    "name": "Botanical Resort Shirt — Daylight",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt11.jpeg",
+    "images": [
+      "images/shirt11.jpeg"
+    ],
+    "price": 1379,
+    "originalPrice": 1779,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 30,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-09",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt11.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt11.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt12",
+    "name": "Botanical Resort Shirt — Edition",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt12.jpeg",
+    "images": [
+      "images/shirt12.jpeg"
+    ],
+    "price": 1479,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 37,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-06",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt12.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt12.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt13",
+    "name": "Botanical Resort Shirt — Core",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt13.jpeg",
+    "images": [
+      "images/shirt13.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 1879,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 3,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-03",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt13.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt13.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt14",
+    "name": "Botanical Resort Shirt — Utility",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt14.jpeg",
+    "images": [
+      "images/shirt14.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 2079,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 0,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-31",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt14.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt14.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt15",
+    "name": "Botanical Resort Shirt — Archive",
+    "category": "shirts",
+    "subcategory": "printed",
+    "image": "images/shirt15.jpeg",
+    "images": [
+      "images/shirt15.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2279,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru Print",
+      "Black Print"
+    ],
+    "stock": 23,
+    "description": "A short-sleeve resort shirt with a subtle botanical print and an open camp collar. The easy shape works worn loose or layered over a simple tee.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-28",
+    "material": "100% cotton woven fabric",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru Print",
+        "image": "images/shirt15.jpeg"
+      },
+      {
+        "name": "Black Print",
+        "image": "images/shirt15.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt16",
+    "name": "Everyday Linen Shirt",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt16.jpeg",
+    "images": [
+      "images/shirt16.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 1879,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 33,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "main-index",
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-07",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt16.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt16.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt16.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt17",
+    "name": "Everyday Linen Shirt — Studio",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt17.jpeg",
+    "images": [
+      "images/shirt17.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 2079,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 40,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-04",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt17.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt17.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt17.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt18",
+    "name": "Everyday Linen Shirt — Weekender",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt18.jpeg",
+    "images": [
+      "images/shirt18.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2279,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 12,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-01",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt18.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt18.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt18.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt19",
+    "name": "Everyday Linen Shirt — Daily",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt19.jpeg",
+    "images": [
+      "images/shirt19.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 19,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-29",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt19.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt19.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt19.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt20",
+    "name": "Everyday Linen Shirt — Signature",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt20.jpeg",
+    "images": [
+      "images/shirt20.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2379,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 26,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-26",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt20.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt20.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt20.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt21",
+    "name": "Everyday Linen Shirt — Classic",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt21.jpeg",
+    "images": [
+      "images/shirt21.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 2079,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 33,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-23",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt21.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt21.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt21.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt22",
+    "name": "Everyday Linen Shirt — Modern",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt22.jpeg",
+    "images": [
+      "images/shirt22.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 40,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-20",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt22.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt22.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt22.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt23",
+    "name": "Everyday Linen Shirt — Essential",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt23.jpeg",
+    "images": [
+      "images/shirt23.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 12,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-17",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt23.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt23.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt23.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt24",
+    "name": "Everyday Linen Shirt — Soft",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt24.jpeg",
+    "images": [
+      "images/shirt24.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2379,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 19,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-14",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt24.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt24.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt24.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt25",
+    "name": "Everyday Linen Shirt — Refined",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt25.jpeg",
+    "images": [
+      "images/shirt25.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2279,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 26,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-11",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt25.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt25.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt25.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt26",
+    "name": "Everyday Linen Shirt — Daylight",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt26.jpeg",
+    "images": [
+      "images/shirt26.jpeg"
+    ],
+    "price": 1579,
+    "originalPrice": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 33,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-08",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt26.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt26.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt26.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt27",
+    "name": "Everyday Linen Shirt — Edition",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt27.jpeg",
+    "images": [
+      "images/shirt27.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 40,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-05",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt27.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt27.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt27.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt28",
+    "name": "Everyday Linen Shirt — Core",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt28.jpeg",
+    "images": [
+      "images/shirt28.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2079,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 3,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-02",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt28.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt28.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt28.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt29",
+    "name": "Everyday Linen Shirt — Utility",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt29.jpeg",
+    "images": [
+      "images/shirt29.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2279,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 0,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-30",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt29.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt29.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt29.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt30",
+    "name": "Everyday Linen Shirt — Archive",
+    "category": "shirts",
+    "subcategory": "plain",
+    "image": "images/shirt30.jpeg",
+    "images": [
+      "images/shirt30.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2479,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru",
+      "Stone",
+      "Sky Blue"
+    ],
+    "stock": 26,
+    "description": "A breathable button-up with a naturally textured finish, a classic collar and long sleeves. An everyday staple that moves easily from casual mornings to relaxed evenings.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-27",
+    "material": "55% linen, 45% cotton",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Ecru",
+        "image": "images/shirt30.jpeg"
+      },
+      {
+        "name": "Stone",
+        "image": "images/shirt30.jpeg"
+      },
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt30.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt31",
+    "name": "Airy Oversized Shirt",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt31.jpeg",
+    "images": [
+      "images/shirt31.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 36,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-06",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt31.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt31.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt32",
+    "name": "Airy Oversized Shirt — Studio",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt32.jpeg",
+    "images": [
+      "images/shirt32.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2179,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 43,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-09-03",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt32.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt32.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt33",
+    "name": "Airy Oversized Shirt — Weekender",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt33.jpeg",
+    "images": [
+      "images/shirt33.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2379,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 15,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "new-arrival",
+      "product-image",
+      "shirts-heading"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-31",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt33.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt33.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt34",
+    "name": "Airy Oversized Shirt — Daily",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt34.jpeg",
+    "images": [
+      "images/shirt34.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 22,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-28",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt34.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt34.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt35",
+    "name": "Airy Oversized Shirt — Signature",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt35.jpeg",
+    "images": [
+      "images/shirt35.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": 2479,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 29,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-25",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt35.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt35.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt36",
+    "name": "Airy Oversized Shirt — Classic",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt36.jpeg",
+    "images": [
+      "images/shirt36.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 2179,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 36,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "new-arrival",
+      "product-image"
+    ],
+    "newArrival": true,
+    "createdAt": "2026-08-22",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt36.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt36.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt37",
+    "name": "Airy Oversized Shirt — Modern",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt37.jpeg",
+    "images": [
+      "images/shirt37.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": 2079,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 43,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-19",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt37.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt37.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt38",
+    "name": "Airy Oversized Shirt — Essential",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt38.jpeg",
+    "images": [
+      "images/shirt38.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 15,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-16",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt38.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt38.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt39",
+    "name": "Airy Oversized Shirt — Soft",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt39.jpeg",
+    "images": [
+      "images/shirt39.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2479,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 22,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-13",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt39.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt39.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt40",
+    "name": "Airy Oversized Shirt — Refined",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt40.jpeg",
+    "images": [
+      "images/shirt40.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": 2379,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 29,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-10",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt40.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt40.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt41",
+    "name": "Airy Oversized Shirt — Daylight",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt41.jpeg",
+    "images": [
+      "images/shirt41.jpeg"
+    ],
+    "price": 1679,
+    "originalPrice": 2079,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 36,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-07",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt41.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt41.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt42",
+    "name": "Airy Oversized Shirt — Edition",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt42.jpeg",
+    "images": [
+      "images/shirt42.jpeg"
+    ],
+    "price": 1779,
+    "originalPrice": null,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 43,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [
+      "product-image"
+    ],
+    "newArrival": false,
+    "createdAt": "2026-08-04",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt42.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt42.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt43",
+    "name": "Airy Oversized Shirt — Core",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt43.jpeg",
+    "images": [
+      "images/shirt43.jpeg"
+    ],
+    "price": 1879,
+    "originalPrice": 2179,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 3,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-08-01",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt43.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt43.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt44",
+    "name": "Airy Oversized Shirt — Utility",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt44.jpeg",
+    "images": [
+      "images/shirt44.jpeg"
+    ],
+    "price": 1799,
+    "originalPrice": 2379,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 0,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-29",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt44.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt44.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirt45",
+    "name": "Airy Oversized Shirt — Archive",
+    "category": "shirts",
+    "subcategory": "oversized",
+    "image": "images/shirt45.jpeg",
+    "images": [
+      "images/shirt45.jpeg"
+    ],
+    "price": 2079,
+    "originalPrice": 2579,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Sky Blue",
+      "Ecru"
+    ],
+    "stock": 29,
+    "description": "A generous button-up silhouette with dropped shoulders and a light, crisp feel. Wear it open over a tee or buttoned for a simple, considered look.",
+    "tags": [],
+    "newArrival": false,
+    "createdAt": "2026-07-26",
+    "material": "100% cotton poplin",
+    "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
+    "catalogueStatus": "ACTIVE",
+    "colorVariants": [
+      {
+        "name": "Sky Blue",
+        "image": "images/shirt45.jpeg"
+      },
+      {
+        "name": "Ecru",
+        "image": "images/shirt45.jpeg"
+      }
+    ]
+  }
+]

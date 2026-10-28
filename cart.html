@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review your FORME shopping bag, update sizes and quantities, and explore the checkout preview.">
+  <title>Your bag — FORME</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- ==================== SHARED HEADER START ==================== -->
+  <div id="site-header"></div>
+  <!-- ==================== SHARED HEADER END ==================== -->
+
+  <!-- ==================== SHOPPING BAG START ==================== -->
+  <main id="main-content" class="cart-page">
+    <div class="cart-page-heading"><div><p class="cart-eyebrow">YOUR EVERYDAY, RECONSIDERED</p><h1>Your bag<span id="bag-item-count"></span></h1></div><a class="cart-continue" href="product.html">Continue exploring <span aria-hidden="true">↗</span></a></div>
+    <p id="cart-notice" class="cart-notice" role="status" hidden></p>
+    <div id="cart-content" aria-live="polite"><p class="cart-loading">Opening your bag…</p></div>
+  </main>
+  <!-- ==================== SHOPPING BAG END ==================== -->
+
+  <!-- ==================== DEMO CHECKOUT START ==================== -->
+  <dialog id="checkout-dialog" class="cart-dialog" aria-labelledby="checkout-title">
+    <div class="cart-dialog-heading"><span class="cart-eyebrow">CHECKOUT PREVIEW</span><button type="button" class="cart-close" data-close-checkout aria-label="Close checkout preview">×</button></div>
+    <div id="checkout-content"></div>
+  </dialog>
+  <!-- ==================== DEMO CHECKOUT END ==================== -->
+  <div id="site-footer"></div>
+  <script type="module" src="js/header.js"></script>
+  <script type="module" src="js/cart.js"></script>
+</body>
+</html>

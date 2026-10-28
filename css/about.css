@@ -1,0 +1,227 @@
+/* ==================== BRAND STORY START ==================== */
+
+.about-hero {
+  padding-block: 4rem 3rem;
+}
+
+.about-hero h1 {
+  margin: 1.5rem 0 2rem;
+  font-size: clamp(3.5rem, 8vw, 8.2rem);
+  font-weight: 400;
+  line-height: 1.01;
+  letter-spacing: -.065em;
+}
+
+.about-hero h1 em, .about-story h2 em, .about-collection h2 em, .about-contact h2 em, .policy-page h1 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.about-hero-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-hero-bottom p {
+  max-width: 35rem;
+  color: #6b6b63;
+  line-height: 1.8;
+  font-size: .95rem;
+}
+
+.about-hero-bottom > span {
+  font: italic clamp(5rem, 12vw, 10rem) Georgia, serif;
+  color: #303e32;
+  line-height: 1;
+}
+
+.about-story {
+  background: #303e32;
+  color: #faf9f3;
+  padding-block: 4.5rem;
+}
+
+.about-story-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.about-story h2, .about-collection h2, .about-contact h2 {
+  font-weight: 400;
+  font-size: clamp(2.4rem, 4.7vw, 4.5rem);
+  line-height: 1.07;
+  letter-spacing: -.045em;
+  margin: 1.2rem 0;
+}
+
+.about-story .eyebrow {
+  color: #d8ddce;
+}
+
+.about-story .notice {
+  background: #ffffff12;
+  border: 1px solid #ffffff35;
+  padding: 1rem;
+  color: #eef0e8;
+  font-size: .78rem;
+  line-height: 1.7;
+}
+
+.about-story h3 {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.about-story p:not(.eyebrow):not(.notice) {
+  line-height: 1.8;
+  font-size: .9rem;
+  color: #d0d7c9;
+}
+
+.about-collection {
+  padding-block: 4.5rem;
+}
+
+.about-categories {
+  display: grid;
+  border-top: 1px solid #d9d9d0;
+  margin-top: 2.5rem;
+}
+
+.about-categories a {
+  display: block;
+  position: relative;
+  padding: 1.8rem 2.5rem 1.8rem 0;
+  border-bottom: 1px solid #d9d9d0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-categories a > span {
+  font-size: .65rem;
+  color: #797a70;
+}
+
+.about-categories h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: .7rem 0;
+}
+
+.about-categories p {
+  font-size: .8rem;
+  line-height: 1.6;
+  color: #74746c;
+}
+
+.about-categories b {
+  position: absolute;
+  right: .6rem;
+  top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.about-categories a:hover h3 {
+  text-decoration: underline;
+  text-underline-offset: .3rem;
+}
+
+.about-contact {
+  display: grid;
+  gap: 1.5rem;
+  border-top: 1px solid #d9d9d0;
+  padding-block: 3.5rem 5rem;
+}
+
+.about-contact p:not(.eyebrow) {
+  max-width: 30rem;
+  font-size: .85rem;
+  line-height: 1.8;
+  color: #74746c;
+}
+
+.about-contact .button {
+  margin-top: 1rem;
+}
+
+@media (min-width: 720px) {
+  .about-story-grid, .about-contact {
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+  }
+
+  .about-categories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 2rem;
+  }
+
+}
+
+@media (min-width: 1100px) {
+  .about-categories {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+}
+
+/* ==================== BRAND STORY END ==================== */
+
+/* ==================== PRIVACY POLICY START ==================== */
+
+.policy-page {
+  max-width: 940px;
+  padding-block: 4rem 5rem;
+}
+
+.policy-page h1 {
+  font-size: clamp(2.7rem, 6vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -.045em;
+  margin: 1.5rem 0;
+}
+
+.policy-page .notice {
+  font-size: .85rem;
+  line-height: 1.75;
+  padding: 1.2rem;
+  background: #eeeee6;
+  border: 1px solid #d9d9cf;
+}
+
+.policy-page p {
+  color: #67695f;
+  line-height: 1.85;
+  font-size: .9rem;
+}
+
+.policy-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.4rem;
+  border-block: 1px solid #d9d9d0;
+  padding-block: 1rem;
+  margin-block: 2rem;
+}
+
+.policy-navigation a {
+  color: #303e32;
+  text-underline-offset: .25rem;
+  font-size: .8rem;
+  padding-block: .5rem;
+}
+
+.policy-page section {
+  padding-top: 1.5rem;
+  scroll-margin-top: 120px;
+}
+
+.policy-page h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* ==================== PRIVACY POLICY END ==================== */

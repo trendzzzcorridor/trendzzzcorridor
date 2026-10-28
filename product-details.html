@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the details, choose your fit and discover everyday clothing from FORME.">
+  <title>Product details — FORME</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/product-details.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- ==================== SHARED HEADER START ==================== -->
+  <div id="site-header"></div>
+  <!-- ==================== SHARED HEADER END ==================== -->
+
+  <!-- ==================== PRODUCT DETAILS START ==================== -->
+  <main id="main-content" class="pd-page">
+    <div id="product-detail" aria-live="polite"><p class="pd-loading">Finding your next everyday favourite…</p></div>
+    <section id="related-products" class="pd-related" hidden aria-labelledby="related-heading"></section>
+  </main>
+  <!-- ==================== PRODUCT DETAILS END ==================== -->
+
+  <!-- ==================== SIZE GUIDE START ==================== -->
+  <dialog id="size-guide" class="pd-dialog" aria-labelledby="size-guide-title">
+    <div class="pd-dialog-heading"><h2 id="size-guide-title">Find your fit</h2><button type="button" class="pd-close" data-close-size aria-label="Close size guide">×</button></div>
+    <p>This is a sample size guide. Measurements are body measurements in centimetres; replace these with your brand’s final fit guide before selling.</p>
+    <div class="pd-table-scroll"><table><caption>General apparel size reference</caption><thead><tr><th scope="col">Size</th><th scope="col">Chest</th><th scope="col">Waist</th></tr></thead><tbody><tr><th scope="row">S</th><td>86–94</td><td>71–79</td></tr><tr><th scope="row">M</th><td>94–102</td><td>79–87</td></tr><tr><th scope="row">L</th><td>102–110</td><td>87–95</td></tr><tr><th scope="row">XL</th><td>110–118</td><td>95–103</td></tr><tr><th scope="row">XXL</th><td>118–126</td><td>103–111</td></tr></tbody></table></div>
+    <p>Relaxed and oversized styles are designed with extra room. Choose your usual size for the intended silhouette.</p>
+    <button type="button" class="pd-primary" data-close-size>Got it</button>
+  </dialog>
+  <!-- ==================== SIZE GUIDE END ==================== -->
+  <div id="site-footer"></div>
+  <script type="module" src="js/header.js"></script>
+  <script type="module" src="js/product-details.js"></script>
+</body>
+</html>

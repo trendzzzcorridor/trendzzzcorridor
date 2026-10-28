@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Preview — FORME</title>
+  <meta name="description" content="Preview the FORME store administration interface, edit local product drafts and export a catalogue JSON file.">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main-content" class="container admin-page">
+    <!-- ==================== ADMIN OVERVIEW START ==================== -->
+    <header class="admin-heading"><div><p class="eyebrow">FORME / STUDIO</p><h1>Store <em>workspace.</em></h1></div><a class="button button-secondary" href="index.html">View storefront <span aria-hidden="true">↗</span></a></header>
+    <p class="notice">Frontend administration preview. This page has no access control and must not be used as a production admin. Edits are local drafts in this browser; they do not change <code>data/products.json</code> or the storefront. Export a JSON file to review and manually replace your catalogue.</p>
+    <div id="admin-feedback" class="admin-feedback" role="status" aria-live="polite"></div>
+    <details id="admin-export-preview" class="admin-export-preview" hidden><summary>Review exported JSON</summary><p>Download the file, or copy this JSON if downloads are unavailable in your browser. Review it before replacing your catalogue.</p><a class="button button-secondary" id="admin-download-link" download="products.json">Download products.json</a><label class="field">Complete catalogue JSON<textarea id="admin-export-json" readonly rows="12" spellcheck="false"></textarea></label></details>
+    <div class="admin-layout">
+      <nav class="admin-navigation" aria-label="Admin sections">
+        <button type="button" data-admin-section="overview" aria-current="page">Overview <span aria-hidden="true">↗</span></button>
+        <button type="button" data-admin-section="products">Products</button>
+        <button type="button" data-admin-section="editor">Add product</button>
+        <button type="button" data-admin-section="inventory">Inventory</button>
+        <button type="button" data-admin-section="orders">Orders</button>
+        <button type="button" data-admin-section="customers">Customers</button>
+      </nav>
+      <div class="admin-content">
+        <section id="admin-overview" data-admin-panel="overview" aria-labelledby="overview-heading">
+          <h2 id="overview-heading">A clear view.</h2>
+          <p class="admin-muted">Catalogue metrics include your local drafts. Revenue, orders and customer analytics need a backend.</p>
+          <div id="admin-metrics" class="admin-metrics"><p>Loading catalogue…</p></div>
+          <div class="admin-overview-grid"><article class="admin-info-card"><p class="eyebrow">YOUR CATALOGUE</p><h3>Make room for the next edit.</h3><p>Review sample products, adjust stock and prepare new arrivals without changing your current storefront.</p><button type="button" class="button" data-open-section="products">Manage products</button></article><article class="admin-info-card"><p class="eyebrow">A CLEAR HANDOFF</p><h3>From draft to catalogue.</h3><p>Download the catalogue with your local changes, review the JSON, then replace <code>data/products.json</code> in your project. Keep a copy of your original file.</p><button type="button" class="button button-secondary" data-export>Export catalogue JSON</button></article></div>
+          <div class="admin-draft-bar"><p id="admin-draft-summary">No local drafts yet.</p><button type="button" class="admin-text-button" id="discard-all-drafts">Discard all local drafts</button></div>
+        </section>
+        <!-- ==================== ADMIN OVERVIEW END ==================== -->
+        <!-- ==================== PRODUCT MANAGEMENT START ==================== -->
+        <section id="admin-products" data-admin-panel="products" aria-labelledby="products-heading" hidden>
+          <div class="admin-section-heading"><h2 id="products-heading">Products</h2><button type="button" class="button" data-open-section="editor">Add product +</button></div>
+          <div class="admin-toolbar"><label class="field">Search products<input id="admin-product-search" type="search" placeholder="Name, ID or tag"></label><label class="field">Category<select id="admin-product-category"><option value="">All categories</option></select></label><button type="button" class="button button-secondary" data-export>Export JSON</button></div>
+          <p id="admin-product-count" class="admin-muted" aria-live="polite"></p>
+          <div id="admin-product-list" class="admin-table-wrap"><p>Loading products…</p></div>
+        </section>
+        <section id="admin-editor" data-admin-panel="editor" aria-labelledby="editor-heading" hidden>
+          <h2 id="editor-heading">Add product</h2><p class="admin-muted">Save a local draft, then export when it is ready. Required fields are marked with an asterisk.</p>
+          <form id="admin-product-form" class="admin-product-form">
+            <div class="admin-form-grid">
+              <label class="field">Product ID *<input name="id" pattern="[a-z][a-z0-9-]*" maxlength="60" placeholder="e.g. tshirt31" required><small>Lowercase, numbers and hyphens. Existing IDs cannot be changed.</small></label>
+              <label class="field">Product name *<input name="name" maxlength="160" required placeholder="e.g. Relaxed Cotton T-Shirt"></label>
+              <label class="field">Category *<select name="category" required></select></label>
+              <label class="field">Subcategory *<select name="subcategory" required></select></label>
+              <label class="field">Price (₹) *<input name="price" type="number" min="1" step="0.01" required></label>
+              <label class="field">Original price (₹)<input name="originalPrice" type="number" min="1" step="0.01"><small>Optional. Must be at least the current price.</small></label>
+              <label class="field">Stock *<input name="stock" type="number" min="0" step="1" required value="0"></label>
+              <label class="field">Added date *<input name="createdAt" type="date" required></label>
+              <label class="field">Sizes *<input name="sizes" placeholder="S, M, L, XL" required maxlength="160"><small>Separate each size with a comma.</small></label>
+              <label class="field">Colours<input name="colors" placeholder="Black, Chalk" maxlength="160"><small>Optional; separate with commas.</small></label>
+              <label class="field admin-field-wide">Primary image path *<input name="image" placeholder="images/tshirt31.jpeg" required pattern="images/[a-z]+[0-9]+\.jpeg"><small>Use images/ followed by lowercase letters, a number and .jpeg.</small></label>
+              <label class="field admin-field-wide">Additional image paths<textarea name="images" rows="2" placeholder="images/tshirt131.jpeg, images/tshirt231.jpeg"></textarea><small>Separate paths with commas. Primary image is included automatically.</small></label>
+              <label class="field admin-field-wide">Description *<textarea name="description" rows="4" required maxlength="4000"></textarea></label>
+              <label class="field">Material<input name="material" maxlength="300" placeholder="e.g. 100% cotton"></label>
+              <label class="field">Care instructions<input name="care" maxlength="400" placeholder="e.g. Cold machine wash"></label>
+              <label class="field admin-field-wide">Display tags<input name="tags" placeholder="main-index, product-image, tshirt-heading, new-arrival" maxlength="500"><small>Comma-separated tags control promotional placements. Products remain in their category without these tags.</small></label>
+            </div>
+            <label class="admin-checkbox"><input name="newArrival" type="checkbox"> Mark as a new arrival</label>
+            <p id="admin-form-error" class="admin-form-error" role="alert"></p>
+            <div class="admin-form-actions"><button type="submit" class="button">Save local draft</button><button type="button" class="button button-secondary" id="cancel-product-edit">Cancel</button></div>
+          </form>
+        </section>
+        <!-- ==================== PRODUCT MANAGEMENT END ==================== -->
+        <!-- ==================== INVENTORY AND FUTURE INTEGRATIONS START ==================== -->
+        <section id="admin-inventory" data-admin-panel="inventory" aria-labelledby="inventory-heading" hidden>
+          <h2 id="inventory-heading">Inventory</h2><p class="admin-muted">Adjust available units as local drafts. Stock is tracked per product in this first version.</p>
+          <div class="admin-toolbar"><label class="field">Search inventory<input id="admin-inventory-search" type="search" placeholder="Product name or ID"></label><label class="field">Stock status<select id="admin-stock-filter"><option value="">All stock</option><option value="low">Low stock (1–5)</option><option value="out">Out of stock</option><option value="available">In stock</option></select></label></div>
+          <div id="admin-inventory-list" class="admin-table-wrap"></div>
+        </section>
+        <section id="admin-orders" data-admin-panel="orders" aria-labelledby="admin-orders-heading" hidden>
+          <h2 id="admin-orders-heading">Orders</h2><div class="admin-integration-card"><p class="eyebrow">READY FOR A CONNECTION</p><h3>Every order, in one place.</h3><p>No live orders are available. Connect an authenticated order API to show real order IDs, payment status, fulfilment, returns and delivery updates here.</p><a href="tracking.html" class="button button-secondary">Explore the tracking demo</a></div>
+        </section>
+        <section id="admin-customers" data-admin-panel="customers" aria-labelledby="customers-heading" hidden>
+          <h2 id="customers-heading">Customers</h2><div class="admin-integration-card"><p class="eyebrow">READY FOR A CONNECTION</p><h3>Know your community.</h3><p>No customer database is connected. A production customer directory requires authenticated, authorised access and a backend. The customer-facing account page currently holds only a local demo profile.</p><a href="my-account.html" class="button button-secondary">Explore the account demo</a></div>
+        </section>
+        <!-- ==================== INVENTORY AND FUTURE INTEGRATIONS END ==================== -->
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="js/header.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

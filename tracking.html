@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track Your Order — FORME</title>
+  <meta name="description" content="Follow an order through the FORME tracking preview, from confirmation to delivery.">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/tracking.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main-content" class="container tracking-page">
+    <!-- ==================== ORDER LOOKUP START ==================== -->
+    <header class="tracking-heading"><p class="eyebrow">FROM US TO YOU</p><h1>Good things.<br><em>On their way.</em></h1><p>Enter your order details to see where things stand.</p></header>
+    <div class="tracking-layout">
+      <section class="tracking-form-panel" aria-labelledby="track-heading">
+        <h2 id="track-heading">Track your order</h2>
+        <p class="notice">This is a tracking demo. No shipping carrier or real order service is connected.</p>
+        <form id="tracking-form">
+          <label class="field">Order ID<input name="orderId" placeholder="e.g. FORME1001" required maxlength="40" autocomplete="off"></label>
+          <label class="field">Email address<input type="email" name="email" placeholder="Email used for your order" required maxlength="150" autocomplete="email"></label>
+          <button type="submit" class="button">Find my order <span aria-hidden="true">→</span></button>
+        </form>
+        <div class="tracking-demo"><strong>Take a look around.</strong><p>Use order <b>FORME1001</b> and <b>demo@example.com</b>.</p><button type="button" class="tracking-demo-button" id="fill-demo">Fill demo details</button></div>
+        <p id="tracking-message" role="status" aria-live="polite"></p>
+      </section>
+      <!-- ==================== ORDER LOOKUP END ==================== -->
+      <!-- ==================== TRACKING STATUS START ==================== -->
+      <section class="tracking-result-panel" aria-label="Order tracking result" aria-live="polite" aria-atomic="true" id="tracking-result">
+        <div class="tracking-empty"><span class="tracking-parcel" aria-hidden="true">↗</span><p class="eyebrow">EVERY STEP, IN VIEW</p><h2>Your journey starts here.</h2><p>Enter the demo order details to preview a shipment timeline.</p></div>
+      </section>
+      <!-- ==================== TRACKING STATUS END ==================== -->
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="js/header.js"></script>
+  <script type="module" src="js/tracking.js"></script>
+</body>
+</html>
