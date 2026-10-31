@@ -9,7 +9,7 @@
     "dev": "node scripts/server.mjs",
     "test": "node --test tests/*.test.mjs",
     "check": "node scripts/check-project.mjs",
-    "build": "rm -rf dist && mkdir -p dist && cp *.html dist/ && cp -R css js data images dist/"
+    "build": "rm -rf dist && mkdir -p dist && cp *.html sitemap.xml dist/ && cp -R css js data images dist/"
   },
   "engines": {
     "node": ">=20"
