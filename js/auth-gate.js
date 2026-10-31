@@ -1,5 +1,10 @@
 import { waitForAuth, loadProfile } from './firebase.js';
 
+if (!document.querySelector('link[href="css/auth-gate.css"]')) {
+  const style = document.createElement('link');
+  style.rel = 'stylesheet'; style.href = 'css/auth-gate.css'; document.head.append(style);
+}
+
 export async function requireCustomer(next) {
   try {
     const user = await waitForAuth();
