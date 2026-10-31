@@ -7,7 +7,7 @@
   <meta name="description" content="Explore the FORME account preview, update your local profile, and find your order history.">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="css/account.css"><link rel="stylesheet" href="css/auth-gate.css">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
@@ -25,45 +25,45 @@
     <!-- ==================== ACCOUNT INTRODUCTION END ==================== -->
     <!-- ==================== ACCOUNT FORMS START ==================== -->
     <section class="account-panel" aria-label="Your account">
-      <p class="notice">Frontend demo. No secure authentication or real accounts are connected. Only your demo profile is saved in this browser; passwords are never saved or verified. Use sample details.</p>
+      <p class="notice">Secure customer account powered by Trendzzz Corridor Firebase. Complete your name and mobile number to shop. Mobile numbers are collected without SMS verification.</p>
       <div id="account-feedback" class="account-feedback" role="status" aria-live="polite"></div>
-      <div id="account-auth">
+      <div id="account-auth"><button type="button" class="button button-secondary account-google-button" id="google-login">Continue with Google</button>
         <div class="account-tabs" role="tablist" aria-label="Account options">
           <button type="button" id="login-tab" role="tab" aria-selected="true" aria-controls="login-panel" data-account-tab="login">Login</button>
           <button type="button" id="register-tab" role="tab" aria-selected="false" aria-controls="register-panel" tabindex="-1" data-account-tab="register">Create account</button>
         </div>
         <div id="login-panel" role="tabpanel" aria-labelledby="login-tab">
           <h2>Welcome back.</h2>
-          <p class="account-muted">Try the account experience with any sample email.</p>
+          <p class="account-muted">Sign in with your email and password, or continue with Google.</p>
           <form id="login-form" class="account-form">
             <label class="field">Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="150"></label>
-            <label class="field">Demo password<input name="password" type="password" autocomplete="off" placeholder="For this preview only" required minlength="8" maxlength="128" aria-describedby="login-password-help"></label>
-            <small id="login-password-help">Enter any 8+ characters. This demo does not check credentials.</small>
-            <button class="button" type="submit">Open demo profile <span aria-hidden="true">↗</span></button>
+            <label class="field">Password<input name="password" type="password" autocomplete="current-password" placeholder="Your password" required minlength="8" maxlength="128" aria-describedby="login-password-help"></label>
+            <small id="login-password-help">Enter your account password.</small>
+            <button class="button" type="submit">Log in <span aria-hidden="true">↗</span></button>
           </form>
         </div>
         <div id="register-panel" role="tabpanel" aria-labelledby="register-tab" hidden>
           <h2>Make yourself at home.</h2>
-          <p class="account-muted">Create a profile preview on this device.</p>
+          <p class="account-muted">Create your secure account. Email verification is required before checkout.</p>
           <form id="register-form" class="account-form">
             <label class="field">Full name<input name="name" autocomplete="name" placeholder="Your name" required minlength="2" maxlength="80"></label>
             <label class="field">Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="150"></label>
-            <label class="field">Demo password<input name="password" type="password" autocomplete="off" placeholder="At least 8 characters" required minlength="8" maxlength="128"></label>
-            <small>Use a sample password. It is discarded immediately and never stored.</small>
-            <button class="button" type="submit">Create local demo profile <span aria-hidden="true">↗</span></button>
+            <label class="field">Password<input name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" required minlength="8" maxlength="128"></label>
+            <small>Use a strong unique password.</small>
+            <button class="button" type="submit">Create account <span aria-hidden="true">↗</span></button>
           </form>
         </div>
       </div>
-      <div id="account-profile" hidden>
-        <div class="account-profile-heading"><div><p class="eyebrow">LOCAL DEMO PROFILE</p><h2 id="profile-greeting">Your profile</h2></div><button type="button" class="account-text-link" id="sign-out">Sign out</button></div>
+      <div id="account-profile" hidden><p id="account-verification" class="account-verify-message" hidden></p><button type="button" id="send-verification" class="button button-secondary" hidden>Resend verification email</button>
+        <div class="account-profile-heading"><div><p class="eyebrow">CUSTOMER PROFILE</p><h2 id="profile-greeting">Your profile</h2></div><button type="button" class="account-text-link" id="sign-out">Sign out</button></div>
         <form id="profile-form" class="account-form">
           <label class="field">Full name<input name="name" autocomplete="name" required minlength="2" maxlength="80"></label>
-          <label class="field">Email address<input name="email" type="email" autocomplete="email" required maxlength="150"></label>
-          <label class="field">Phone <span class="account-muted">(optional)</span><input name="phone" type="tel" autocomplete="tel" maxlength="30"></label>
-          <button class="button" type="submit">Save local profile</button>
+          <label class="field">Email address<input name="email" type="email" autocomplete="email" readonly required maxlength="150"></label>
+          <label class="field">Mobile number (required)<input name="phone" type="tel" autocomplete="tel" minlength="8" maxlength="20" placeholder="+91 9876543210" required></label>
+          <button class="button" type="submit">Save profile</button>
         </form>
         <section class="account-order-history" aria-labelledby="orders-heading"><h3 id="orders-heading">Order history</h3><p>Your order history will appear here once a real account and order service are connected.</p><a class="button button-secondary" href="product.html">Explore the collection</a></section>
-        <button class="account-text-link account-delete" id="clear-profile" type="button">Delete this local demo profile</button>
+        <p class="account-muted">To request deletion of your customer data, contact Trendzzz Corridor support.</p>
       </div>
     </section>
     <!-- ==================== ACCOUNT FORMS END ==================== -->

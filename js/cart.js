@@ -1,3 +1,4 @@
+import { requireCustomer } from './auth-gate.js';
 import { getProducts, formatPrice, escapeHTML, setupImages, renderError, getCart, saveCart, showToast, categoryConfig } from './common.js';
 
 // ==================== CART DATA AND STOCK START ====================
@@ -139,7 +140,8 @@ function renderCheckout() {
   }).join('')}</ul><div class="cart-dialog-total"><span>Bag total</span><span>${formatPrice(subtotal())}</span></div><p>Delivery and final charges are not calculated in this preview. Your bag will remain saved.</p><button type="button" class="cart-primary" id="finish-checkout-preview">Finish preview <span aria-hidden="true">↗</span></button>`;
 }
 
-function openCheckout() {
+async function openCheckout() {
+  if (!await requireCustomer()) return;
   reconcileCart();
   renderCart();
   renderCheckout();
@@ -162,6 +164,7 @@ checkoutDialog.addEventListener('close', () => cartContainer.querySelector('#ope
 
 // ==================== CART LOADING START ====================
 async function initializeCart() {
+  if (!await requireCustomer()) return;
   try {
     const products = await getProducts();
     productsById = new Map(products.map(product => [product.id, product]));

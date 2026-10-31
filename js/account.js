@@ -1,105 +1,93 @@
-import { readStorage, writeStorage } from './common.js';
+import { auth, googleLogin, emailLogin, emailRegister, logout, loadProfile, saveProfile, authMessage } from './firebase.js';
+import { onAuthStateChanged, sendEmailVerification, reload } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
 
-/* ==================== LOCAL PROFILE STORAGE START ==================== */
-const PROFILE_KEY = 'forme-demo-profile-v1';
-const SESSION_KEY = 'forme-demo-session-v1';
 const feedback = document.querySelector('#account-feedback');
 const profileForm = document.querySelector('#profile-form');
-let profile = readStorage(PROFILE_KEY, null);
-if (!profile || typeof profile.name !== 'string' || typeof profile.email !== 'string') profile = null;
-
-function setFeedback(message, isError = false) {
-  feedback.textContent = message;
-  feedback.dataset.error = String(isError);
-}
-
-function displayProfile() {
-  const isOpen = Boolean(profile && readStorage(SESSION_KEY, false) === true);
-  document.querySelector('#account-auth').hidden = isOpen;
-  document.querySelector('#account-profile').hidden = !isOpen;
-  if (!isOpen) return;
-  document.querySelector('#profile-greeting').textContent = `Hello, ${profile.name.split(' ')[0]}.`;
-  profileForm.elements.name.value = profile.name;
-  profileForm.elements.email.value = profile.email;
-  profileForm.elements.phone.value = profile.phone || '';
-}
-
-function openProfile(nextProfile, form) {
-  profile = nextProfile;
-  const profileSaved = writeStorage(PROFILE_KEY, profile);
-  const sessionSaved = writeStorage(SESSION_KEY, true);
-  // Passwords never leave the form and are cleared immediately.
-  form.reset();
-  displayProfile();
-  setFeedback(profileSaved && sessionSaved ? 'Your local demo profile is open. This is not an authenticated session.' : 'Your demo profile is open for this page only. Browser storage is unavailable, so it cannot be kept after navigation.', !(profileSaved && sessionSaved));
-}
-/* ==================== LOCAL PROFILE STORAGE END ==================== */
-
-/* ==================== ACCOUNT TABS AND FORMS START ==================== */
 const tabs = [...document.querySelectorAll('[data-account-tab]')];
-function selectTab(tab) {
-  tabs.forEach(item => {
-    const selected = item === tab;
-    item.setAttribute('aria-selected', String(selected));
-    item.tabIndex = selected ? 0 : -1;
-    document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+const params = new URLSearchParams(location.search);
+const returnTo = params.get('return');
+const safeReturn = returnTo && !returnTo.startsWith('/') && !returnTo.includes('://') && /^[a-z0-9._?=&%-]+$/i.test(returnTo) ? returnTo : 'product.html';
+let activeUser = null;
+let customerProfile = null;
+function say(message, error = false) { feedback.textContent = message; feedback.dataset.error = String(error); }
+function selectTab(index) {
+  tabs.forEach((tab, i) => {
+    const selected = i === index;
+    tab.setAttribute('aria-selected', String(selected));
+    tab.tabIndex = selected ? 0 : -1;
+    document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected;
   });
-  setFeedback('');
 }
 tabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => selectTab(tab));
+  tab.addEventListener('click', () => selectTab(index));
   tab.addEventListener('keydown', event => {
-    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    if (!['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
     event.preventDefault();
-    const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
-    selectTab(tabs[next]);
-    tabs[next].focus();
+    const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length-1 : (index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+    selectTab(next); tabs[next].focus();
   });
 });
-
+if (params.get('mode') === 'register') selectTab(1);
+async function renderUser(user) {
+  activeUser = user;
+  customerProfile = null;
+  const authenticated = Boolean(user);
+  document.querySelector('#account-auth').hidden = authenticated;
+  document.querySelector('#account-profile').hidden = !authenticated;
+  if (!authenticated) return;
+  profileForm.elements.email.value = user.email || '';
+  profileForm.elements.name.value = user.displayName || '';
+  profileForm.elements.phone.value = '';
+  document.querySelector('#profile-greeting').textContent = 'Complete your profile';
+  try {
+    customerProfile = await loadProfile(user);
+    if (auth.currentUser?.uid !== user.uid) return;
+    profileForm.elements.name.value = customerProfile?.name || user.displayName || '';
+    profileForm.elements.phone.value = customerProfile?.phone || '';
+    document.querySelector('#profile-greeting').textContent = customerProfile?.name ? 'Hello, ' + customerProfile.name.split(' ')[0] + '.' : 'Complete your profile';
+    const requiresVerify = user.providerData.some(p => p.providerId === 'password') && !user.emailVerified;
+    const note = document.querySelector('#account-verification');
+    note.hidden = !requiresVerify;
+    note.textContent = 'Please verify your email address before checkout. Check your inbox, then refresh this page.';
+    document.querySelector('#send-verification').hidden = !requiresVerify;
+    if (params.has('complete') || !customerProfile?.phone) say('Please enter your full name and mobile number to finish setting up your account.');
+    else if (requiresVerify) say('Your profile is saved. Please verify your email before shopping.');
+    else if (returnTo) location.replace(safeReturn);
+    else say('Your account is ready.');
+  } catch (error) { say(authMessage(error), true); }
+}
+onAuthStateChanged(auth, renderUser);
+async function run(task) {
+  say('Please wait…');
+  try { await task(); } catch (error) { say(authMessage(error), true); }
+}
+document.querySelector('#google-login').addEventListener('click', () => run(async () => { await googleLogin(); }));
 document.querySelector('#login-form').addEventListener('submit', event => {
-  event.preventDefault();
-  const form = event.currentTarget;
+  event.preventDefault(); const form=event.currentTarget;
   if (!form.reportValidity()) return;
-  const email = form.elements.email.value.trim().toLowerCase();
-  const existing = profile?.email.toLowerCase() === email ? profile : { name: 'Demo visitor', email, phone: '' };
-  openProfile(existing, form);
+  run(async () => { await emailLogin(form.elements.email.value.trim(), form.elements.password.value); form.reset(); });
 });
-
 document.querySelector('#register-form').addEventListener('submit', event => {
-  event.preventDefault();
-  const form = event.currentTarget;
-  const name = form.elements.name.value.trim();
+  event.preventDefault(); const form=event.currentTarget;
   if (!form.reportValidity()) return;
-  if (name.length < 2) { setFeedback('Please enter a name with at least two non-space characters.', true); return; }
-  openProfile({ name, email: form.elements.email.value.trim().toLowerCase(), phone: '' }, form);
+  run(async () => { await emailRegister(form.elements.name.value.trim(), form.elements.email.value.trim(), form.elements.password.value); form.reset(); });
 });
-
 profileForm.addEventListener('submit', event => {
   event.preventDefault();
-  if (!profileForm.reportValidity()) return;
-  const name = profileForm.elements.name.value.trim();
-  if (name.length < 2) { setFeedback('Please enter a name with at least two non-space characters.', true); return; }
-  profile = { name, email: profileForm.elements.email.value.trim().toLowerCase(), phone: profileForm.elements.phone.value.trim() };
-  const saved = writeStorage(PROFILE_KEY, profile);
-  displayProfile();
-  setFeedback(saved ? 'Local profile updated on this browser.' : 'Profile updated for this page only. Browser storage is unavailable.', !saved);
+  if (!profileForm.reportValidity() || !activeUser) return;
+  run(async () => {
+    await saveProfile(activeUser, profileForm.elements.name.value, profileForm.elements.phone.value);
+    customerProfile = await loadProfile(activeUser);
+    if (activeUser.providerData.some(p => p.providerId === 'password') && !activeUser.emailVerified) say('Profile saved. Verify your email before continuing.');
+    else if (returnTo) location.assign(safeReturn);
+    else say('Profile saved successfully.');
+  });
 });
-
-document.querySelector('#sign-out').addEventListener('click', () => {
-  writeStorage(SESSION_KEY, false);
-  displayProfile();
-  setFeedback('Signed out of the demo profile.');
-  document.querySelector('#login-tab').focus();
-});
-
-document.querySelector('#clear-profile').addEventListener('click', () => {
-  profile = null;
-  writeStorage(PROFILE_KEY, null);
-  writeStorage(SESSION_KEY, false);
-  displayProfile();
-  setFeedback('Your local demo profile has been deleted.');
-  document.querySelector('#login-tab').focus();
-});
-displayProfile();
-/* ==================== ACCOUNT TABS AND FORMS END ==================== */
+document.querySelector('#send-verification').addEventListener('click', () => run(async () => {
+  if (!auth.currentUser) return;
+  await reload(auth.currentUser);
+  if (auth.currentUser.emailVerified) { await renderUser(auth.currentUser); return; }
+  await sendEmailVerification(auth.currentUser);
+  say('Verification email sent. Please check your inbox.');
+}));
+document.querySelector('#sign-out').addEventListener('click', () => run(async () => { await logout(); say('Signed out.'); }));
