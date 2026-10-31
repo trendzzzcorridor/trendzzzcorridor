@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Only the authenticated customer may read or update their own profile.
+    match /customers/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+
+      allow create, update: if request.auth != null
+        && request.auth.uid == userId
+        && request.resource.data.keys().hasOnly([
+          'uid', 'name', 'email', 'phone', 'phoneVerified', 'updatedAt'
+        ])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.name is string
+        && request.resource.data.name.size() >= 2
+        && request.resource.data.name.size() <= 80
+        && request.resource.data.phone is string
+        && request.resource.data.phone.size() >= 8
+        && request.resource.data.phone.size() <= 20
+        && request.resource.data.phoneVerified == false
+        && request.resource.data.updatedAt is string;
+
+      allow delete: if false;
+    }
+    // Order processing, payments, inventory administration remain disabled.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
