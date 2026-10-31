@@ -1,3 +1,4 @@
+import { requireCustomer } from './auth-gate.js';
 import { getProducts, formatPrice, escapeHTML, productCard, setupImages, renderError, addToCart, getCartQuantity, showToast, categoryConfig, imageURL } from './common.js';
 
 // ==================== PRODUCT DETAILS SETUP START ====================
@@ -109,9 +110,10 @@ function bindPurchaseForm(product) {
     refreshPurchaseLimits();
   });
   quantityInput.addEventListener('change', refreshPurchaseLimits);
-  form.addEventListener('submit', event => {
+  form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
+    if (!await requireCustomer()) return;
     const values = new FormData(form);
     const quantity = Number(values.get('quantity'));
     if (!Number.isInteger(quantity) || quantity < 1 || quantity > availableQuantity(product)) {
