@@ -613,3 +613,11 @@
 }
 
 /* ==================== RESPONSIVE PRODUCT PAGE END ==================== */
+
+/* Per-colour image carousel */
+.pd-gallery-arrow { position:absolute; top:50%; transform:translateY(-50%); z-index:2; width:42px; height:48px; border:0; background:rgba(255,255,255,.85); color:#20231f; font-size:30px; cursor:pointer; display:grid; place-items:center; }
+.pd-gallery-prev { left:12px; }
+.pd-gallery-next { right:12px; }
+.pd-gallery-arrow:hover { background:#fff; }
+.pd-gallery-arrow:focus-visible { outline:2px solid #303e32; outline-offset:2px; }
+.pd-gallery-arrow[hidden], .pd-thumbnails[hidden] { display:none!important; }
