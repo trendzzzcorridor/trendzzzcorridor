@@ -1,3 +1,6 @@
+import { auth } from './firebase.js';
+import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
+
 // ==================== CATALOGUE CONFIGURATION START ====================
 // Product records live ONLY in data/products.json. This describes navigation.
 export const categoryConfig = {
@@ -7,26 +10,39 @@ export const categoryConfig = {
   shirts: { label: 'Shirts', page: 'shirts.html', tag: 'shirts-heading', subcategories: [{ id: 'printed', label: 'Printed' }, { id: 'plain', label: 'Plain' }, { id: 'oversized', label: 'Oversized' }] }
 };
 
+const inventoryDb = getFirestore(auth.app);
 let productRequest;
 export async function getProducts() {
   if (!productRequest) {
     productRequest = fetch('data/products.json').then(response => {
       if (!response.ok) throw new Error('The collection could not load. Please try again.');
       return response.json();
-    }).then(data => {
+    }).then(async data => {
       if (!Array.isArray(data)) throw new Error('The product catalogue format is invalid.');
       const ids = new Set();
+      // Read public availability once per catalogue load; never trust a stale default
+      // when the inventory service is unreachable.
+      let availability = new Map();
+      let inventoryAvailable = true;
+      try {
+        const snapshot = await getDocs(collection(inventoryDb, 'inventory'));
+        availability = new Map(snapshot.docs.map(record => [record.id, record.data().status]));
+      } catch (error) {
+        console.warn('Could not read inventory; purchasing temporarily disabled.', error);
+        inventoryAvailable = false;
+      }
       return data.filter(product => {
         const valid = product && typeof product.id === 'string' && !ids.has(product.id) && typeof product.name === 'string' && categoryConfig[product.category] && categoryConfig[product.category].subcategories.some(sub => sub.id === product.subcategory) && Number.isFinite(product.price) && product.price >= 0;
         if (valid) ids.add(product.id);
         return valid;
       }).map(product => ({
         ...product,
+        availability: inventoryAvailable ? (['AVAILABLE', 'COMING_SOON', 'SOLD_OUT'].includes(availability.get(product.id)) ? availability.get(product.id) : 'AVAILABLE') : 'UNAVAILABLE',
         sizes: Array.isArray(product.sizes) ? product.sizes.filter(size => typeof size === 'string') : [],
         colors: Array.isArray(product.colors) ? product.colors.filter(color => typeof color === 'string') : [],
         tags: Array.isArray(product.tags) ? product.tags.filter(tag => typeof tag === 'string') : [],
         images: Array.isArray(product.images) ? product.images : [product.image],
-        stock: Math.max(0, Math.floor(Number(product.stock) || 0)),
+        stock: inventoryAvailable && !['COMING_SOON', 'SOLD_OUT'].includes(availability.get(product.id)) ? Math.max(0, Math.floor(Number(product.stock) || 0)) : 0,
         description: String(product.description || ''),
         originalPrice: Number(product.originalPrice) > product.price ? Number(product.originalPrice) : null
       }));
@@ -60,7 +76,7 @@ export function productCard(product) {
   return `<article class="product-card" data-product-id="${escapeHTML(product.id)}">
     <a class="product-card-link" href="${productURL(product)}">
       <div class="product-card-image"><img src="${escapeHTML(imageURL(product.image))}" alt="${escapeHTML(product.name)}" loading="lazy" decoding="async" width="600" height="760">
-        ${product.stock === 0 ? '<span class="product-badge">Sold out</span>' : isNewArrival(product) ? '<span class="product-badge">New</span>' : ''}
+        ${product.availability === 'COMING_SOON' ? '<span class="product-badge">Coming soon</span>' : product.availability === 'UNAVAILABLE' ? '<span class="product-badge">Availability unavailable</span>' : (product.availability === 'SOLD_OUT' || product.stock === 0) ? '<span class="product-badge">Sold out</span>' : isNewArrival(product) ? '<span class="product-badge">New</span>' : ''}
         <span class="product-card-discover" aria-hidden="true">Discover <span>↗</span></span>
       </div>
       <div class="product-card-meta"><span>${escapeHTML(subcategory)} / ${escapeHTML(categoryConfig[product.category]?.label)}</span><span class="product-color-count">${product.colors.length ? `${product.colors.length} colour${product.colors.length > 1 ? 's' : ''}` : ''}</span></div>
