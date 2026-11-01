@@ -1,16 +1,13 @@
 // One-time trusted local admin-role assignment. NEVER run this in the browser.
 // Requires: npm install firebase-admin
-// Requires GOOGLE_APPLICATION_CREDENTIALS pointing to a private service-account JSON
-// with permission to manage Firebase Authentication users. NEVER commit that JSON.
+// Authenticate locally using keyless Application Default Credentials (ADC):
+// gcloud auth application-default login --impersonate-service-account=SERVICE_ACCOUNT_EMAIL
+// Never commit local ADC credentials or service-account keys.
 // Usage: node scripts/grant-admins.mjs UID_ONE UID_TWO
 import admin from 'firebase-admin';
 const ids = process.argv.slice(2);
 if (ids.length !== 2 || ids.some(id => !/^[A-Za-z0-9]{15,128}$/.test(id)) || ids[0] === ids[1]) {
   console.error('Pass exactly two distinct Firebase Authentication user UIDs.');
-  process.exit(1);
-}
-if (!process.env.GOOGLE_APPLICATION_CREDENTIALS) {
-  console.error('Set GOOGLE_APPLICATION_CREDENTIALS to a private service-account JSON file outside the repository.');
   process.exit(1);
 }
 admin.initializeApp({ credential: admin.credential.applicationDefault(), projectId: 'trendzzz-corridor' });
