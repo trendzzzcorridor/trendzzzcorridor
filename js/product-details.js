@@ -18,7 +18,45 @@ function showUnavailable() {
 function renderProduct(product) {
   const category = categoryConfig[product.category];
   const subcategory = category?.subcategories.find(item => item.id === product.subcategory);
-  const images = [...new Set([product.image, ...(product.images || [])].map(imageURL).filter(Boolean))];
+  const galleryForColor = color => {
+    const variant = (product.colorVariants || []).find(item => item.name === color);
+    const source = variant?.images?.length ? variant.images : variant?.image ? [variant.image] : [product.image, ...(product.images || [])];
+    return [...new Set(source.map(imageURL).filter(Boolean))];
+  };
+  const firstColor = product.colors?.[0] || '';
+  let images = galleryForColor(firstColor);
+  let currentImageIndex = 0;
+  let slideTimer = null;
+  const stopSlideshow = () => { if (slideTimer !== null) { clearInterval(slideTimer); slideTimer = null; } };
+  const startSlideshow = () => {
+    stopSlideshow();
+    if (images.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches && !document.hidden) {
+      slideTimer = setInterval(() => selectImage((currentImageIndex + 1) % images.length), 4000);
+    }
+  };
+  const selectImage = index => {
+    if (!images.length) return;
+    currentImageIndex = (index + images.length) % images.length;
+    const mainImage = detailContainer.querySelector('#product-main-image');
+    delete mainImage.dataset.fallback;
+    mainImage.classList.remove('image-fallback');
+    mainImage.src = images[currentImageIndex];
+    mainImage.alt = `${product.name} — ${detailContainer.querySelector('input[name="color"]:checked')?.value || firstColor}, view ${currentImageIndex + 1}`;
+    setupImages(detailContainer);
+    detailContainer.querySelector('#image-counter').textContent = `${String(currentImageIndex + 1).padStart(2, '0')} / ${String(images.length).padStart(2, '0')}`;
+    detailContainer.querySelectorAll('[data-image-index]').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.imageIndex) === currentImageIndex)));
+  };
+  const renderGallery = color => {
+    images = galleryForColor(color);
+    currentImageIndex = 0;
+    const thumbs = detailContainer.querySelector('#pd-thumbnails');
+    thumbs.innerHTML = images.map((image, index) => `<button type="button" class="pd-thumbnail" data-image-index="${index}" aria-label="View photograph ${index + 1}" aria-pressed="${index === 0}"><img src="${escapeHTML(image)}" alt="${escapeHTML(product.name)} — ${escapeHTML(color)}, view ${index + 1}" loading="lazy"></button>`).join('');
+    thumbs.hidden = images.length <= 1;
+    detailContainer.querySelectorAll('.pd-gallery-arrow').forEach(button => { button.hidden = images.length <= 1; });
+    thumbs.querySelectorAll('[data-image-index]').forEach(button => button.addEventListener('click', () => { selectImage(Number(button.dataset.imageIndex)); startSlideshow(); }));
+    selectImage(0);
+    startSlideshow();
+  };
   const discount = product.originalPrice > product.price ? Math.round((1 - product.price / product.originalPrice) * 100) : 0;
   document.title = `${product.name} — FORME`;
   document.querySelector('meta[name="description"]').content = product.description || `Discover ${product.name} at FORME.`;
@@ -27,8 +65,8 @@ function renderProduct(product) {
     <nav class="pd-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="${escapeHTML(category?.page || 'product.html')}">${escapeHTML(category?.label || 'Collection')}</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHTML(product.name)}</span></nav>
     <div class="pd-layout">
       <section class="pd-gallery" aria-label="Product photographs">
-        <div class="pd-main-image"><img id="product-main-image" src="${escapeHTML(images[0] || '')}" alt="${escapeHTML(product.name)}" fetchpriority="high"><span class="pd-image-counter" id="image-counter">01 / ${String(Math.max(1, images.length)).padStart(2, '0')}</span></div>
-        ${images.length > 1 ? `<div class="pd-thumbnails" aria-label="Choose a product photograph">${images.map((image, index) => `<button type="button" class="pd-thumbnail" data-image-index="${index}" aria-label="View photograph ${index + 1}" aria-pressed="${index === 0}"><img src="${escapeHTML(image)}" alt="${escapeHTML(product.name)} — view ${index + 1}" loading="lazy"></button>`).join('')}</div>` : ''}
+        <div class="pd-main-image"><img id="product-main-image" src="${escapeHTML(images[0] || '')}" alt="${escapeHTML(product.name)}" fetchpriority="high"><button type="button" class="pd-gallery-arrow pd-gallery-prev" aria-label="Previous photograph" ${images.length <= 1 ? "hidden" : ""}>‹</button><button type="button" class="pd-gallery-arrow pd-gallery-next" aria-label="Next photograph" ${images.length <= 1 ? "hidden" : ""}>›</button><span class="pd-image-counter" id="image-counter">01 / ${String(Math.max(1, images.length)).padStart(2, '0')}</span></div>
+        <div id="pd-thumbnails" class="pd-thumbnails" aria-label="Choose a product photograph" ${images.length <= 1 ? "hidden" : ""}></div>
       </section>
       <section class="pd-info" aria-labelledby="product-name">
         <p class="pd-eyebrow">${escapeHTML(category?.label || product.category)} / ${escapeHTML(subcategory?.label || product.subcategory)}</p>
@@ -55,20 +93,12 @@ function renderProduct(product) {
     </div>`;
 
   setupImages(detailContainer);
-  detailContainer.querySelectorAll('[data-image-index]').forEach(button => {
-    button.addEventListener('click', () => {
-      const index = Number(button.dataset.imageIndex);
-      const mainImage = detailContainer.querySelector('#product-main-image');
-      delete mainImage.dataset.fallback;
-      mainImage.classList.remove('image-fallback');
-      mainImage.src = images[index];
-      mainImage.alt = `${product.name} — view ${index + 1}`;
-      // Reattach the shared fallback for a different photograph.
-      setupImages(detailContainer);
-      detailContainer.querySelector('#image-counter').textContent = `${String(index + 1).padStart(2, '0')} / ${String(images.length).padStart(2, '0')}`;
-      detailContainer.querySelectorAll('[data-image-index]').forEach(thumbnail => thumbnail.setAttribute('aria-pressed', String(thumbnail === button)));
-    });
-  });
+  detailContainer.querySelector('.pd-gallery-prev').addEventListener('click', () => { selectImage(currentImageIndex - 1); startSlideshow(); });
+  detailContainer.querySelector('.pd-gallery-next').addEventListener('click', () => { selectImage(currentImageIndex + 1); startSlideshow(); });
+  detailContainer.querySelectorAll('input[name="color"]').forEach(input => input.addEventListener('change', () => { if (input.checked) renderGallery(input.value); }));
+  document.addEventListener('visibilitychange', () => { if (document.hidden) stopSlideshow(); else if (detailContainer.querySelector('#product-main-image')) startSlideshow(); });
+  window.addEventListener('pagehide', stopSlideshow);
+  renderGallery(firstColor);
   bindPurchaseForm(product);
 }
 // ==================== PRODUCT DETAILS SETUP END ====================
