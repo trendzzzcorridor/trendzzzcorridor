@@ -25,7 +25,8 @@ service cloud.firestore {
     }
 
     match /inventory/{productId} {
-      allow get, list: if isAdmin();
+      // Inventory records contain public product status only; writing remains admin-only.
+      allow get, list: if true;
       allow create, update: if isAdmin()
         && productId.matches('^[a-z][a-z0-9-]{0,59}$')
         && request.resource.data.keys().hasOnly(['productId','status','updatedAt','updatedBy'])
