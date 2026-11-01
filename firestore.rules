@@ -1,15 +1,16 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Only the authenticated customer may read or update their own profile.
-    match /customers/{userId} {
-      allow read: if request.auth != null && request.auth.uid == userId;
+    function signedIn() { return request.auth != null; }
+    function isAdmin() { return signedIn() && request.auth.token.admin == true; }
+    function isOwner(uid) { return signedIn() && request.auth.uid == uid; }
 
-      allow create, update: if request.auth != null
-        && request.auth.uid == userId
-        && request.resource.data.keys().hasOnly([
-          'uid', 'name', 'email', 'phone', 'phoneVerified', 'updatedAt'
-        ])
+    match /customers/{userId} {
+      allow get: if isOwner(userId) || isAdmin();
+      allow list: if isAdmin();
+      allow create, update: if isOwner(userId)
+        && request.resource.data.keys().hasOnly(['uid','name','email','phone','phoneVerified','updatedAt'])
+        && request.resource.data.keys().hasAll(['uid','name','email','phone','phoneVerified','updatedAt'])
         && request.resource.data.uid == request.auth.uid
         && request.resource.data.email == request.auth.token.email
         && request.resource.data.name is string
@@ -20,12 +21,22 @@ service cloud.firestore {
         && request.resource.data.phone.size() <= 20
         && request.resource.data.phoneVerified == false
         && request.resource.data.updatedAt is string;
-
       allow delete: if false;
     }
-    // Order processing, payments, inventory administration remain disabled.
-    match /{document=**} {
-      allow read, write: if false;
+
+    match /inventory/{productId} {
+      allow get, list: if isAdmin();
+      allow create, update: if isAdmin()
+        && productId.matches('^[a-z][a-z0-9-]{0,59}$')
+        && request.resource.data.keys().hasOnly(['productId','status','updatedAt','updatedBy'])
+        && request.resource.data.keys().hasAll(['productId','status','updatedAt','updatedBy'])
+        && request.resource.data.productId == productId
+        && request.resource.data.status in ['AVAILABLE','COMING_SOON','SOLD_OUT']
+        && request.resource.data.updatedBy == request.auth.uid
+        && request.resource.data.updatedAt is string;
+      allow delete: if false;
     }
+    // Orders and other collections remain locked until a secure backend exists.
+    match /{document=**} { allow read, write: if false; }
   }
 }
