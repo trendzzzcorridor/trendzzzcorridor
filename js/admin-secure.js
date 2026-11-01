@@ -66,7 +66,7 @@ async function renderInventory() {
         save.disabled = true;
         try {
           await setDoc(doc(db,'inventory',product.id), { productId:product.id, status:select.value, updatedAt:new Date().toISOString(), updatedBy:auth.currentUser.uid });
-          status('Saved availability for ' + product.id + '. Public catalogue display is not yet wired to inventory.');
+          status('Saved availability for ' + product.id + '. Refresh the public catalogue to see the updated status.');
         } catch (error) { status('Unable to save: ' + authMessage(error)); }
         finally { save.disabled = false; }
       });
