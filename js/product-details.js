@@ -36,7 +36,7 @@ function renderProduct(product) {
         <div class="pd-price-row"><span>${formatPrice(product.price)}</span>${discount ? `<del>${formatPrice(product.originalPrice)}</del><span class="pd-discount">${discount}% OFF</span>` : ''}</div>
         <p class="pd-tax-note">Sample catalogue price · INR</p>
         <p class="pd-short-description">${escapeHTML(product.description)}</p>
-        <p class="pd-stock ${product.stock ? '' : 'is-out'}">${product.stock ? `In stock · ${product.stock} available across all options` : 'Currently out of stock'}</p>
+        <p class="pd-stock ${product.stock ? '' : 'is-out'}">${product.availability === 'COMING_SOON' ? 'Coming soon' : product.availability === 'UNAVAILABLE' ? 'Availability temporarily unavailable' : product.availability === 'SOLD_OUT' ? 'Sold out' : product.stock ? `In stock · ${product.stock} available across all options` : 'Currently out of stock'}</p>
         <form id="purchase-form">
           <div class="pd-size-heading"><span>SELECT SIZE</span><button type="button" id="open-size-guide" class="pd-text-button">Size guide</button></div>
           <fieldset class="pd-option-group"><legend class="sr-only">Choose a size</legend><div class="pd-option-list">${product.sizes.map(size => `<label class="pd-option"><input type="radio" name="size" value="${escapeHTML(size)}" required><span>${escapeHTML(size)}</span></label>`).join('')}</div></fieldset>
@@ -89,7 +89,7 @@ function refreshPurchaseLimits() {
   detailContainer.querySelector('#buy-now').disabled = available === 0;
   const feedback = detailContainer.querySelector('#purchase-feedback');
   if (available === 0) {
-    feedback.textContent = currentProduct.stock > 0 ? 'All available stock is already in your bag. Update your bag to change the quantity.' : 'This piece is currently unavailable. Explore the related styles below.';
+    feedback.textContent = currentProduct.availability === 'COMING_SOON' ? 'Coming soon — purchasing is not available yet.' : currentProduct.availability === 'UNAVAILABLE' ? 'Availability cannot be verified right now. Please try again later.' : currentProduct.stock > 0 ? 'All available stock is already in your bag. Update your bag to change the quantity.' : 'This piece is currently unavailable. Explore the related styles below.';
     feedback.dataset.stockMessage = 'true';
   } else if (feedback.dataset.stockMessage) {
     feedback.textContent = '';
