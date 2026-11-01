@@ -36,19 +36,31 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshir.jpeg"
+        "image": "images/tshir.jpeg",
+        "images": [
+          "images/tshir.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt1.jpeg"
+        "image": "images/tshirt1.jpeg",
+        "images": [
+          "images/tshirt1.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt1.jpeg"
+        "image": "images/tshirt1.jpeg",
+        "images": [
+          "images/tshirt1.jpeg"
+        ]
       },
       {
         "name": "dark black",
-        "image": "images/tshirt1.jpeg"
+        "image": "images/tshirt1.jpeg",
+        "images": [
+          "images/tshirt1.jpeg"
+        ]
       }
     ]
   },
@@ -87,15 +99,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt2.jpeg"
+        "image": "images/tshirt2.jpeg",
+        "images": [
+          "images/tshirt2.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt2.jpeg"
+        "image": "images/tshirt2.jpeg",
+        "images": [
+          "images/tshirt2.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt2.jpeg"
+        "image": "images/tshirt2.jpeg",
+        "images": [
+          "images/tshirt2.jpeg"
+        ]
       }
     ]
   },
@@ -137,15 +158,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt3.jpeg"
+        "image": "images/tshirt3.jpeg",
+        "images": [
+          "images/tshirt3.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt3.jpeg"
+        "image": "images/tshirt3.jpeg",
+        "images": [
+          "images/tshirt3.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt3.jpeg"
+        "image": "images/tshirt3.jpeg",
+        "images": [
+          "images/tshirt3.jpeg"
+        ]
       }
     ]
   },
@@ -184,15 +214,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt4.jpeg"
+        "image": "images/tshirt4.jpeg",
+        "images": [
+          "images/tshirt4.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt4.jpeg"
+        "image": "images/tshirt4.jpeg",
+        "images": [
+          "images/tshirt4.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt4.jpeg"
+        "image": "images/tshirt4.jpeg",
+        "images": [
+          "images/tshirt4.jpeg"
+        ]
       }
     ]
   },
@@ -231,15 +270,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt5.jpeg"
+        "image": "images/tshirt5.jpeg",
+        "images": [
+          "images/tshirt5.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt5.jpeg"
+        "image": "images/tshirt5.jpeg",
+        "images": [
+          "images/tshirt5.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt5.jpeg"
+        "image": "images/tshirt5.jpeg",
+        "images": [
+          "images/tshirt5.jpeg"
+        ]
       }
     ]
   },
@@ -280,15 +328,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt6.jpeg"
+        "image": "images/tshirt6.jpeg",
+        "images": [
+          "images/tshirt6.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt6.jpeg"
+        "image": "images/tshirt6.jpeg",
+        "images": [
+          "images/tshirt6.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt6.jpeg"
+        "image": "images/tshirt6.jpeg",
+        "images": [
+          "images/tshirt6.jpeg"
+        ]
       }
     ]
   },
@@ -328,15 +385,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt7.jpeg"
+        "image": "images/tshirt7.jpeg",
+        "images": [
+          "images/tshirt7.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt7.jpeg"
+        "image": "images/tshirt7.jpeg",
+        "images": [
+          "images/tshirt7.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt7.jpeg"
+        "image": "images/tshirt7.jpeg",
+        "images": [
+          "images/tshirt7.jpeg"
+        ]
       }
     ]
   },
@@ -376,15 +442,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt8.jpeg"
+        "image": "images/tshirt8.jpeg",
+        "images": [
+          "images/tshirt8.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt8.jpeg"
+        "image": "images/tshirt8.jpeg",
+        "images": [
+          "images/tshirt8.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt8.jpeg"
+        "image": "images/tshirt8.jpeg",
+        "images": [
+          "images/tshirt8.jpeg"
+        ]
       }
     ]
   },
@@ -423,15 +498,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt9.jpeg"
+        "image": "images/tshirt9.jpeg",
+        "images": [
+          "images/tshirt9.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt9.jpeg"
+        "image": "images/tshirt9.jpeg",
+        "images": [
+          "images/tshirt9.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt9.jpeg"
+        "image": "images/tshirt9.jpeg",
+        "images": [
+          "images/tshirt9.jpeg"
+        ]
       }
     ]
   },
@@ -469,15 +553,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt10.jpeg"
+        "image": "images/tshirt10.jpeg",
+        "images": [
+          "images/tshirt10.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt10.jpeg"
+        "image": "images/tshirt10.jpeg",
+        "images": [
+          "images/tshirt10.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt10.jpeg"
+        "image": "images/tshirt10.jpeg",
+        "images": [
+          "images/tshirt10.jpeg"
+        ]
       }
     ]
   },
@@ -517,15 +610,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt11.jpeg"
+        "image": "images/tshirt11.jpeg",
+        "images": [
+          "images/tshirt11.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt11.jpeg"
+        "image": "images/tshirt11.jpeg",
+        "images": [
+          "images/tshirt11.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt11.jpeg"
+        "image": "images/tshirt11.jpeg",
+        "images": [
+          "images/tshirt11.jpeg"
+        ]
       }
     ]
   },
@@ -565,15 +667,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt12.jpeg"
+        "image": "images/tshirt12.jpeg",
+        "images": [
+          "images/tshirt12.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt12.jpeg"
+        "image": "images/tshirt12.jpeg",
+        "images": [
+          "images/tshirt12.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt12.jpeg"
+        "image": "images/tshirt12.jpeg",
+        "images": [
+          "images/tshirt12.jpeg"
+        ]
       }
     ]
   },
@@ -611,15 +722,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt13.jpeg"
+        "image": "images/tshirt13.jpeg",
+        "images": [
+          "images/tshirt13.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt13.jpeg"
+        "image": "images/tshirt13.jpeg",
+        "images": [
+          "images/tshirt13.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt13.jpeg"
+        "image": "images/tshirt13.jpeg",
+        "images": [
+          "images/tshirt13.jpeg"
+        ]
       }
     ]
   },
@@ -655,15 +775,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt14.jpeg"
+        "image": "images/tshirt14.jpeg",
+        "images": [
+          "images/tshirt14.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt14.jpeg"
+        "image": "images/tshirt14.jpeg",
+        "images": [
+          "images/tshirt14.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt14.jpeg"
+        "image": "images/tshirt14.jpeg",
+        "images": [
+          "images/tshirt14.jpeg"
+        ]
       }
     ]
   },
@@ -699,26 +828,38 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/tshirt15.jpeg"
+        "image": "images/tshirt15.jpeg",
+        "images": [
+          "images/tshirt15.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt15.jpeg"
+        "image": "images/tshirt15.jpeg",
+        "images": [
+          "images/tshirt15.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/tshirt15.jpeg"
+        "image": "images/tshirt15.jpeg",
+        "images": [
+          "images/tshirt15.jpeg"
+        ]
       }
     ]
   },
   {
     "id": "tshirt16",
-    "name": "Everyday Oversized Tee",
+    "name": "AMG DTF PRINT WHITE TSHIRT",
     "category": "tshirt",
     "subcategory": "oversized",
-    "image": "images/tshirt16.jpeg",
+    "image": "images/AMGDTFPRINTWHITETSHIRT1.jpeg",
     "images": [
-      "images/tshirt16.jpeg"
+      "images/AMGDTFPRINTWHITETSHIRT1.jpeg",
+      "images/AMGDTFPRINTWHITETSHIRT2.jpeg",
+      "images/AMGDTFPRINTWHITETSHIRT3.jpeg",
+      "images/AMGDTFPRINTWHITETSHIRT4.jpeg"
     ],
     "price": 1179,
     "originalPrice": 1579,
@@ -730,9 +871,7 @@
       "XXL"
     ],
     "colors": [
-      "Olive",
-      "Ecru",
-      "Black"
+      "White"
     ],
     "stock": 15,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
@@ -749,16 +888,14 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
-        "name": "Olive",
-        "image": "images/tshirt16.jpeg"
-      },
-      {
-        "name": "Ecru",
-        "image": "images/tshirt16.jpeg"
-      },
-      {
-        "name": "Black",
-        "image": "images/tshirt16.jpeg"
+        "name": "White",
+        "image": "images/AMGDTFPRINTWHITETSHIRT1.jpeg",
+        "images": [
+          "images/AMGDTFPRINTWHITETSHIRT1.jpeg",
+          "images/AMGDTFPRINTWHITETSHIRT2.jpeg",
+          "images/AMGDTFPRINTWHITETSHIRT3.jpeg",
+          "images/AMGDTFPRINTWHITETSHIRT4.jpeg"
+        ]
       }
     ]
   },
@@ -800,15 +937,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt17.jpeg"
+        "image": "images/tshirt17.jpeg",
+        "images": [
+          "images/tshirt17.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt17.jpeg"
+        "image": "images/tshirt17.jpeg",
+        "images": [
+          "images/tshirt17.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt17.jpeg"
+        "image": "images/tshirt17.jpeg",
+        "images": [
+          "images/tshirt17.jpeg"
+        ]
       }
     ]
   },
@@ -850,15 +996,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt18.jpeg"
+        "image": "images/tshirt18.jpeg",
+        "images": [
+          "images/tshirt18.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt18.jpeg"
+        "image": "images/tshirt18.jpeg",
+        "images": [
+          "images/tshirt18.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt18.jpeg"
+        "image": "images/tshirt18.jpeg",
+        "images": [
+          "images/tshirt18.jpeg"
+        ]
       }
     ]
   },
@@ -897,15 +1052,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt19.jpeg"
+        "image": "images/tshirt19.jpeg",
+        "images": [
+          "images/tshirt19.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt19.jpeg"
+        "image": "images/tshirt19.jpeg",
+        "images": [
+          "images/tshirt19.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt19.jpeg"
+        "image": "images/tshirt19.jpeg",
+        "images": [
+          "images/tshirt19.jpeg"
+        ]
       }
     ]
   },
@@ -944,15 +1108,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt20.jpeg"
+        "image": "images/tshirt20.jpeg",
+        "images": [
+          "images/tshirt20.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt20.jpeg"
+        "image": "images/tshirt20.jpeg",
+        "images": [
+          "images/tshirt20.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt20.jpeg"
+        "image": "images/tshirt20.jpeg",
+        "images": [
+          "images/tshirt20.jpeg"
+        ]
       }
     ]
   },
@@ -993,15 +1166,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt21.jpeg"
+        "image": "images/tshirt21.jpeg",
+        "images": [
+          "images/tshirt21.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt21.jpeg"
+        "image": "images/tshirt21.jpeg",
+        "images": [
+          "images/tshirt21.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt21.jpeg"
+        "image": "images/tshirt21.jpeg",
+        "images": [
+          "images/tshirt21.jpeg"
+        ]
       }
     ]
   },
@@ -1041,15 +1223,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt22.jpeg"
+        "image": "images/tshirt22.jpeg",
+        "images": [
+          "images/tshirt22.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt22.jpeg"
+        "image": "images/tshirt22.jpeg",
+        "images": [
+          "images/tshirt22.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt22.jpeg"
+        "image": "images/tshirt22.jpeg",
+        "images": [
+          "images/tshirt22.jpeg"
+        ]
       }
     ]
   },
@@ -1089,15 +1280,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt23.jpeg"
+        "image": "images/tshirt23.jpeg",
+        "images": [
+          "images/tshirt23.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt23.jpeg"
+        "image": "images/tshirt23.jpeg",
+        "images": [
+          "images/tshirt23.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt23.jpeg"
+        "image": "images/tshirt23.jpeg",
+        "images": [
+          "images/tshirt23.jpeg"
+        ]
       }
     ]
   },
@@ -1135,15 +1335,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt24.jpeg"
+        "image": "images/tshirt24.jpeg",
+        "images": [
+          "images/tshirt24.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt24.jpeg"
+        "image": "images/tshirt24.jpeg",
+        "images": [
+          "images/tshirt24.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt24.jpeg"
+        "image": "images/tshirt24.jpeg",
+        "images": [
+          "images/tshirt24.jpeg"
+        ]
       }
     ]
   },
@@ -1181,15 +1390,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt25.jpeg"
+        "image": "images/tshirt25.jpeg",
+        "images": [
+          "images/tshirt25.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt25.jpeg"
+        "image": "images/tshirt25.jpeg",
+        "images": [
+          "images/tshirt25.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt25.jpeg"
+        "image": "images/tshirt25.jpeg",
+        "images": [
+          "images/tshirt25.jpeg"
+        ]
       }
     ]
   },
@@ -1229,15 +1447,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt26.jpeg"
+        "image": "images/tshirt26.jpeg",
+        "images": [
+          "images/tshirt26.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt26.jpeg"
+        "image": "images/tshirt26.jpeg",
+        "images": [
+          "images/tshirt26.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt26.jpeg"
+        "image": "images/tshirt26.jpeg",
+        "images": [
+          "images/tshirt26.jpeg"
+        ]
       }
     ]
   },
@@ -1277,15 +1504,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt27.jpeg"
+        "image": "images/tshirt27.jpeg",
+        "images": [
+          "images/tshirt27.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt27.jpeg"
+        "image": "images/tshirt27.jpeg",
+        "images": [
+          "images/tshirt27.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt27.jpeg"
+        "image": "images/tshirt27.jpeg",
+        "images": [
+          "images/tshirt27.jpeg"
+        ]
       }
     ]
   },
@@ -1323,15 +1559,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt28.jpeg"
+        "image": "images/tshirt28.jpeg",
+        "images": [
+          "images/tshirt28.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt28.jpeg"
+        "image": "images/tshirt28.jpeg",
+        "images": [
+          "images/tshirt28.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt28.jpeg"
+        "image": "images/tshirt28.jpeg",
+        "images": [
+          "images/tshirt28.jpeg"
+        ]
       }
     ]
   },
@@ -1367,15 +1612,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt29.jpeg"
+        "image": "images/tshirt29.jpeg",
+        "images": [
+          "images/tshirt29.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt29.jpeg"
+        "image": "images/tshirt29.jpeg",
+        "images": [
+          "images/tshirt29.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt29.jpeg"
+        "image": "images/tshirt29.jpeg",
+        "images": [
+          "images/tshirt29.jpeg"
+        ]
       }
     ]
   },
@@ -1411,15 +1665,24 @@
     "colorVariants": [
       {
         "name": "Olive",
-        "image": "images/tshirt30.jpeg"
+        "image": "images/tshirt30.jpeg",
+        "images": [
+          "images/tshirt30.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/tshirt30.jpeg"
+        "image": "images/tshirt30.jpeg",
+        "images": [
+          "images/tshirt30.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/tshirt30.jpeg"
+        "image": "images/tshirt30.jpeg",
+        "images": [
+          "images/tshirt30.jpeg"
+        ]
       }
     ]
   },
@@ -1462,15 +1725,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger1.jpeg"
+        "image": "images/jogger1.jpeg",
+        "images": [
+          "images/jogger1.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger1.jpeg"
+        "image": "images/jogger1.jpeg",
+        "images": [
+          "images/jogger1.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger1.jpeg"
+        "image": "images/jogger1.jpeg",
+        "images": [
+          "images/jogger1.jpeg"
+        ]
       }
     ]
   },
@@ -1512,15 +1784,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger2.jpeg"
+        "image": "images/jogger2.jpeg",
+        "images": [
+          "images/jogger2.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger2.jpeg"
+        "image": "images/jogger2.jpeg",
+        "images": [
+          "images/jogger2.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger2.jpeg"
+        "image": "images/jogger2.jpeg",
+        "images": [
+          "images/jogger2.jpeg"
+        ]
       }
     ]
   },
@@ -1562,15 +1843,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger3.jpeg"
+        "image": "images/jogger3.jpeg",
+        "images": [
+          "images/jogger3.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger3.jpeg"
+        "image": "images/jogger3.jpeg",
+        "images": [
+          "images/jogger3.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger3.jpeg"
+        "image": "images/jogger3.jpeg",
+        "images": [
+          "images/jogger3.jpeg"
+        ]
       }
     ]
   },
@@ -1609,15 +1899,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger4.jpeg"
+        "image": "images/jogger4.jpeg",
+        "images": [
+          "images/jogger4.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger4.jpeg"
+        "image": "images/jogger4.jpeg",
+        "images": [
+          "images/jogger4.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger4.jpeg"
+        "image": "images/jogger4.jpeg",
+        "images": [
+          "images/jogger4.jpeg"
+        ]
       }
     ]
   },
@@ -1656,15 +1955,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger5.jpeg"
+        "image": "images/jogger5.jpeg",
+        "images": [
+          "images/jogger5.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger5.jpeg"
+        "image": "images/jogger5.jpeg",
+        "images": [
+          "images/jogger5.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger5.jpeg"
+        "image": "images/jogger5.jpeg",
+        "images": [
+          "images/jogger5.jpeg"
+        ]
       }
     ]
   },
@@ -1705,15 +2013,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger6.jpeg"
+        "image": "images/jogger6.jpeg",
+        "images": [
+          "images/jogger6.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger6.jpeg"
+        "image": "images/jogger6.jpeg",
+        "images": [
+          "images/jogger6.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger6.jpeg"
+        "image": "images/jogger6.jpeg",
+        "images": [
+          "images/jogger6.jpeg"
+        ]
       }
     ]
   },
@@ -1753,15 +2070,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger7.jpeg"
+        "image": "images/jogger7.jpeg",
+        "images": [
+          "images/jogger7.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger7.jpeg"
+        "image": "images/jogger7.jpeg",
+        "images": [
+          "images/jogger7.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger7.jpeg"
+        "image": "images/jogger7.jpeg",
+        "images": [
+          "images/jogger7.jpeg"
+        ]
       }
     ]
   },
@@ -1801,15 +2127,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger8.jpeg"
+        "image": "images/jogger8.jpeg",
+        "images": [
+          "images/jogger8.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger8.jpeg"
+        "image": "images/jogger8.jpeg",
+        "images": [
+          "images/jogger8.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger8.jpeg"
+        "image": "images/jogger8.jpeg",
+        "images": [
+          "images/jogger8.jpeg"
+        ]
       }
     ]
   },
@@ -1847,15 +2182,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger9.jpeg"
+        "image": "images/jogger9.jpeg",
+        "images": [
+          "images/jogger9.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger9.jpeg"
+        "image": "images/jogger9.jpeg",
+        "images": [
+          "images/jogger9.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger9.jpeg"
+        "image": "images/jogger9.jpeg",
+        "images": [
+          "images/jogger9.jpeg"
+        ]
       }
     ]
   },
@@ -1893,15 +2237,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger10.jpeg"
+        "image": "images/jogger10.jpeg",
+        "images": [
+          "images/jogger10.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger10.jpeg"
+        "image": "images/jogger10.jpeg",
+        "images": [
+          "images/jogger10.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger10.jpeg"
+        "image": "images/jogger10.jpeg",
+        "images": [
+          "images/jogger10.jpeg"
+        ]
       }
     ]
   },
@@ -1941,15 +2294,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger11.jpeg"
+        "image": "images/jogger11.jpeg",
+        "images": [
+          "images/jogger11.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger11.jpeg"
+        "image": "images/jogger11.jpeg",
+        "images": [
+          "images/jogger11.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger11.jpeg"
+        "image": "images/jogger11.jpeg",
+        "images": [
+          "images/jogger11.jpeg"
+        ]
       }
     ]
   },
@@ -1989,15 +2351,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger12.jpeg"
+        "image": "images/jogger12.jpeg",
+        "images": [
+          "images/jogger12.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger12.jpeg"
+        "image": "images/jogger12.jpeg",
+        "images": [
+          "images/jogger12.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger12.jpeg"
+        "image": "images/jogger12.jpeg",
+        "images": [
+          "images/jogger12.jpeg"
+        ]
       }
     ]
   },
@@ -2035,15 +2406,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger13.jpeg"
+        "image": "images/jogger13.jpeg",
+        "images": [
+          "images/jogger13.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger13.jpeg"
+        "image": "images/jogger13.jpeg",
+        "images": [
+          "images/jogger13.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger13.jpeg"
+        "image": "images/jogger13.jpeg",
+        "images": [
+          "images/jogger13.jpeg"
+        ]
       }
     ]
   },
@@ -2079,15 +2459,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger14.jpeg"
+        "image": "images/jogger14.jpeg",
+        "images": [
+          "images/jogger14.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger14.jpeg"
+        "image": "images/jogger14.jpeg",
+        "images": [
+          "images/jogger14.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger14.jpeg"
+        "image": "images/jogger14.jpeg",
+        "images": [
+          "images/jogger14.jpeg"
+        ]
       }
     ]
   },
@@ -2123,15 +2512,24 @@
     "colorVariants": [
       {
         "name": "Charcoal",
-        "image": "images/jogger15.jpeg"
+        "image": "images/jogger15.jpeg",
+        "images": [
+          "images/jogger15.jpeg"
+        ]
       },
       {
         "name": "Black",
-        "image": "images/jogger15.jpeg"
+        "image": "images/jogger15.jpeg",
+        "images": [
+          "images/jogger15.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/jogger15.jpeg"
+        "image": "images/jogger15.jpeg",
+        "images": [
+          "images/jogger15.jpeg"
+        ]
       }
     ]
   },
@@ -2172,11 +2570,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans1.jpeg"
+        "image": "images/jeans1.jpeg",
+        "images": [
+          "images/jeans1.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans1.jpeg"
+        "image": "images/jeans1.jpeg",
+        "images": [
+          "images/jeans1.jpeg"
+        ]
       }
     ]
   },
@@ -2217,11 +2621,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans2.jpeg"
+        "image": "images/jeans2.jpeg",
+        "images": [
+          "images/jeans2.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans2.jpeg"
+        "image": "images/jeans2.jpeg",
+        "images": [
+          "images/jeans2.jpeg"
+        ]
       }
     ]
   },
@@ -2262,11 +2672,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans3.jpeg"
+        "image": "images/jeans3.jpeg",
+        "images": [
+          "images/jeans3.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans3.jpeg"
+        "image": "images/jeans3.jpeg",
+        "images": [
+          "images/jeans3.jpeg"
+        ]
       }
     ]
   },
@@ -2304,11 +2720,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans4.jpeg"
+        "image": "images/jeans4.jpeg",
+        "images": [
+          "images/jeans4.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans4.jpeg"
+        "image": "images/jeans4.jpeg",
+        "images": [
+          "images/jeans4.jpeg"
+        ]
       }
     ]
   },
@@ -2346,11 +2768,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans5.jpeg"
+        "image": "images/jeans5.jpeg",
+        "images": [
+          "images/jeans5.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans5.jpeg"
+        "image": "images/jeans5.jpeg",
+        "images": [
+          "images/jeans5.jpeg"
+        ]
       }
     ]
   },
@@ -2390,11 +2818,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans6.jpeg"
+        "image": "images/jeans6.jpeg",
+        "images": [
+          "images/jeans6.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans6.jpeg"
+        "image": "images/jeans6.jpeg",
+        "images": [
+          "images/jeans6.jpeg"
+        ]
       }
     ]
   },
@@ -2433,11 +2867,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans7.jpeg"
+        "image": "images/jeans7.jpeg",
+        "images": [
+          "images/jeans7.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans7.jpeg"
+        "image": "images/jeans7.jpeg",
+        "images": [
+          "images/jeans7.jpeg"
+        ]
       }
     ]
   },
@@ -2476,11 +2916,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans8.jpeg"
+        "image": "images/jeans8.jpeg",
+        "images": [
+          "images/jeans8.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans8.jpeg"
+        "image": "images/jeans8.jpeg",
+        "images": [
+          "images/jeans8.jpeg"
+        ]
       }
     ]
   },
@@ -2517,11 +2963,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans9.jpeg"
+        "image": "images/jeans9.jpeg",
+        "images": [
+          "images/jeans9.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans9.jpeg"
+        "image": "images/jeans9.jpeg",
+        "images": [
+          "images/jeans9.jpeg"
+        ]
       }
     ]
   },
@@ -2558,11 +3010,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans10.jpeg"
+        "image": "images/jeans10.jpeg",
+        "images": [
+          "images/jeans10.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans10.jpeg"
+        "image": "images/jeans10.jpeg",
+        "images": [
+          "images/jeans10.jpeg"
+        ]
       }
     ]
   },
@@ -2601,11 +3059,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans11.jpeg"
+        "image": "images/jeans11.jpeg",
+        "images": [
+          "images/jeans11.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans11.jpeg"
+        "image": "images/jeans11.jpeg",
+        "images": [
+          "images/jeans11.jpeg"
+        ]
       }
     ]
   },
@@ -2644,11 +3108,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans12.jpeg"
+        "image": "images/jeans12.jpeg",
+        "images": [
+          "images/jeans12.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans12.jpeg"
+        "image": "images/jeans12.jpeg",
+        "images": [
+          "images/jeans12.jpeg"
+        ]
       }
     ]
   },
@@ -2685,11 +3155,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans13.jpeg"
+        "image": "images/jeans13.jpeg",
+        "images": [
+          "images/jeans13.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans13.jpeg"
+        "image": "images/jeans13.jpeg",
+        "images": [
+          "images/jeans13.jpeg"
+        ]
       }
     ]
   },
@@ -2724,11 +3200,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans14.jpeg"
+        "image": "images/jeans14.jpeg",
+        "images": [
+          "images/jeans14.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans14.jpeg"
+        "image": "images/jeans14.jpeg",
+        "images": [
+          "images/jeans14.jpeg"
+        ]
       }
     ]
   },
@@ -2763,11 +3245,17 @@
     "colorVariants": [
       {
         "name": "Indigo",
-        "image": "images/jeans15.jpeg"
+        "image": "images/jeans15.jpeg",
+        "images": [
+          "images/jeans15.jpeg"
+        ]
       },
       {
         "name": "Washed Black",
-        "image": "images/jeans15.jpeg"
+        "image": "images/jeans15.jpeg",
+        "images": [
+          "images/jeans15.jpeg"
+        ]
       }
     ]
   },
@@ -2810,15 +3298,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie1.jpeg"
+        "image": "images/hoodie1.jpeg",
+        "images": [
+          "images/hoodie1.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie1.jpeg"
+        "image": "images/hoodie1.jpeg",
+        "images": [
+          "images/hoodie1.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie1.jpeg"
+        "image": "images/hoodie1.jpeg",
+        "images": [
+          "images/hoodie1.jpeg"
+        ]
       }
     ]
   },
@@ -2860,15 +3357,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie2.jpeg"
+        "image": "images/hoodie2.jpeg",
+        "images": [
+          "images/hoodie2.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie2.jpeg"
+        "image": "images/hoodie2.jpeg",
+        "images": [
+          "images/hoodie2.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie2.jpeg"
+        "image": "images/hoodie2.jpeg",
+        "images": [
+          "images/hoodie2.jpeg"
+        ]
       }
     ]
   },
@@ -2910,15 +3416,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie3.jpeg"
+        "image": "images/hoodie3.jpeg",
+        "images": [
+          "images/hoodie3.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie3.jpeg"
+        "image": "images/hoodie3.jpeg",
+        "images": [
+          "images/hoodie3.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie3.jpeg"
+        "image": "images/hoodie3.jpeg",
+        "images": [
+          "images/hoodie3.jpeg"
+        ]
       }
     ]
   },
@@ -2957,15 +3472,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie4.jpeg"
+        "image": "images/hoodie4.jpeg",
+        "images": [
+          "images/hoodie4.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie4.jpeg"
+        "image": "images/hoodie4.jpeg",
+        "images": [
+          "images/hoodie4.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie4.jpeg"
+        "image": "images/hoodie4.jpeg",
+        "images": [
+          "images/hoodie4.jpeg"
+        ]
       }
     ]
   },
@@ -3004,15 +3528,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie5.jpeg"
+        "image": "images/hoodie5.jpeg",
+        "images": [
+          "images/hoodie5.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie5.jpeg"
+        "image": "images/hoodie5.jpeg",
+        "images": [
+          "images/hoodie5.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie5.jpeg"
+        "image": "images/hoodie5.jpeg",
+        "images": [
+          "images/hoodie5.jpeg"
+        ]
       }
     ]
   },
@@ -3053,15 +3586,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie6.jpeg"
+        "image": "images/hoodie6.jpeg",
+        "images": [
+          "images/hoodie6.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie6.jpeg"
+        "image": "images/hoodie6.jpeg",
+        "images": [
+          "images/hoodie6.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie6.jpeg"
+        "image": "images/hoodie6.jpeg",
+        "images": [
+          "images/hoodie6.jpeg"
+        ]
       }
     ]
   },
@@ -3101,15 +3643,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie7.jpeg"
+        "image": "images/hoodie7.jpeg",
+        "images": [
+          "images/hoodie7.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie7.jpeg"
+        "image": "images/hoodie7.jpeg",
+        "images": [
+          "images/hoodie7.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie7.jpeg"
+        "image": "images/hoodie7.jpeg",
+        "images": [
+          "images/hoodie7.jpeg"
+        ]
       }
     ]
   },
@@ -3149,15 +3700,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie8.jpeg"
+        "image": "images/hoodie8.jpeg",
+        "images": [
+          "images/hoodie8.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie8.jpeg"
+        "image": "images/hoodie8.jpeg",
+        "images": [
+          "images/hoodie8.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie8.jpeg"
+        "image": "images/hoodie8.jpeg",
+        "images": [
+          "images/hoodie8.jpeg"
+        ]
       }
     ]
   },
@@ -3195,15 +3755,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie9.jpeg"
+        "image": "images/hoodie9.jpeg",
+        "images": [
+          "images/hoodie9.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie9.jpeg"
+        "image": "images/hoodie9.jpeg",
+        "images": [
+          "images/hoodie9.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie9.jpeg"
+        "image": "images/hoodie9.jpeg",
+        "images": [
+          "images/hoodie9.jpeg"
+        ]
       }
     ]
   },
@@ -3241,15 +3810,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie10.jpeg"
+        "image": "images/hoodie10.jpeg",
+        "images": [
+          "images/hoodie10.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie10.jpeg"
+        "image": "images/hoodie10.jpeg",
+        "images": [
+          "images/hoodie10.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie10.jpeg"
+        "image": "images/hoodie10.jpeg",
+        "images": [
+          "images/hoodie10.jpeg"
+        ]
       }
     ]
   },
@@ -3289,15 +3867,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie11.jpeg"
+        "image": "images/hoodie11.jpeg",
+        "images": [
+          "images/hoodie11.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie11.jpeg"
+        "image": "images/hoodie11.jpeg",
+        "images": [
+          "images/hoodie11.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie11.jpeg"
+        "image": "images/hoodie11.jpeg",
+        "images": [
+          "images/hoodie11.jpeg"
+        ]
       }
     ]
   },
@@ -3337,15 +3924,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie12.jpeg"
+        "image": "images/hoodie12.jpeg",
+        "images": [
+          "images/hoodie12.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie12.jpeg"
+        "image": "images/hoodie12.jpeg",
+        "images": [
+          "images/hoodie12.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie12.jpeg"
+        "image": "images/hoodie12.jpeg",
+        "images": [
+          "images/hoodie12.jpeg"
+        ]
       }
     ]
   },
@@ -3383,15 +3979,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie13.jpeg"
+        "image": "images/hoodie13.jpeg",
+        "images": [
+          "images/hoodie13.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie13.jpeg"
+        "image": "images/hoodie13.jpeg",
+        "images": [
+          "images/hoodie13.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie13.jpeg"
+        "image": "images/hoodie13.jpeg",
+        "images": [
+          "images/hoodie13.jpeg"
+        ]
       }
     ]
   },
@@ -3427,15 +4032,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie14.jpeg"
+        "image": "images/hoodie14.jpeg",
+        "images": [
+          "images/hoodie14.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie14.jpeg"
+        "image": "images/hoodie14.jpeg",
+        "images": [
+          "images/hoodie14.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie14.jpeg"
+        "image": "images/hoodie14.jpeg",
+        "images": [
+          "images/hoodie14.jpeg"
+        ]
       }
     ]
   },
@@ -3471,15 +4085,24 @@
     "colorVariants": [
       {
         "name": "Stone",
-        "image": "images/hoodie15.jpeg"
+        "image": "images/hoodie15.jpeg",
+        "images": [
+          "images/hoodie15.jpeg"
+        ]
       },
       {
         "name": "Charcoal",
-        "image": "images/hoodie15.jpeg"
+        "image": "images/hoodie15.jpeg",
+        "images": [
+          "images/hoodie15.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/hoodie15.jpeg"
+        "image": "images/hoodie15.jpeg",
+        "images": [
+          "images/hoodie15.jpeg"
+        ]
       }
     ]
   },
@@ -3520,11 +4143,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket1.jpeg"
+        "image": "images/jacket1.jpeg",
+        "images": [
+          "images/jacket1.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket1.jpeg"
+        "image": "images/jacket1.jpeg",
+        "images": [
+          "images/jacket1.jpeg"
+        ]
       }
     ]
   },
@@ -3565,11 +4194,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket2.jpeg"
+        "image": "images/jacket2.jpeg",
+        "images": [
+          "images/jacket2.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket2.jpeg"
+        "image": "images/jacket2.jpeg",
+        "images": [
+          "images/jacket2.jpeg"
+        ]
       }
     ]
   },
@@ -3610,11 +4245,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket3.jpeg"
+        "image": "images/jacket3.jpeg",
+        "images": [
+          "images/jacket3.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket3.jpeg"
+        "image": "images/jacket3.jpeg",
+        "images": [
+          "images/jacket3.jpeg"
+        ]
       }
     ]
   },
@@ -3652,11 +4293,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket4.jpeg"
+        "image": "images/jacket4.jpeg",
+        "images": [
+          "images/jacket4.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket4.jpeg"
+        "image": "images/jacket4.jpeg",
+        "images": [
+          "images/jacket4.jpeg"
+        ]
       }
     ]
   },
@@ -3694,11 +4341,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket5.jpeg"
+        "image": "images/jacket5.jpeg",
+        "images": [
+          "images/jacket5.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket5.jpeg"
+        "image": "images/jacket5.jpeg",
+        "images": [
+          "images/jacket5.jpeg"
+        ]
       }
     ]
   },
@@ -3738,11 +4391,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket6.jpeg"
+        "image": "images/jacket6.jpeg",
+        "images": [
+          "images/jacket6.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket6.jpeg"
+        "image": "images/jacket6.jpeg",
+        "images": [
+          "images/jacket6.jpeg"
+        ]
       }
     ]
   },
@@ -3781,11 +4440,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket7.jpeg"
+        "image": "images/jacket7.jpeg",
+        "images": [
+          "images/jacket7.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket7.jpeg"
+        "image": "images/jacket7.jpeg",
+        "images": [
+          "images/jacket7.jpeg"
+        ]
       }
     ]
   },
@@ -3824,11 +4489,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket8.jpeg"
+        "image": "images/jacket8.jpeg",
+        "images": [
+          "images/jacket8.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket8.jpeg"
+        "image": "images/jacket8.jpeg",
+        "images": [
+          "images/jacket8.jpeg"
+        ]
       }
     ]
   },
@@ -3865,11 +4536,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket9.jpeg"
+        "image": "images/jacket9.jpeg",
+        "images": [
+          "images/jacket9.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket9.jpeg"
+        "image": "images/jacket9.jpeg",
+        "images": [
+          "images/jacket9.jpeg"
+        ]
       }
     ]
   },
@@ -3906,11 +4583,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket10.jpeg"
+        "image": "images/jacket10.jpeg",
+        "images": [
+          "images/jacket10.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket10.jpeg"
+        "image": "images/jacket10.jpeg",
+        "images": [
+          "images/jacket10.jpeg"
+        ]
       }
     ]
   },
@@ -3949,11 +4632,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket11.jpeg"
+        "image": "images/jacket11.jpeg",
+        "images": [
+          "images/jacket11.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket11.jpeg"
+        "image": "images/jacket11.jpeg",
+        "images": [
+          "images/jacket11.jpeg"
+        ]
       }
     ]
   },
@@ -3992,11 +4681,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket12.jpeg"
+        "image": "images/jacket12.jpeg",
+        "images": [
+          "images/jacket12.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket12.jpeg"
+        "image": "images/jacket12.jpeg",
+        "images": [
+          "images/jacket12.jpeg"
+        ]
       }
     ]
   },
@@ -4033,11 +4728,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket13.jpeg"
+        "image": "images/jacket13.jpeg",
+        "images": [
+          "images/jacket13.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket13.jpeg"
+        "image": "images/jacket13.jpeg",
+        "images": [
+          "images/jacket13.jpeg"
+        ]
       }
     ]
   },
@@ -4072,11 +4773,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket14.jpeg"
+        "image": "images/jacket14.jpeg",
+        "images": [
+          "images/jacket14.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket14.jpeg"
+        "image": "images/jacket14.jpeg",
+        "images": [
+          "images/jacket14.jpeg"
+        ]
       }
     ]
   },
@@ -4111,11 +4818,17 @@
     "colorVariants": [
       {
         "name": "Black",
-        "image": "images/jacket15.jpeg"
+        "image": "images/jacket15.jpeg",
+        "images": [
+          "images/jacket15.jpeg"
+        ]
       },
       {
         "name": "Olive",
-        "image": "images/jacket15.jpeg"
+        "image": "images/jacket15.jpeg",
+        "images": [
+          "images/jacket15.jpeg"
+        ]
       }
     ]
   },
@@ -4156,11 +4869,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt1.jpeg"
+        "image": "images/shirt1.jpeg",
+        "images": [
+          "images/shirt1.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt1.jpeg"
+        "image": "images/shirt1.jpeg",
+        "images": [
+          "images/shirt1.jpeg"
+        ]
       }
     ]
   },
@@ -4201,11 +4920,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt2.jpeg"
+        "image": "images/shirt2.jpeg",
+        "images": [
+          "images/shirt2.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt2.jpeg"
+        "image": "images/shirt2.jpeg",
+        "images": [
+          "images/shirt2.jpeg"
+        ]
       }
     ]
   },
@@ -4246,11 +4971,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt3.jpeg"
+        "image": "images/shirt3.jpeg",
+        "images": [
+          "images/shirt3.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt3.jpeg"
+        "image": "images/shirt3.jpeg",
+        "images": [
+          "images/shirt3.jpeg"
+        ]
       }
     ]
   },
@@ -4288,11 +5019,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt4.jpeg"
+        "image": "images/shirt4.jpeg",
+        "images": [
+          "images/shirt4.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt4.jpeg"
+        "image": "images/shirt4.jpeg",
+        "images": [
+          "images/shirt4.jpeg"
+        ]
       }
     ]
   },
@@ -4330,11 +5067,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt5.jpeg"
+        "image": "images/shirt5.jpeg",
+        "images": [
+          "images/shirt5.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt5.jpeg"
+        "image": "images/shirt5.jpeg",
+        "images": [
+          "images/shirt5.jpeg"
+        ]
       }
     ]
   },
@@ -4374,11 +5117,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt6.jpeg"
+        "image": "images/shirt6.jpeg",
+        "images": [
+          "images/shirt6.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt6.jpeg"
+        "image": "images/shirt6.jpeg",
+        "images": [
+          "images/shirt6.jpeg"
+        ]
       }
     ]
   },
@@ -4417,11 +5166,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt7.jpeg"
+        "image": "images/shirt7.jpeg",
+        "images": [
+          "images/shirt7.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt7.jpeg"
+        "image": "images/shirt7.jpeg",
+        "images": [
+          "images/shirt7.jpeg"
+        ]
       }
     ]
   },
@@ -4460,11 +5215,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt8.jpeg"
+        "image": "images/shirt8.jpeg",
+        "images": [
+          "images/shirt8.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt8.jpeg"
+        "image": "images/shirt8.jpeg",
+        "images": [
+          "images/shirt8.jpeg"
+        ]
       }
     ]
   },
@@ -4501,11 +5262,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt9.jpeg"
+        "image": "images/shirt9.jpeg",
+        "images": [
+          "images/shirt9.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt9.jpeg"
+        "image": "images/shirt9.jpeg",
+        "images": [
+          "images/shirt9.jpeg"
+        ]
       }
     ]
   },
@@ -4542,11 +5309,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt10.jpeg"
+        "image": "images/shirt10.jpeg",
+        "images": [
+          "images/shirt10.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt10.jpeg"
+        "image": "images/shirt10.jpeg",
+        "images": [
+          "images/shirt10.jpeg"
+        ]
       }
     ]
   },
@@ -4585,11 +5358,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt11.jpeg"
+        "image": "images/shirt11.jpeg",
+        "images": [
+          "images/shirt11.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt11.jpeg"
+        "image": "images/shirt11.jpeg",
+        "images": [
+          "images/shirt11.jpeg"
+        ]
       }
     ]
   },
@@ -4628,11 +5407,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt12.jpeg"
+        "image": "images/shirt12.jpeg",
+        "images": [
+          "images/shirt12.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt12.jpeg"
+        "image": "images/shirt12.jpeg",
+        "images": [
+          "images/shirt12.jpeg"
+        ]
       }
     ]
   },
@@ -4669,11 +5454,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt13.jpeg"
+        "image": "images/shirt13.jpeg",
+        "images": [
+          "images/shirt13.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt13.jpeg"
+        "image": "images/shirt13.jpeg",
+        "images": [
+          "images/shirt13.jpeg"
+        ]
       }
     ]
   },
@@ -4708,11 +5499,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt14.jpeg"
+        "image": "images/shirt14.jpeg",
+        "images": [
+          "images/shirt14.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt14.jpeg"
+        "image": "images/shirt14.jpeg",
+        "images": [
+          "images/shirt14.jpeg"
+        ]
       }
     ]
   },
@@ -4747,11 +5544,17 @@
     "colorVariants": [
       {
         "name": "Ecru Print",
-        "image": "images/shirt15.jpeg"
+        "image": "images/shirt15.jpeg",
+        "images": [
+          "images/shirt15.jpeg"
+        ]
       },
       {
         "name": "Black Print",
-        "image": "images/shirt15.jpeg"
+        "image": "images/shirt15.jpeg",
+        "images": [
+          "images/shirt15.jpeg"
+        ]
       }
     ]
   },
@@ -4794,15 +5597,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt16.jpeg"
+        "image": "images/shirt16.jpeg",
+        "images": [
+          "images/shirt16.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt16.jpeg"
+        "image": "images/shirt16.jpeg",
+        "images": [
+          "images/shirt16.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt16.jpeg"
+        "image": "images/shirt16.jpeg",
+        "images": [
+          "images/shirt16.jpeg"
+        ]
       }
     ]
   },
@@ -4844,15 +5656,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt17.jpeg"
+        "image": "images/shirt17.jpeg",
+        "images": [
+          "images/shirt17.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt17.jpeg"
+        "image": "images/shirt17.jpeg",
+        "images": [
+          "images/shirt17.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt17.jpeg"
+        "image": "images/shirt17.jpeg",
+        "images": [
+          "images/shirt17.jpeg"
+        ]
       }
     ]
   },
@@ -4894,15 +5715,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt18.jpeg"
+        "image": "images/shirt18.jpeg",
+        "images": [
+          "images/shirt18.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt18.jpeg"
+        "image": "images/shirt18.jpeg",
+        "images": [
+          "images/shirt18.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt18.jpeg"
+        "image": "images/shirt18.jpeg",
+        "images": [
+          "images/shirt18.jpeg"
+        ]
       }
     ]
   },
@@ -4941,15 +5771,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt19.jpeg"
+        "image": "images/shirt19.jpeg",
+        "images": [
+          "images/shirt19.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt19.jpeg"
+        "image": "images/shirt19.jpeg",
+        "images": [
+          "images/shirt19.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt19.jpeg"
+        "image": "images/shirt19.jpeg",
+        "images": [
+          "images/shirt19.jpeg"
+        ]
       }
     ]
   },
@@ -4988,15 +5827,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt20.jpeg"
+        "image": "images/shirt20.jpeg",
+        "images": [
+          "images/shirt20.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt20.jpeg"
+        "image": "images/shirt20.jpeg",
+        "images": [
+          "images/shirt20.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt20.jpeg"
+        "image": "images/shirt20.jpeg",
+        "images": [
+          "images/shirt20.jpeg"
+        ]
       }
     ]
   },
@@ -5037,15 +5885,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt21.jpeg"
+        "image": "images/shirt21.jpeg",
+        "images": [
+          "images/shirt21.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt21.jpeg"
+        "image": "images/shirt21.jpeg",
+        "images": [
+          "images/shirt21.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt21.jpeg"
+        "image": "images/shirt21.jpeg",
+        "images": [
+          "images/shirt21.jpeg"
+        ]
       }
     ]
   },
@@ -5085,15 +5942,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt22.jpeg"
+        "image": "images/shirt22.jpeg",
+        "images": [
+          "images/shirt22.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt22.jpeg"
+        "image": "images/shirt22.jpeg",
+        "images": [
+          "images/shirt22.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt22.jpeg"
+        "image": "images/shirt22.jpeg",
+        "images": [
+          "images/shirt22.jpeg"
+        ]
       }
     ]
   },
@@ -5133,15 +5999,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt23.jpeg"
+        "image": "images/shirt23.jpeg",
+        "images": [
+          "images/shirt23.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt23.jpeg"
+        "image": "images/shirt23.jpeg",
+        "images": [
+          "images/shirt23.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt23.jpeg"
+        "image": "images/shirt23.jpeg",
+        "images": [
+          "images/shirt23.jpeg"
+        ]
       }
     ]
   },
@@ -5179,15 +6054,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt24.jpeg"
+        "image": "images/shirt24.jpeg",
+        "images": [
+          "images/shirt24.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt24.jpeg"
+        "image": "images/shirt24.jpeg",
+        "images": [
+          "images/shirt24.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt24.jpeg"
+        "image": "images/shirt24.jpeg",
+        "images": [
+          "images/shirt24.jpeg"
+        ]
       }
     ]
   },
@@ -5225,15 +6109,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt25.jpeg"
+        "image": "images/shirt25.jpeg",
+        "images": [
+          "images/shirt25.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt25.jpeg"
+        "image": "images/shirt25.jpeg",
+        "images": [
+          "images/shirt25.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt25.jpeg"
+        "image": "images/shirt25.jpeg",
+        "images": [
+          "images/shirt25.jpeg"
+        ]
       }
     ]
   },
@@ -5273,15 +6166,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt26.jpeg"
+        "image": "images/shirt26.jpeg",
+        "images": [
+          "images/shirt26.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt26.jpeg"
+        "image": "images/shirt26.jpeg",
+        "images": [
+          "images/shirt26.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt26.jpeg"
+        "image": "images/shirt26.jpeg",
+        "images": [
+          "images/shirt26.jpeg"
+        ]
       }
     ]
   },
@@ -5321,15 +6223,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt27.jpeg"
+        "image": "images/shirt27.jpeg",
+        "images": [
+          "images/shirt27.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt27.jpeg"
+        "image": "images/shirt27.jpeg",
+        "images": [
+          "images/shirt27.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt27.jpeg"
+        "image": "images/shirt27.jpeg",
+        "images": [
+          "images/shirt27.jpeg"
+        ]
       }
     ]
   },
@@ -5367,15 +6278,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt28.jpeg"
+        "image": "images/shirt28.jpeg",
+        "images": [
+          "images/shirt28.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt28.jpeg"
+        "image": "images/shirt28.jpeg",
+        "images": [
+          "images/shirt28.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt28.jpeg"
+        "image": "images/shirt28.jpeg",
+        "images": [
+          "images/shirt28.jpeg"
+        ]
       }
     ]
   },
@@ -5411,15 +6331,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt29.jpeg"
+        "image": "images/shirt29.jpeg",
+        "images": [
+          "images/shirt29.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt29.jpeg"
+        "image": "images/shirt29.jpeg",
+        "images": [
+          "images/shirt29.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt29.jpeg"
+        "image": "images/shirt29.jpeg",
+        "images": [
+          "images/shirt29.jpeg"
+        ]
       }
     ]
   },
@@ -5455,15 +6384,24 @@
     "colorVariants": [
       {
         "name": "Ecru",
-        "image": "images/shirt30.jpeg"
+        "image": "images/shirt30.jpeg",
+        "images": [
+          "images/shirt30.jpeg"
+        ]
       },
       {
         "name": "Stone",
-        "image": "images/shirt30.jpeg"
+        "image": "images/shirt30.jpeg",
+        "images": [
+          "images/shirt30.jpeg"
+        ]
       },
       {
         "name": "Sky Blue",
-        "image": "images/shirt30.jpeg"
+        "image": "images/shirt30.jpeg",
+        "images": [
+          "images/shirt30.jpeg"
+        ]
       }
     ]
   },
@@ -5504,11 +6442,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt31.jpeg"
+        "image": "images/shirt31.jpeg",
+        "images": [
+          "images/shirt31.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt31.jpeg"
+        "image": "images/shirt31.jpeg",
+        "images": [
+          "images/shirt31.jpeg"
+        ]
       }
     ]
   },
@@ -5549,11 +6493,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt32.jpeg"
+        "image": "images/shirt32.jpeg",
+        "images": [
+          "images/shirt32.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt32.jpeg"
+        "image": "images/shirt32.jpeg",
+        "images": [
+          "images/shirt32.jpeg"
+        ]
       }
     ]
   },
@@ -5594,11 +6544,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt33.jpeg"
+        "image": "images/shirt33.jpeg",
+        "images": [
+          "images/shirt33.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt33.jpeg"
+        "image": "images/shirt33.jpeg",
+        "images": [
+          "images/shirt33.jpeg"
+        ]
       }
     ]
   },
@@ -5636,11 +6592,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt34.jpeg"
+        "image": "images/shirt34.jpeg",
+        "images": [
+          "images/shirt34.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt34.jpeg"
+        "image": "images/shirt34.jpeg",
+        "images": [
+          "images/shirt34.jpeg"
+        ]
       }
     ]
   },
@@ -5678,11 +6640,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt35.jpeg"
+        "image": "images/shirt35.jpeg",
+        "images": [
+          "images/shirt35.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt35.jpeg"
+        "image": "images/shirt35.jpeg",
+        "images": [
+          "images/shirt35.jpeg"
+        ]
       }
     ]
   },
@@ -5722,11 +6690,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt36.jpeg"
+        "image": "images/shirt36.jpeg",
+        "images": [
+          "images/shirt36.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt36.jpeg"
+        "image": "images/shirt36.jpeg",
+        "images": [
+          "images/shirt36.jpeg"
+        ]
       }
     ]
   },
@@ -5765,11 +6739,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt37.jpeg"
+        "image": "images/shirt37.jpeg",
+        "images": [
+          "images/shirt37.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt37.jpeg"
+        "image": "images/shirt37.jpeg",
+        "images": [
+          "images/shirt37.jpeg"
+        ]
       }
     ]
   },
@@ -5808,11 +6788,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt38.jpeg"
+        "image": "images/shirt38.jpeg",
+        "images": [
+          "images/shirt38.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt38.jpeg"
+        "image": "images/shirt38.jpeg",
+        "images": [
+          "images/shirt38.jpeg"
+        ]
       }
     ]
   },
@@ -5849,11 +6835,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt39.jpeg"
+        "image": "images/shirt39.jpeg",
+        "images": [
+          "images/shirt39.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt39.jpeg"
+        "image": "images/shirt39.jpeg",
+        "images": [
+          "images/shirt39.jpeg"
+        ]
       }
     ]
   },
@@ -5890,11 +6882,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt40.jpeg"
+        "image": "images/shirt40.jpeg",
+        "images": [
+          "images/shirt40.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt40.jpeg"
+        "image": "images/shirt40.jpeg",
+        "images": [
+          "images/shirt40.jpeg"
+        ]
       }
     ]
   },
@@ -5933,11 +6931,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt41.jpeg"
+        "image": "images/shirt41.jpeg",
+        "images": [
+          "images/shirt41.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt41.jpeg"
+        "image": "images/shirt41.jpeg",
+        "images": [
+          "images/shirt41.jpeg"
+        ]
       }
     ]
   },
@@ -5976,11 +6980,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt42.jpeg"
+        "image": "images/shirt42.jpeg",
+        "images": [
+          "images/shirt42.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt42.jpeg"
+        "image": "images/shirt42.jpeg",
+        "images": [
+          "images/shirt42.jpeg"
+        ]
       }
     ]
   },
@@ -6017,11 +7027,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt43.jpeg"
+        "image": "images/shirt43.jpeg",
+        "images": [
+          "images/shirt43.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt43.jpeg"
+        "image": "images/shirt43.jpeg",
+        "images": [
+          "images/shirt43.jpeg"
+        ]
       }
     ]
   },
@@ -6056,11 +7072,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt44.jpeg"
+        "image": "images/shirt44.jpeg",
+        "images": [
+          "images/shirt44.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt44.jpeg"
+        "image": "images/shirt44.jpeg",
+        "images": [
+          "images/shirt44.jpeg"
+        ]
       }
     ]
   },
@@ -6095,11 +7117,17 @@
     "colorVariants": [
       {
         "name": "Sky Blue",
-        "image": "images/shirt45.jpeg"
+        "image": "images/shirt45.jpeg",
+        "images": [
+          "images/shirt45.jpeg"
+        ]
       },
       {
         "name": "Ecru",
-        "image": "images/shirt45.jpeg"
+        "image": "images/shirt45.jpeg",
+        "images": [
+          "images/shirt45.jpeg"
+        ]
       }
     ]
   }
