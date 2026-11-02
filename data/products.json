@@ -854,12 +854,12 @@
     "name": "AMG DTF PRINT WHITE TSHIRT",
     "category": "tshirt",
     "subcategory": "oversized",
-    "image": "images/AMGDTFPRINTWHITETSHIRT1.jpeg",
+    "image": "images/AMGDTFPRINTWHITERLXTSHIRT1.jpeg",
     "images": [
-      "images/AMGDTFPRINTWHITETSHIRT1.jpeg",
-      "images/AMGDTFPRINTWHITETSHIRT2.jpeg",
-      "images/AMGDTFPRINTWHITETSHIRT3.jpeg",
-      "images/AMGDTFPRINTWHITETSHIRT4.jpeg"
+      "images/AMGDTFPRINTWHITERLXTSHIRT1.jpeg",
+      "images/AMGDTFPRINTWHITERLXTSHIRT2.jpeg",
+      "images/AMGDTFPRINTWHITERLXTSHIRT3.jpeg",
+      "images/AMGDTFPRINTWHITERLXTSHIRT4.jpeg"
     ],
     "price": 1179,
     "originalPrice": 1579,
@@ -891,10 +891,10 @@
         "name": "White",
         "image": "images/AMGDTFPRINTWHITETSHIRT1.jpeg",
         "images": [
-          "images/AMGDTFPRINTWHITETSHIRT1.jpeg",
-          "images/AMGDTFPRINTWHITETSHIRT2.jpeg",
-          "images/AMGDTFPRINTWHITETSHIRT3.jpeg",
-          "images/AMGDTFPRINTWHITETSHIRT4.jpeg"
+          "images/AMGDTFPRINTWHITERLXTSHIRT1.jpeg",
+          "images/AMGDTFPRINTWHITERLXTSHIRT2.jpeg",
+          "images/AMGDTFPRINTWHITERLXTSHIRT3.jpeg",
+          "images/AMGDTFPRINTWHITERLXTSHIRT4.jpeg"
         ]
       }
     ]
