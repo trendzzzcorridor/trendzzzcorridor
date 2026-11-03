@@ -1,3 +1,4 @@
+import { requireCustomer } from './auth-gate.js';
 import { getCart, CART_KEY, escapeHTML } from './common.js';
 
 // ==================== SHARED HEADER AND FOOTER LOADING START ====================
@@ -10,6 +11,7 @@ async function loadHeader() {
     container.innerHTML = await response.text();
     setupSidebar();
     updateCartBadge();
+    container.querySelector('.cart-icon')?.addEventListener('click', async event => { event.preventDefault(); await requireCustomer(() => { location.href = 'cart.html'; }); });
     const currentPage = location.pathname.split('/').pop() || 'index.html';
     container.querySelectorAll('.desktop-navigation a').forEach(link => {
       if (link.getAttribute('href') === currentPage) link.setAttribute('aria-current', 'page');
