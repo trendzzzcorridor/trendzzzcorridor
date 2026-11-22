@@ -81,3 +81,7 @@ body::after{content:'';position:fixed;inset:0;z-index:5000;pointer-events:none;b
 body.is-page-leaving::after{opacity:1;}
 @media(max-width:700px){.brand-name{font-size:clamp(17px,4.8vw,25px);}.product-badge{height:31px;font-size:.6rem;}}
 @media(prefers-reduced-motion:reduce){a.is-driving-off{animation:none!important;}body::after{transition:none!important;}}
+
+/* Ensure the hero CTA stays light against the charcoal hero. */
+.button.hero-button{background:#f4f4f2;color:#25262a;border-color:#f4f4f2;}
+.button.hero-button:hover,.button.hero-button:focus-visible{background:#cfd1d5;color:#191b1f;border-color:#cfd1d5;}
