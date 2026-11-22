@@ -35,7 +35,7 @@ function renderCatalogue(products) {
   document.querySelector('#catalogue-grid').innerHTML = tiles.map(tile => {
     const product = tile.products.find(item => !usedImages.has(item.image)) || tile.products[0];
     if (product) usedImages.add(product.image);
-    return `<a class="catalogue-tile" href="${tile.href}"><div class="catalogue-tile-image"><img src="${escapeHTML(imageURL(product?.image))}" alt="${escapeHTML(tile.label)} collection" loading="lazy" decoding="async" width="600" height="480"></div><h3 class="catalogue-tile-title">${escapeHTML(tile.label)}<span aria-hidden="true">↗</span></h3></a>`;
+    return `<a class="catalogue-tile" href="${tile.href}"><div class="catalogue-tile-image"><img src="${escapeHTML(imageURL(product?.image))}" alt="${escapeHTML(tile.label)} collection" loading="lazy" decoding="async" width="600" height="480"></div><h3 class="catalogue-tile-title">${escapeHTML(tile.label)}</h3></a>`;
   }).join('');
 }
 async function initializeHome() {
