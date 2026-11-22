@@ -47,10 +47,10 @@ body{background:var(--paper);color:var(--ink);}
 .button-secondary{background:transparent;color:var(--ink);border-color:#b5b7bd;}
 .button-secondary:hover{background:#e0e1e3;color:var(--ink);border-color:#aaaeb5;}
 .product-card-image{background:#e6e7e8;}
-.product-card-image img{object-fit:contain;object-position:center;transition:filter .3s;transform:none!important;}
-.product-card-link:hover .product-card-image img{transform:none!important;filter:brightness(.965);}
+.product-card-image img{object-fit:contain;object-position:center;transition:filter .3s,transform .12s linear;transform:scale(var(--tc-card-zoom,1))!important;transform-origin:center;}
+.product-card-link:hover .product-card-image img{transform:scale(var(--tc-card-zoom,1))!important;filter:brightness(.965);}
 .product-card-discover{display:none!important;}
-.product-badge{top:auto!important;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;height:54px;padding:7px 10px;background:rgba(38,40,45,.42);color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.45);text-align:center;font-size:.68rem;font-weight:600;letter-spacing:.09em;backdrop-filter:blur(4px);}
+.product-badge{top:auto!important;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;height:var(--tc-badge-height,62px);padding:7px 10px;background:rgba(38,40,45,.27);color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.9),0 0 7px rgba(0,0,0,.65);text-align:center;font-size:.79rem;font-weight:700;letter-spacing:.09em;backdrop-filter:blur(3px);transition:height .16s ease,background-color .22s ease;}
 .product-discount{color:#4e525a;}
 .product-price del{color:#85878d;}
 .collection-quick-nav{background:#f4f4f2;}
@@ -79,7 +79,7 @@ body{background:var(--paper);color:var(--ink);}
 a.is-driving-off{animation:tc-text-drive .22s cubic-bezier(.55,.02,1,.65) both;}
 body::after{content:'';position:fixed;inset:0;z-index:5000;pointer-events:none;background:#292b30;opacity:0;transition:opacity .19s ease-in;}
 body.is-page-leaving::after{opacity:1;}
-@media(max-width:700px){.brand-name{font-size:clamp(17px,4.8vw,25px);}.product-badge{height:50px;font-size:.6rem;}}
+@media(max-width:700px){.brand-name{font-size:clamp(17px,4.8vw,25px);}.product-badge{height:var(--tc-badge-height,50px);font-size:.70rem;}}
 @media(prefers-reduced-motion:reduce){a.is-driving-off{animation:none!important;}body::after{transition:none!important;}}
 
 /* Ensure the hero CTA stays light against the charcoal hero. */
@@ -97,3 +97,38 @@ a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spa
 /* Preserve the full garment in catalogue tiles and cart previews as well. */
 .catalogue-tile-image,.cart-item-image{background:#e6e7e8;}
 .catalogue-tile img,.cart-item-image img{object-fit:contain;object-position:center;}
+
+/* All catalogue, cart and detail photograph frames are intentionally landscape 4:3.
+   The source photo itself is never stretched or clipped: contain adds breathing room. */
+.product-card-image,.catalogue-tile-image,.cart-item-image,.pd-main-image{
+  aspect-ratio:4/3!important;
+}
+.product-card-image img,.catalogue-tile-image img,.cart-item-image img,.pd-main-image img{
+  object-fit:contain!important;
+  object-position:center;
+}
+.pd-thumbnail{
+  aspect-ratio:4/3;
+  height:auto;
+}
+.pd-thumbnail img{object-fit:contain!important;}
+/* Each hero retains its responsive frame, but pans vertically through its photograph
+   during the same three seconds as the existing auto-carousel interval. */
+@keyframes tc-hero-pan{
+  from{transform:scale(1.13) translate3d(0,2.7%,0);}
+  to{transform:scale(1.13) translate3d(0,-2.7%,0);}
+}
+.product-slider .slider-image-link img{
+  object-fit:cover;
+  object-position:center;
+}
+.product-slider .slider-image-link.active img{
+  animation:tc-hero-pan 3s linear both;
+  will-change:transform;
+}
+/* Only thumbnails/cards respond to scroll. The hero remains on its own timeline. */
+@media(prefers-reduced-motion:reduce){
+  .product-slider .slider-image-link.active img{animation:none!important;transform:none!important;will-change:auto;}
+  .product-card-image img{transform:none!important;transition:none!important;}
+  .product-badge{height:50px!important;transition:none!important;}
+}
