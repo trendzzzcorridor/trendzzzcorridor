@@ -84,7 +84,7 @@ export function productCard(product) {
     </a>
   </article>`;
 }
-const imagePlaceholder = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900"><rect width="600" height="760" fill="#e9e8e2"/><text x="600" y="425" text-anchor="middle" font-family="Arial" font-size="32" fill="#697064" letter-spacing="1">Trendzzz Corridor</text><text x="600" y="490" text-anchor="middle" font-family="Arial" font-size="17" fill="#697064">Image coming soon</text></svg>');
+const imagePlaceholder = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900"><rect width="1200" height="900" fill="#e9e8e2"/><text x="600" y="425" text-anchor="middle" font-family="Arial" font-size="32" fill="#697064" letter-spacing="1">Trendzzz Corridor</text><text x="600" y="490" text-anchor="middle" font-family="Arial" font-size="17" fill="#697064">Image coming soon</text></svg>');
 export function setupImages(container = document) {
   container.querySelectorAll('img').forEach(image => {
     const fallback = () => {
