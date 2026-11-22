@@ -33,12 +33,12 @@
 
 .about-hero-bottom > span {
   font: italic clamp(5rem, 12vw, 10rem) Georgia, serif;
-  color: #303e32;
+  color: #292b30;
   line-height: 1;
 }
 
 .about-story {
-  background: #303e32;
+  background: #292b30;
   color: #faf9f3;
   padding-block: 4.5rem;
 }
@@ -57,14 +57,14 @@
 }
 
 .about-story .eyebrow {
-  color: #d8ddce;
+  color: #d7d9dd;
 }
 
 .about-story .notice {
   background: #ffffff12;
   border: 1px solid #ffffff35;
   padding: 1rem;
-  color: #eef0e8;
+  color: #eef0f2;
   font-size: .78rem;
   line-height: 1.7;
 }
@@ -78,7 +78,7 @@
 .about-story p:not(.eyebrow):not(.notice) {
   line-height: 1.8;
   font-size: .9rem;
-  color: #d0d7c9;
+  color: #d1d3d7;
 }
 
 .about-collection {
@@ -188,7 +188,7 @@
   font-size: .85rem;
   line-height: 1.75;
   padding: 1.2rem;
-  background: #eeeee6;
+  background: #edeeee;
   border: 1px solid #d9d9cf;
 }
 
@@ -208,7 +208,7 @@
 }
 
 .policy-navigation a {
-  color: #303e32;
+  color: #292b30;
   text-underline-offset: .25rem;
   font-size: .8rem;
   padding-block: .5rem;
