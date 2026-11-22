@@ -1,0 +1,83 @@
+/* Trendzzz Corridor charcoal + soft grey visual system. Loaded after page styles. */
+:root{--ink:#27292d;--muted:#6d7075;--paper:#f4f4f2;--surface:#e7e8e9;--line:#d5d6d8;--olive:#292b30;--olive-light:#e2e3e5;--white:#fff;}
+body{background:var(--paper);color:var(--ink);}
+:focus-visible{outline-color:#616775;}
+::selection{background:#c2c6cd;color:#22242a;}
+.announcement-bar{background:#37393e;color:#f5f5f5;}
+.announcement-bar span{color:#d3d4d6;}
+.site-header{background:#24262a;color:#f5f5f4;border-color:#494b50;}
+.site-header .icon-button{color:inherit;}
+.desktop-navigation{border-color:#494b50;}
+.desktop-navigation a:hover,.desktop-navigation a[aria-current=page]{color:#fff;}
+.new-dot{background:#c9ccd1;}
+.brand-name,.footer-brand{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-style:italic;letter-spacing:-.025em;}
+.brand-name{font-size:clamp(20px,2.6vw,36px);white-space:nowrap;text-transform:none;}
+.footer-brand{font-size:clamp(28px,3vw,38px);}
+.catalogue-sidebar{background:#f4f4f2;color:#27292d;}
+.catalogue-sidebar .icon-button{color:#27292d;}
+.sidebar-backdrop{background:rgba(17,18,21,.68);}
+.cart-count{background:#e6e8ed;color:#24262a;}
+.home-hero,.hero-copy{background:#303237;color:#f8f8f7;}
+.hero-main-copy p,.hero-footnote{color:#c5c6c9;}
+.hero-button{background:#f4f4f2;color:#25262a;border-color:#f4f4f2;justify-content:center;}
+.hero-button:hover,.hero-button:focus-visible{background:#cfd1d5;color:#191b1f;border-color:#cfd1d5;}
+.collection-hero,.collection-hero-copy{background:#303237;color:#f8f8f7;}
+.collection-hero-copy>p:last-child{color:#c5c6c9;}
+.product-slider{background:#303237;}
+.slider-product-caption{display:none!important;}
+.slider-controls{background:#2b2d32;color:#f6f6f5;border-color:#4e5056;}
+.slider-arrows button{color:inherit;transition:color .18s,transform .18s;}
+.slider-arrows button:hover{color:#bfc5d0;transform:scale(1.08);}
+.slider-dot::after{background:#777b82;}
+.slider-dot.active::after{background:#f2f3f4;}
+.slider-empty{color:#f6f6f5;}
+.collection-strip{background:#f4f4f2;}
+.collection-strip a{justify-content:center;transition:background .22s,color .22s;}
+.collection-strip a:hover{color:#fff;background:#32353b;}
+.collection-strip a>span:first-child{margin-left:0;font-size:.62rem;color:inherit;}
+.catalogue-section{background:#e9eaeb;}
+.catalogue-tile-title{justify-content:center;text-align:center;transition:letter-spacing .22s;}
+.catalogue-tile:hover .catalogue-tile-title{letter-spacing:.035em;}
+.catalogue-tile:hover img{transform:none;filter:brightness(.96);}
+.catalogue-tile img{transition:filter .3s;}
+.text-link{border-color:currentColor;transition:color .24s,border-color .24s,letter-spacing .24s;}
+.text-link:hover{color:#656a76;letter-spacing:.025em;}
+.button{justify-content:center;text-align:center;background:#292b30;border-color:#292b30;color:#fff;transition:background .2s,color .2s,box-shadow .2s,transform .2s;}
+.button:hover,.button:focus-visible{background:#494d56;border-color:#494d56;box-shadow:0 8px 24px rgba(15,16,19,.14);transform:translateY(-2px);}
+.button-secondary{background:transparent;color:var(--ink);border-color:#b5b7bd;}
+.button-secondary:hover{background:#e0e1e3;color:var(--ink);border-color:#aaaeb5;}
+.product-card-image{background:#e6e7e8;}
+.product-card-image img{object-fit:contain;object-position:center;transition:filter .3s;transform:none!important;}
+.product-card-link:hover .product-card-image img{transform:none!important;filter:brightness(.965);}
+.product-card-discover{display:none!important;}
+.product-badge{top:auto!important;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;height:35px;padding:5px 9px;background:rgba(38,40,45,.60);color:#fff;text-align:center;font-size:.68rem;font-weight:600;letter-spacing:.09em;backdrop-filter:blur(4px);}
+.product-discount{color:#4e525a;}
+.product-price del{color:#85878d;}
+.collection-quick-nav{background:#f4f4f2;}
+.collection-quick-nav a:hover{color:#565b65;}
+.pd-main-image{background:#e6e7e9;}
+.pd-main-image img,.pd-thumbnail img{object-fit:contain;}
+.pd-thumbnail[aria-pressed=true]{border-color:#30343d;}
+.pd-discount{background:#e4e5e7;color:#30343d;}
+.pd-option input:checked+span{border-color:#2b2e35;background:#2b2e35;}
+.pd-option input:focus-visible+span{outline-color:#2b2e35;}
+.pd-primary{background:#292b30;border-color:#292b30;}
+.pd-primary:hover{background:#494d56;}
+.pd-secondary{border-color:#292b30;color:#292b30;}
+.pd-secondary:hover{background:#e5e6e8;}
+.pd-gallery-arrow:focus-visible{outline-color:#292b30;}
+.pd-stock::before{background:#666c76;}
+.pd-stock.is-out::before{background:#a56b61;}
+.site-footer{background:#24262b;color:#f2f2f1;border-color:#474a50;}
+.footer-links{color:#c0c2c7;}
+.footer-bottom{color:#abb0b7;border-color:#484b51;}
+.footer-demo{color:#b0b2b8;}
+.notice{background:#e2e3e5;border-color:#c5c8cd;}
+.field input,.field select,.field textarea,input.form-input,select.form-input{background:#fff;}
+.filter-option input,.filters input[type=checkbox]{accent-color:#292b30;}
+@keyframes tc-text-drive{0%{transform:translateX(0);opacity:1;filter:blur(0);}35%{transform:translateX(13px);opacity:1;filter:blur(0);}100%{transform:translateX(76px);opacity:0;filter:blur(2px);}}
+a.is-driving-off{animation:tc-text-drive .22s cubic-bezier(.55,.02,1,.65) both;}
+body::after{content:'';position:fixed;inset:0;z-index:5000;pointer-events:none;background:#292b30;opacity:0;transition:opacity .19s ease-in;}
+body.is-page-leaving::after{opacity:1;}
+@media(max-width:700px){.brand-name{font-size:clamp(17px,4.8vw,25px);}.product-badge{height:31px;font-size:.6rem;}}
+@media(prefers-reduced-motion:reduce){a.is-driving-off{animation:none!important;}body::after{transition:none!important;}}
