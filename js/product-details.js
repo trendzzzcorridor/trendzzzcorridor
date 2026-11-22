@@ -12,7 +12,7 @@ function availableQuantity(product) {
 }
 
 function showUnavailable() {
-  detailContainer.innerHTML = `<div class="pd-unavailable"><p class="pd-eyebrow">A LITTLE DETOUR</p><h1>Product not found.</h1><p>This piece may have moved, or the link may be incomplete. Discover something else in the collection.</p><a class="pd-primary" href="product.html">Explore the collection ↗</a></div>`;
+  detailContainer.innerHTML = `<div class="pd-unavailable"><p class="pd-eyebrow">A LITTLE DETOUR</p><h1>Product not found.</h1><p>This piece may have moved, or the link may be incomplete. Discover something else in the collection.</p><a class="pd-primary" href="product.html">Explore the collection</a></div>`;
 }
 
 function renderProduct(product) {
@@ -198,7 +198,7 @@ async function initializeProduct() {
       .slice(0, 4);
     if (related.length) {
       relatedContainer.hidden = false;
-      relatedContainer.innerHTML = `<div class="pd-section-heading"><h2 id="related-heading">A little more your style.</h2><a href="${escapeHTML(categoryConfig[currentProduct.category]?.page || 'product.html')}">Explore all ↗</a></div><div class="pd-related-grid">${related.map(product => productCard(product)).join('')}</div>`;
+      relatedContainer.innerHTML = `<div class="pd-section-heading"><h2 id="related-heading">A little more your style.</h2><a href="${escapeHTML(categoryConfig[currentProduct.category]?.page || 'product.html')}">Explore all</a></div><div class="pd-related-grid">${related.map(product => productCard(product)).join('')}</div>`;
       setupImages(relatedContainer);
     }
   } catch (error) {
