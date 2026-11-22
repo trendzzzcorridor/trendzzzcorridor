@@ -58,8 +58,8 @@ function renderProduct(product) {
     startSlideshow();
   };
   const discount = product.originalPrice > product.price ? Math.round((1 - product.price / product.originalPrice) * 100) : 0;
-  document.title = `${product.name} — FORME`;
-  document.querySelector('meta[name="description"]').content = product.description || `Discover ${product.name} at FORME.`;
+  document.title = `${product.name} — Trendzzz Corridor`;
+  document.querySelector('meta[name="description"]').content = product.description || `Discover ${product.name} at Trendzzz Corridor.`;
 
   detailContainer.innerHTML = `
     <nav class="pd-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="${escapeHTML(category?.page || 'product.html')}">${escapeHTML(category?.label || 'Collection')}</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHTML(product.name)}</span></nav>
@@ -79,7 +79,7 @@ function renderProduct(product) {
           <div class="pd-size-heading"><span>SELECT SIZE</span><button type="button" id="open-size-guide" class="pd-text-button">Size guide</button></div>
           <fieldset class="pd-option-group"><legend class="sr-only">Choose a size</legend><div class="pd-option-list">${product.sizes.map(size => `<label class="pd-option"><input type="radio" name="size" value="${escapeHTML(size)}" required><span>${escapeHTML(size)}</span></label>`).join('')}</div></fieldset>
           ${product.colors?.length ? `<fieldset class="pd-option-group"><legend>COLOUR</legend><div class="pd-option-list">${product.colors.map((color, index) => `<label class="pd-option pd-color-option"><input type="radio" name="color" value="${escapeHTML(color)}" ${index === 0 ? 'checked' : ''}><span>${escapeHTML(color)}</span></label>`).join('')}</div></fieldset>` : ''}
-          <div class="pd-purchase-row"><div class="pd-quantity"><button type="button" id="quantity-decrease" aria-label="Decrease quantity">−</button><label class="sr-only" for="quantity">Quantity</label><input id="quantity" name="quantity" type="number" min="1" max="${Math.max(1, availableQuantity(product))}" value="1" step="1" inputmode="numeric" required><button type="button" id="quantity-increase" aria-label="Increase quantity">+</button></div><button type="submit" class="pd-primary" id="add-to-cart" name="action" value="add">Add to bag <span aria-hidden="true">↗</span></button></div>
+          <div class="pd-purchase-row"><div class="pd-quantity"><button type="button" id="quantity-decrease" aria-label="Decrease quantity">−</button><label class="sr-only" for="quantity">Quantity</label><input id="quantity" name="quantity" type="number" min="1" max="${Math.max(1, availableQuantity(product))}" value="1" step="1" inputmode="numeric" required><button type="button" id="quantity-increase" aria-label="Increase quantity">+</button></div><button type="submit" class="pd-primary" id="add-to-cart" name="action" value="add">Add to bag </button></div>
           <button type="submit" class="pd-secondary" id="buy-now" name="action" value="buy">Buy now</button>
           <p id="purchase-feedback" class="pd-feedback" role="status"></p>
         </form>
