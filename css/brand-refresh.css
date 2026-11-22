@@ -85,3 +85,11 @@ body.is-page-leaving::after{opacity:1;}
 /* Ensure the hero CTA stays light against the charcoal hero. */
 .button.hero-button{background:#f4f4f2;color:#25262a;border-color:#f4f4f2;}
 .button.hero-button:hover,.button.hero-button:focus-visible{background:#cfd1d5;color:#191b1f;border-color:#cfd1d5;}
+
+/* Shared tactile, accessible hover response for other customer links. */
+a.cart-primary,a.pd-primary,a.account-text-link,.collection-quick-nav a,.about-categories a,.desktop-navigation a{
+  transition:background-color .2s,color .2s,border-color .2s,transform .22s,letter-spacing .22s;
+}
+a.cart-primary:hover,a.pd-primary:hover{background:#494d56;color:#fff;transform:translateY(-2px);}
+a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spacing:.025em;}
+.about-categories a:hover{background:rgba(48,51,57,.04);padding-left:8px;}
