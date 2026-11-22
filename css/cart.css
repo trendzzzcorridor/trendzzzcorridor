@@ -191,15 +191,15 @@
 
 .cart-notice {
   padding: 15px 18px;
-  background: #edf0e7;
-  border-left: 2px solid #5d7053;
+  background: #ececef;
+  border-left: 2px solid #777c87;
   font-size: 12px;
   line-height: 1.7;
   margin-bottom: 25px;
 }
 
 .cart-summary {
-  background: #efefe8;
+  background: #efeff0;
   padding: 30px;
   position: sticky;
   top: calc(var(--header-height,80px) + 25px);
@@ -239,7 +239,7 @@
 .cart-summary-note {
   font-size: 10px;
   line-height: 1.8;
-  color: #787e70;
+  color: #777b84;
   margin: 12px 0 23px;
 }
 
@@ -250,8 +250,8 @@
   gap: 12px;
   min-height: 49px;
   padding: 13px 22px;
-  border: 1px solid #303e32;
-  background: #303e32;
+  border: 1px solid #292b30;
+  background: #292b30;
   color: #fff;
   font-size: 11px;
   text-decoration: none;
@@ -260,7 +260,7 @@
 }
 
 .cart-primary:hover {
-  background: #222e24;
+  background: #41444a;
 }
 
 .cart-primary:disabled {
@@ -274,7 +274,7 @@
 
 .cart-secondary {
   background: transparent;
-  color: #303e32;
+  color: #292b30;
 }
 
 .cart-checkout-caption {
@@ -319,7 +319,7 @@
 
 .cart-empty-mark {
   font: italic 65px Georgia,serif;
-  color: #849078;
+  color: #82878f;
   margin-bottom: 18px;
 }
 
@@ -331,7 +331,7 @@
 }
 
 .cart-empty p {
-  color: #777e6d;
+  color: #777b84;
   font-size: 13px;
   line-height: 1.8;
   margin: 0 0 26px;
@@ -341,7 +341,7 @@
   padding: 80px 0;
   text-align: center;
   font-size: 13px;
-  color: #777e6d;
+  color: #777b84;
 }
 
 /* ==================== SHOPPING BAG END ==================== */
@@ -437,8 +437,8 @@
   height: 48px;
   display: grid;
   place-items: center;
-  background: #e7ebdf;
-  color: #425736;
+  background: #e8e9eb;
+  color: #4c515b;
   font-size: 22px;
   margin-top: 20px;
 }
