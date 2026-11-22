@@ -77,7 +77,7 @@
 }
 
 .account-tabs button[aria-selected="true"] {
-  border-color: #303e32;
+  border-color: #292b30;
   color: #252821;
 }
 
@@ -123,7 +123,7 @@
 
 .account-feedback {
   margin: 1rem 0;
-  color: #303e32;
+  color: #292b30;
   font-size: .85rem;
   line-height: 1.6;
 }
