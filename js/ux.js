@@ -4,7 +4,7 @@ let leaving = false;
 document.addEventListener('click', event => {
   if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || leaving) return;
   if (!(event.target instanceof Element)) return;
-  const link = event.target.closest('a.button,a.text-link,.collection-strip a,.catalogue-tile');
+  const link = event.target.closest('a.button,a.text-link,.collection-strip a,.catalogue-tile,a.cart-primary,a.pd-primary,a.account-text-link,.collection-quick-nav a,.about-categories a');
   if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
   const destination = new URL(link.href, location.href);
   if (!['http:', 'https:'].includes(destination.protocol) || destination.origin !== location.origin) return;
