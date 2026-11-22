@@ -3,9 +3,9 @@ import { escapeHTML } from './common.js';
 /* ==================== DEMO TRACKING SERVICE START ==================== */
 // Replace this function with an authenticated API request when an order backend exists.
 async function findOrder(orderId, email) {
-  if (orderId.toUpperCase() !== 'FORME1001' || email.toLowerCase() !== 'demo@example.com') return null;
+  if (orderId.toUpperCase() !== 'TZC1001' || email.toLowerCase() !== 'demo@example.com') return null;
   return {
-    id: 'FORME1001',
+    id: 'TZC1001',
     status: 'In transit',
     estimate: 'Sample shipment · delivery estimate available from a future carrier API',
     currentStep: 2,
@@ -28,7 +28,7 @@ const requestedOrder = new URLSearchParams(location.search).get('order');
 if (requestedOrder) form.elements.orderId.value = requestedOrder.slice(0, 80);
 
 document.querySelector('#fill-demo').addEventListener('click', () => {
-  form.elements.orderId.value = 'FORME1001';
+  form.elements.orderId.value = 'TZC1001';
   form.elements.email.value = 'demo@example.com';
   message.textContent = 'Demo details filled. Select Find my order to view the timeline.';
   form.querySelector('button[type="submit"]').focus();
@@ -47,7 +47,7 @@ form.addEventListener('submit', async event => {
   try {
     const order = await findOrder(orderId, email);
     if (!order) {
-      result.innerHTML = '<div class="tracking-empty"><p class="eyebrow">NO MATCH FOUND</p><h2>Let’s check those details.</h2><p>No demo order matches that order ID and email. Try FORME1001 with demo@example.com.</p></div>';
+      result.innerHTML = '<div class="tracking-empty"><p class="eyebrow">NO MATCH FOUND</p><h2>Let’s check those details.</h2><p>No demo order matches that order ID and email. Try TZC1001 with demo@example.com.</p></div>';
       message.textContent = 'No matching demo order. Check both fields and try again.';
       return;
     }
