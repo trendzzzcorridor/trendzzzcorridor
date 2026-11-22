@@ -131,7 +131,7 @@ window.addEventListener('cart-updated', refreshFromStorage);
 // ==================== DEMO CHECKOUT START ====================
 function renderCheckout() {
   if (!cartItems.length) {
-    checkoutContent.innerHTML = `<h2 id="checkout-title">Your bag is empty.</h2><p>Add a piece from the collection to explore the checkout preview.</p><a class="cart-primary" href="product.html">Explore the collection ↗</a>`;
+    checkoutContent.innerHTML = `<h2 id="checkout-title">Your bag is empty.</h2><p>Add a piece from the collection to explore the checkout preview.</p><a class="cart-primary" href="product.html">Explore the collection</a>`;
     return;
   }
   checkoutContent.innerHTML = `<h2 id="checkout-title">One last look.</h2><p>This is a frontend checkout demonstration. No payment information is collected, and no real order will be placed.</p><ul class="cart-dialog-list">${cartItems.map(item => {
@@ -151,7 +151,7 @@ async function openCheckout() {
 checkoutDialog.querySelector('[data-close-checkout]').addEventListener('click', () => checkoutDialog.close());
 checkoutDialog.addEventListener('click', event => {
   if (event.target.closest('#finish-checkout-preview')) {
-    checkoutContent.innerHTML = `<div class="cart-dialog-success" aria-hidden="true">✓</div><h2 id="checkout-title" tabindex="-1">Preview complete.</h2><p>No order was placed and no payment was taken. Your bag is still here when you’re ready to explore further.</p><p>A live store will connect this step to a secure payment provider, order records and delivery updates.</p><a class="cart-primary" href="product.html">Continue exploring ↗</a><p><a href="tracking.html?order=TZC1001">View separate sample order tracking</a></p>`;
+    checkoutContent.innerHTML = `<div class="cart-dialog-success" aria-hidden="true">✓</div><h2 id="checkout-title" tabindex="-1">Preview complete.</h2><p>No order was placed and no payment was taken. Your bag is still here when you’re ready to explore further.</p><p>A live store will connect this step to a secure payment provider, order records and delivery updates.</p><a class="cart-primary" href="product.html">Continue exploring</a><p><a href="tracking.html?order=TZC1001">View separate sample order tracking</a></p>`;
     checkoutContent.querySelector('#checkout-title').focus();
     return;
   }
