@@ -1,3 +1,4 @@
+import './ux.js';
 import { requireCustomer } from './auth-gate.js';
 import { getCart, CART_KEY, escapeHTML } from './common.js';
 
@@ -17,13 +18,13 @@ async function loadHeader() {
       if (link.getAttribute('href') === currentPage) link.setAttribute('aria-current', 'page');
     });
   } catch {
-    container.innerHTML = '<nav class="header-main" aria-label="Basic navigation"><a href="product.html">Catalogue</a><a class="brand-name" href="index.html">FORME</a><a href="cart.html">Bag</a></nav><p class="notice">The full menu could not load. Please run this site through its local server and refresh.</p>';
+    container.innerHTML = '<nav class="header-main" aria-label="Basic navigation"><a href="product.html">Catalogue</a><a class="brand-name" href="index.html">Trendzzz Corridor</a><a href="cart.html">Bag</a></nav><p class="notice">The full menu could not load. Please run this site through its local server and refresh.</p>';
   }
 }
 function loadFooter() {
   const container = document.querySelector('#site-footer');
   if (!container) return;
-  container.innerHTML = `<footer class="site-footer"><div class="footer-top"><div><a class="footer-brand" href="index.html">FORME</a><p class="footer-tagline">An everyday state of mind.</p><p class="footer-demo">A sample clothing collection. Find your fit, make it yours.</p></div><div><h2 class="footer-heading">The collection</h2><nav class="footer-links" aria-label="Footer collections"><a href="tshirt.html">T-Shirts</a><a href="bottom-wear.html">Bottom Wear</a><a href="shirts.html">Shirts</a><a href="winter-wear.html">Winter Wear</a></nav></div><div><h2 class="footer-heading">Here to help</h2><nav class="footer-links" aria-label="Footer help"><a href="tracking.html">Track your order</a><a href="my-account.html">My account</a><a href="cart.html">Shopping bag</a><a href="privacy-policy.html">Privacy policy</a></nav></div><div><h2 class="footer-heading">The world of Forme</h2><nav class="footer-links" aria-label="Footer brand"><a href="about-us.html">Our story</a><a href="product.html">Explore the catalogue</a><a href="admin-dashboard.html">Demo dashboard</a></nav></div></div><div class="footer-bottom"><span>© ${escapeHTML(new Date().getFullYear())} FORME · Sample storefront</span><span>India / INR ₹ <span aria-hidden="true">&nbsp;&nbsp;↗</span></span></div></footer>`;
+  container.innerHTML = `<footer class="site-footer"><div class="footer-top"><div><a class="footer-brand" href="index.html">Trendzzz Corridor</a><p class="footer-tagline">An everyday state of mind.</p><p class="footer-demo">Everyday clothing with your own point of view.</p></div><div><h2 class="footer-heading">The collection</h2><nav class="footer-links" aria-label="Footer collections"><a href="tshirt.html">T-Shirts</a><a href="bottom-wear.html">Bottom Wear</a><a href="shirts.html">Shirts</a><a href="winter-wear.html">Winter Wear</a></nav></div><div><h2 class="footer-heading">Here to help</h2><nav class="footer-links" aria-label="Footer help"><a href="tracking.html">Track your order</a><a href="my-account.html">My account</a><a href="cart.html">Shopping bag</a><a href="privacy-policy.html">Privacy policy</a></nav></div><div><h2 class="footer-heading">The world of Trendzzz Corridor</h2><nav class="footer-links" aria-label="Footer brand"><a href="about-us.html">Our story</a><a href="product.html">Explore the catalogue</a><a href="admin-dashboard.html">Admin dashboard</a></nav></div></div><div class="footer-bottom"><span>© ${escapeHTML(new Date().getFullYear())} Trendzzz Corridor · Clothing collection</span><span>India / INR ₹ <span aria-hidden="true">&nbsp;&nbsp;↗</span></span></div></footer>`;
 }
 // ==================== SHARED HEADER AND FOOTER LOADING END ====================
 
