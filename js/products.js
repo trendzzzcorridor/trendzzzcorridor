@@ -23,7 +23,7 @@ function renderCollections(products, filters) {
   collection.innerHTML = applicable.map(([key, config]) => {
     const categoryProducts = products.filter(product => product.category === key);
     if (discovery && !categoryProducts.length) return '';
-    return `<section class="major-collection" aria-label="${config.label}">${discovery ? `<div class="major-collection-heading"><p class="eyebrow">The ${config.label} edit</p><h2>${config.label}</h2><a class="text-link" href="${config.page}">Show all ${config.label} <span aria-hidden="true">↗</span></a></div>` : ''}${config.subcategories.filter(subcategory => !filters.subcategory || filters.subcategory === subcategory.id).map(subcategory => {
+    return `<section class="major-collection" aria-label="${config.label}">${discovery ? `<div class="major-collection-heading"><p class="eyebrow">The ${config.label} edit</p><h2>${config.label}</h2><a class="text-link" href="${config.page}">Show all ${config.label} </a></div>` : ''}${config.subcategories.filter(subcategory => !filters.subcategory || filters.subcategory === subcategory.id).map(subcategory => {
       let sectionProducts = categoryProducts.filter(product => product.subcategory === subcategory.id);
       if (discovery && filters.sort === 'featured') {
         // Promotional products are randomized only after category and tag filtering.
@@ -32,7 +32,7 @@ function renderCollections(products, filters) {
         sectionProducts = [...promotional, ...regular];
       }
       const anchor = discovery ? `${key}-${subcategory.id}` : subcategory.id;
-      return `<section class="subcategory-section" id="${anchor}" aria-labelledby="heading-${anchor}"><div class="subcategory-heading"><h${discovery ? '3' : '2'} id="heading-${anchor}">${escapeHTML(subcategory.label)}<span>${sectionProducts.length} styles</span></h${discovery ? '3' : '2'}>${discovery ? `<a class="text-link" href="${config.page}#${subcategory.id}">Show all <span aria-hidden="true">↗</span></a>` : '<a class="back-to-top" href="#collection-top" aria-label="Back to collection navigation">↑ Back to top</a>'}</div>${sectionGrid(sectionProducts, discovery)}</section>`;
+      return `<section class="subcategory-section" id="${anchor}" aria-labelledby="heading-${anchor}"><div class="subcategory-heading"><h${discovery ? '3' : '2'} id="heading-${anchor}">${escapeHTML(subcategory.label)}<span>${sectionProducts.length} styles</span></h${discovery ? '3' : '2'}>${discovery ? `<a class="text-link" href="${config.page}#${subcategory.id}">Show all </a>` : '<a class="back-to-top" href="#collection-top" aria-label="Back to collection navigation">↑ Back to top</a>'}</div>${sectionGrid(sectionProducts, discovery)}</section>`;
     }).join('')}</section>`;
   }).join('');
   setupImages(collection);
