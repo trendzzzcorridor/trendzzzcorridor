@@ -93,3 +93,7 @@ a.cart-primary,a.pd-primary,a.account-text-link,.collection-quick-nav a,.about-c
 a.cart-primary:hover,a.pd-primary:hover{background:#494d56;color:#fff;transform:translateY(-2px);}
 a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spacing:.025em;}
 .about-categories a:hover{background:rgba(48,51,57,.04);padding-left:8px;}
+
+/* Preserve the full garment in catalogue tiles and cart previews as well. */
+.catalogue-tile-image,.cart-item-image{background:#e6e7e8;}
+.catalogue-tile img,.cart-item-image img{object-fit:contain;object-position:center;}
