@@ -50,7 +50,7 @@ body{background:var(--paper);color:var(--ink);}
 .product-card-image img{object-fit:contain;object-position:center;transition:filter .3s;transform:none!important;}
 .product-card-link:hover .product-card-image img{transform:none!important;filter:brightness(.965);}
 .product-card-discover{display:none!important;}
-.product-badge{top:auto!important;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;height:35px;padding:5px 9px;background:rgba(38,40,45,.60);color:#fff;text-align:center;font-size:.68rem;font-weight:600;letter-spacing:.09em;backdrop-filter:blur(4px);}
+.product-badge{top:auto!important;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;height:54px;padding:7px 10px;background:rgba(38,40,45,.60);color:#fff;text-align:center;font-size:.68rem;font-weight:600;letter-spacing:.09em;backdrop-filter:blur(4px);}
 .product-discount{color:#4e525a;}
 .product-price del{color:#85878d;}
 .collection-quick-nav{background:#f4f4f2;}
@@ -79,7 +79,7 @@ body{background:var(--paper);color:var(--ink);}
 a.is-driving-off{animation:tc-text-drive .22s cubic-bezier(.55,.02,1,.65) both;}
 body::after{content:'';position:fixed;inset:0;z-index:5000;pointer-events:none;background:#292b30;opacity:0;transition:opacity .19s ease-in;}
 body.is-page-leaving::after{opacity:1;}
-@media(max-width:700px){.brand-name{font-size:clamp(17px,4.8vw,25px);}.product-badge{height:31px;font-size:.6rem;}}
+@media(max-width:700px){.brand-name{font-size:clamp(17px,4.8vw,25px);}.product-badge{height:50px;font-size:.6rem;}}
 @media(prefers-reduced-motion:reduce){a.is-driving-off{animation:none!important;}body::after{transition:none!important;}}
 
 /* Ensure the hero CTA stays light against the charcoal hero. */
