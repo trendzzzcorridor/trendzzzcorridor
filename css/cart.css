@@ -82,7 +82,7 @@
 
 .cart-item-image {
   display: block;
-  aspect-ratio: 4/5;
+  aspect-ratio: 3/4;
   background: #e9e7df;
   overflow: hidden;
 }
@@ -91,7 +91,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .cart-item-category {

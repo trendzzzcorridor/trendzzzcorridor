@@ -98,37 +98,81 @@ a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spa
 .catalogue-tile-image,.cart-item-image{background:#e6e7e8;}
 .catalogue-tile img,.cart-item-image img{object-fit:contain;object-position:center;}
 
-/* All catalogue, cart and detail photograph frames are intentionally landscape 4:3.
-   The source photo itself is never stretched or clipped: contain adds breathing room. */
+/* Permanent Trendzzz Corridor portrait photography standard.
+   Every garment photo frame uses width:height = 3:4, including hero images. */
+:root{--tc-photo-ratio:3 / 4;}
 .product-card-image,.catalogue-tile-image,.cart-item-image,.pd-main-image{
-  aspect-ratio:4/3!important;
+  aspect-ratio:var(--tc-photo-ratio)!important;
 }
 .product-card-image img,.catalogue-tile-image img,.cart-item-image img,.pd-main-image img{
+  display:block;
+  width:100%;
+  height:100%;
   object-fit:contain!important;
   object-position:center;
 }
 .pd-thumbnail{
-  aspect-ratio:4/3;
+  aspect-ratio:var(--tc-photo-ratio);
   height:auto;
+  padding:0;
 }
 .pd-thumbnail img{object-fit:contain!important;}
-/* Each hero retains its responsive frame, but pans vertically through its photograph
-   during the same three seconds as the existing auto-carousel interval. */
-@keyframes tc-hero-pan{
-  from{transform:scale(1.13) translate3d(0,2.7%,0);}
-  to{transform:scale(1.13) translate3d(0,-2.7%,0);}
+/* Keep the scroll swell, but make its largest size the exact frame size.
+   The garment remains entirely visible even while the card is moving. */
+.product-card-image img,.product-card-link:hover .product-card-image img{
+  transform:scale(calc(var(--tc-card-zoom,1) - .055))!important;
+}
+/* The hero keeps the editorial split layout, but the actual photo panel
+   has an independent 3:4 frame. Controls occupy a separate row below it.
+   A bounded width prevents excessively tall desktop headers. */
+.home-hero,.collection-hero{
+  height:auto;
+  min-height:0;
+  max-height:none;
+}
+.home-hero .product-slider,.collection-hero .product-slider{
+  width:min(100%,480px);
+  min-height:0;
+  height:auto;
+  max-height:none;
+  align-self:center;
+  justify-self:center;
+}
+.product-slider .slider-images{
+  position:relative;
+  inset:auto;
+  width:100%;
+  aspect-ratio:var(--tc-photo-ratio);
+  overflow:hidden;
+}
+.product-slider .slider-controls{
+  position:relative;
+  inset:auto;
+  width:100%;
 }
 .product-slider .slider-image-link img{
-  object-fit:cover;
-  object-position:center;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain!important;
+  object-position:center!important;
+}
+/* Small vertical motion inside the portrait panel, without cutting off
+   the artwork or garment. Preserve the three-second slide cadence. */
+@keyframes tc-hero-pan{
+  from{transform:scale(.96) translate3d(0,2%,0);}
+  to{transform:scale(.96) translate3d(0,-2%,0);}
 }
 .product-slider .slider-image-link.active img{
   animation:tc-hero-pan 3s linear both;
   will-change:transform;
 }
-/* Only thumbnails/cards respond to scroll. The hero remains on its own timeline. */
+@media(max-width:600px){
+  .collection-hero{display:flex;flex-direction:column;}
+  .home-hero .product-slider,.collection-hero .product-slider{width:min(100%,480px);}
+}
 @media(prefers-reduced-motion:reduce){
   .product-slider .slider-image-link.active img{animation:none!important;transform:none!important;will-change:auto;}
-  .product-card-image img{transform:none!important;transition:none!important;}
+  .product-card-image img,.product-card-link:hover .product-card-image img{transform:none!important;transition:none!important;}
   .product-badge{height:50px!important;transition:none!important;}
 }

@@ -75,7 +75,7 @@ export function productCard(product) {
   const subcategory = categoryConfig[product.category]?.subcategories.find(sub => sub.id === product.subcategory)?.label || '';
   return `<article class="product-card" data-product-id="${escapeHTML(product.id)}">
     <a class="product-card-link" href="${productURL(product)}">
-      <div class="product-card-image"><img src="${escapeHTML(imageURL(product.image))}" alt="${escapeHTML(product.name)}" loading="lazy" decoding="async" width="1200" height="900">
+      <div class="product-card-image"><img src="${escapeHTML(imageURL(product.image))}" alt="${escapeHTML(product.name)}" loading="lazy" decoding="async" width="1200" height="1600">
         ${product.availability === 'COMING_SOON' ? '<span class="product-badge">Coming soon</span>' : product.availability === 'UNAVAILABLE' ? '<span class="product-badge">Availability unavailable</span>' : (product.availability === 'SOLD_OUT' || product.stock === 0) ? '<span class="product-badge">Sold out</span>' : isNewArrival(product) ? '<span class="product-badge">New</span>' : ''}
       </div>
       <div class="product-card-meta"><span>${escapeHTML(subcategory)} / ${escapeHTML(categoryConfig[product.category]?.label)}</span><span class="product-color-count">${product.colors.length ? `${product.colors.length} colour${product.colors.length > 1 ? 's' : ''}` : ''}</span></div>
@@ -84,7 +84,7 @@ export function productCard(product) {
     </a>
   </article>`;
 }
-const imagePlaceholder = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900"><rect width="1200" height="900" fill="#e9e8e2"/><text x="600" y="425" text-anchor="middle" font-family="Arial" font-size="32" fill="#697064" letter-spacing="1">Trendzzz Corridor</text><text x="600" y="490" text-anchor="middle" font-family="Arial" font-size="17" fill="#697064">Image coming soon</text></svg>');
+const imagePlaceholder = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600"><rect width="1200" height="1600" fill="#e9e8e2"/><text x="600" y="775" text-anchor="middle" font-family="Arial" font-size="32" fill="#697064" letter-spacing="1">Trendzzz Corridor</text><text x="600" y="840" text-anchor="middle" font-family="Arial" font-size="17" fill="#697064">Image coming soon</text></svg>');
 export function setupImages(container = document) {
   container.querySelectorAll('img').forEach(image => {
     const fallback = () => {

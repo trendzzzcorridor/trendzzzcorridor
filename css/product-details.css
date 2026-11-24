@@ -40,14 +40,14 @@
 .pd-main-image {
   position: relative;
   background: #eae8e1;
-  aspect-ratio: 4/5;
+  aspect-ratio: 3/4;
   overflow: hidden;
 }
 
 .pd-main-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -70,7 +70,8 @@
 
 .pd-thumbnail {
   width: 70px;
-  height: 86px;
+  height: auto;
+  aspect-ratio: 3/4;
   padding: 3px;
   border: 1px solid transparent;
   background: transparent;
@@ -84,7 +85,7 @@
 .pd-thumbnail img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -557,12 +558,13 @@
   }
 
   .pd-main-image {
-    aspect-ratio: 4/5;
+    aspect-ratio: 3/4;
   }
 
   .pd-thumbnail {
     width: 57px;
-    height: 70px;
+    height: auto;
+  aspect-ratio: 3/4;
   }
 
   .pd-info h1 {

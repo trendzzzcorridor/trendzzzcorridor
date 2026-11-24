@@ -50,7 +50,7 @@ function renderProduct(product) {
     images = galleryForColor(color);
     currentImageIndex = 0;
     const thumbs = detailContainer.querySelector('#pd-thumbnails');
-    thumbs.innerHTML = images.map((image, index) => `<button type="button" class="pd-thumbnail" data-image-index="${index}" aria-label="View photograph ${index + 1}" aria-pressed="${index === 0}"><img src="${escapeHTML(image)}" alt="${escapeHTML(product.name)} — ${escapeHTML(color)}, view ${index + 1}" loading="lazy"></button>`).join('');
+    thumbs.innerHTML = images.map((image, index) => `<button type="button" class="pd-thumbnail" data-image-index="${index}" aria-label="View photograph ${index + 1}" aria-pressed="${index === 0}"><img src="${escapeHTML(image)}" alt="${escapeHTML(product.name)} — ${escapeHTML(color)}, view ${index + 1}" width="1200" height="1600" loading="lazy"></button>`).join('');
     thumbs.hidden = images.length <= 1;
     detailContainer.querySelectorAll('.pd-gallery-arrow').forEach(button => { button.hidden = images.length <= 1; });
     thumbs.querySelectorAll('[data-image-index]').forEach(button => button.addEventListener('click', () => { selectImage(Number(button.dataset.imageIndex)); startSlideshow(); }));
@@ -65,7 +65,7 @@ function renderProduct(product) {
     <nav class="pd-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="${escapeHTML(category?.page || 'product.html')}">${escapeHTML(category?.label || 'Collection')}</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHTML(product.name)}</span></nav>
     <div class="pd-layout">
       <section class="pd-gallery" aria-label="Product photographs">
-        <div class="pd-main-image"><img id="product-main-image" src="${escapeHTML(images[0] || '')}" alt="${escapeHTML(product.name)}" width="1200" height="900" fetchpriority="high"><button type="button" class="pd-gallery-arrow pd-gallery-prev" aria-label="Previous photograph" ${images.length <= 1 ? "hidden" : ""}>‹</button><button type="button" class="pd-gallery-arrow pd-gallery-next" aria-label="Next photograph" ${images.length <= 1 ? "hidden" : ""}>›</button><span class="pd-image-counter" id="image-counter">01 / ${String(Math.max(1, images.length)).padStart(2, '0')}</span></div>
+        <div class="pd-main-image"><img id="product-main-image" src="${escapeHTML(images[0] || '')}" alt="${escapeHTML(product.name)}" width="1200" height="1600" fetchpriority="high"><button type="button" class="pd-gallery-arrow pd-gallery-prev" aria-label="Previous photograph" ${images.length <= 1 ? "hidden" : ""}>‹</button><button type="button" class="pd-gallery-arrow pd-gallery-next" aria-label="Next photograph" ${images.length <= 1 ? "hidden" : ""}>›</button><span class="pd-image-counter" id="image-counter">01 / ${String(Math.max(1, images.length)).padStart(2, '0')}</span></div>
         <div id="pd-thumbnails" class="pd-thumbnails" aria-label="Choose a product photograph" ${images.length <= 1 ? "hidden" : ""}></div>
       </section>
       <section class="pd-info" aria-labelledby="product-name">

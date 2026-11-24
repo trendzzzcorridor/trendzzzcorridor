@@ -132,14 +132,14 @@
 
 .catalogue-tile-image {
   overflow: hidden;
-  aspect-ratio: 5/4;
+  aspect-ratio: 3/4;
   background: #dedfd4;
 }
 
 .catalogue-tile img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center 38%;
   transition: transform .5s;
 }
