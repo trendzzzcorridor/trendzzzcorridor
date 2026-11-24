@@ -7,7 +7,11 @@
     "image": "images/tshir.jpeg",
     "images": [
       "images/tshir.jpeg",
-      "images/tshirt1.jpeg"
+      "images/tshirt1.jpeg",
+      "images/HORSEGREYRLXTSHIRT1.jpeg",
+      "images/HORSEGREYRLXTSHIRT2.jpeg",
+      "images/HORSEGREYRLXTSHIRT3.jpeg",
+      "images/HORSEGREYRLXTSHIRT4.jpeg"
     ],
     "price": 1179,
     "originalPrice": 1379,
@@ -19,7 +23,7 @@
       "Ecru",
       "Black",
       "Olive",
-      "dark black"
+      "Grey"
     ],
     "stock": 12,
     "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
@@ -56,10 +60,13 @@
         ]
       },
       {
-        "name": "dark black",
-        "image": "images/tshirt1.jpeg",
+        "name": "Grey",
+        "image": "images/HORSEGREYRLXTSHIRT1.jpeg",
         "images": [
-          "images/tshirt1.jpeg"
+          "images/HORSEGREYRLXTSHIRT1.jpeg",
+          "images/HORSEGREYRLXTSHIRT2.jpeg",
+          "images/HORSEGREYRLXTSHIRT3.jpeg",
+          "images/HORSEGREYRLXTSHIRT4.jpeg"
         ]
       }
     ]
