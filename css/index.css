@@ -68,7 +68,7 @@
 }
 
 .home-slider .slider-image-link img {
-  object-position: 50% 38%;
+  object-position: center;
 }
 
 .collection-strip {
@@ -139,8 +139,8 @@
 .catalogue-tile img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
-  object-position: center 38%;
+  object-fit: cover;
+  object-position: center;
   transition: transform .5s;
 }
 
@@ -300,7 +300,7 @@
   }
 
   .home-slider .slider-image-link img {
-    object-position: 52% center;
+    object-position: center;
   }
 
 }
@@ -381,7 +381,7 @@
   }
 
   .home-slider .slider-image-link img {
-    object-position: 50% 34%;
+    object-position: center;
   }
 
   .home-slider .slider-product-caption {

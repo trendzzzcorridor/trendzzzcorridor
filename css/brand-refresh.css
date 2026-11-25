@@ -47,7 +47,7 @@ body{background:var(--paper);color:var(--ink);}
 .button-secondary{background:transparent;color:var(--ink);border-color:#b5b7bd;}
 .button-secondary:hover{background:#e0e1e3;color:var(--ink);border-color:#aaaeb5;}
 .product-card-image{background:#e6e7e8;}
-.product-card-image img{object-fit:contain;object-position:center;transition:filter .3s,transform .12s linear;transform:scale(var(--tc-card-zoom,1))!important;transform-origin:center;}
+.product-card-image img{object-fit:cover;object-position:center;transition:filter .3s,transform .12s linear;transform:scale(var(--tc-card-zoom,1))!important;transform-origin:center;}
 .product-card-link:hover .product-card-image img{transform:scale(var(--tc-card-zoom,1))!important;filter:brightness(.965);}
 .product-card-discover{display:none!important;}
 .product-badge{top:auto!important;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;height:var(--tc-badge-height,62px);padding:7px 10px;background:rgba(38,40,45,.27);color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.9),0 0 7px rgba(0,0,0,.65);text-align:center;font-size:.79rem;font-weight:700;letter-spacing:.09em;backdrop-filter:blur(3px);transition:height .16s ease,background-color .22s ease;}
@@ -56,7 +56,7 @@ body{background:var(--paper);color:var(--ink);}
 .collection-quick-nav{background:#f4f4f2;}
 .collection-quick-nav a:hover{color:#565b65;}
 .pd-main-image{background:#e6e7e9;}
-.pd-main-image img,.pd-thumbnail img{object-fit:contain;}
+.pd-main-image img,.pd-thumbnail img{object-fit:cover;}
 .pd-thumbnail[aria-pressed=true]{border-color:#30343d;}
 .pd-discount{background:#e4e5e7;color:#30343d;}
 .pd-option input:checked+span{border-color:#2b2e35;background:#2b2e35;}
@@ -94,12 +94,13 @@ a.cart-primary:hover,a.pd-primary:hover{background:#494d56;color:#fff;transform:
 a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spacing:.025em;}
 .about-categories a:hover{background:rgba(48,51,57,.04);padding-left:8px;}
 
-/* Preserve the full garment in catalogue tiles and cart previews as well. */
+/* Fill catalogue tiles and cart previews without distorting photos. */
 .catalogue-tile-image,.cart-item-image{background:#e6e7e8;}
-.catalogue-tile img,.cart-item-image img{object-fit:contain;object-position:center;}
+.catalogue-tile img,.cart-item-image img{object-fit:cover;object-position:center;}
 
 /* Permanent Trendzzz Corridor portrait photography standard.
-   Every garment photo frame uses width:height = 3:4, including hero images. */
+   Every garment photo frame uses width:height = 3:4, including hero images.
+   Cover fills the frame proportionally, with a centered crop for mismatched ratios. */
 :root{--tc-photo-ratio:3 / 4;}
 .product-card-image,.catalogue-tile-image,.cart-item-image,.pd-main-image{
   aspect-ratio:var(--tc-photo-ratio)!important;
@@ -108,7 +109,7 @@ a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spa
   display:block;
   width:100%;
   height:100%;
-  object-fit:contain!important;
+  object-fit:cover!important;
   object-position:center;
 }
 .pd-thumbnail{
@@ -116,11 +117,11 @@ a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spa
   height:auto;
   padding:0;
 }
-.pd-thumbnail img{object-fit:contain!important;}
-/* Keep the scroll swell, but make its largest size the exact frame size.
-   The garment remains entirely visible even while the card is moving. */
+.pd-thumbnail img{object-fit:cover!important;}
+/* Scroll zoom starts at full frame size, never exposing empty edges.
+   The existing scroll effect enlarges the image by at most 5.5%. */
 .product-card-image img,.product-card-link:hover .product-card-image img{
-  transform:scale(calc(var(--tc-card-zoom,1) - .055))!important;
+  transform:scale(max(1,var(--tc-card-zoom,1)))!important;
 }
 /* The hero keeps the editorial split layout, but the actual photo panel
    has an independent 3:4 frame. Controls occupy a separate row below it.
@@ -154,25 +155,20 @@ a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spa
   display:block;
   width:100%;
   height:100%;
-  object-fit:contain!important;
+  object-fit:cover!important;
   object-position:center!important;
 }
-/* Small vertical motion inside the portrait panel, without cutting off
-   the artwork or garment. Preserve the three-second slide cadence. */
-@keyframes tc-hero-pan{
-  from{transform:scale(.96) translate3d(0,2%,0);}
-  to{transform:scale(.96) translate3d(0,-2%,0);}
-}
-.product-slider .slider-image-link.active img{
-  animation:tc-hero-pan 3s linear both;
-  will-change:transform;
+/* Hero photographs remain stationary within each slide.
+   The shared carousel still changes photographs every three seconds. */
+.product-slider .slider-image-link img{
+  animation:none;
+  transform:none;
 }
 @media(max-width:600px){
   .collection-hero{display:flex;flex-direction:column;}
   .home-hero .product-slider,.collection-hero .product-slider{width:min(100%,480px);}
 }
 @media(prefers-reduced-motion:reduce){
-  .product-slider .slider-image-link.active img{animation:none!important;transform:none!important;will-change:auto;}
   .product-card-image img,.product-card-link:hover .product-card-image img{transform:none!important;transition:none!important;}
   .product-badge{height:50px!important;transition:none!important;}
 }
