@@ -1,7 +1,7 @@
 [
   {
     "id": "tshirt1",
-    "name": "Essential Relaxed Tee",
+    "name": "HORSE",
     "category": "tshirt",
     "subcategory": "relaxed",
     "image": "images/tshir.jpeg",
@@ -17,13 +17,17 @@
     "originalPrice": 1379,
     "sizes": [
       "S",
-      "M"
+      "M",
+      "L",
+      "XL",
+      "XXL"
     ],
     "colors": [
-      "Ecru",
-      "Black",
-      "Olive",
-      "Grey"
+      "RED",
+      "CREAM",
+      "NAVY BLUE",
+      "BLACK",
+      "BROWN"
     ],
     "stock": 12,
     "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
@@ -39,37 +43,91 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
-        "name": "Ecru",
+        "id": "colour-1",
+        "name": "RED",
         "image": "images/tshir.jpeg",
         "images": [
           "images/tshir.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 0,
+          "XXL": 0
+        },
+        "stock": 2
       },
       {
-        "name": "Black",
+        "id": "colour-2",
+        "name": "CREAM",
         "image": "images/tshirt1.jpeg",
         "images": [
           "images/tshirt1.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 0,
+          "XXL": 0
+        },
+        "stock": 2
       },
       {
-        "name": "Olive",
+        "id": "colour-3",
+        "name": "NAVY BLUE",
         "image": "images/tshirt1.jpeg",
         "images": [
           "images/tshirt1.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 0,
+          "XXL": 0
+        },
+        "stock": 2
       },
       {
-        "name": "Grey",
+        "id": "colour-4",
+        "name": "BLACK",
         "image": "images/HORSEGREYRLXTSHIRT1.jpeg",
         "images": [
           "images/HORSEGREYRLXTSHIRT1.jpeg",
           "images/HORSEGREYRLXTSHIRT2.jpeg",
           "images/HORSEGREYRLXTSHIRT3.jpeg",
           "images/HORSEGREYRLXTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 2,
+          "L": 2,
+          "XL": 0,
+          "XXL": 0
+        },
+        "stock": 4
+      },
+      {
+        "id": "colour-5",
+        "name": "BROWN",
+        "image": "images/HORSEGREYRLXTSHIRT1.jpeg",
+        "images": [
+          "images/HORSEGREYRLXTSHIRT1.jpeg"
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 0,
+          "XXL": 0
+        },
+        "stock": 2
       }
-    ]
+    ],
+    "campaignImage": "images/tshir.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt2",
@@ -102,7 +160,7 @@
     "createdAt": "2026-09-11",
     "material": "100% cotton jersey, 220 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -161,7 +219,7 @@
     "createdAt": "2026-09-08",
     "material": "100% cotton jersey, 220 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -217,7 +275,7 @@
     "createdAt": "2026-09-05",
     "material": "100% cotton jersey, 220 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -273,7 +331,7 @@
     "createdAt": "2026-09-02",
     "material": "100% cotton jersey, 220 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -300,7 +358,7 @@
   },
   {
     "id": "tshirt6",
-    "name": "Essential Relaxed Tee — Classic",
+    "name": "TOKYO",
     "category": "tshirt",
     "subcategory": "relaxed",
     "image": "images/tshirt6.jpeg",
@@ -317,11 +375,13 @@
       "XXL"
     ],
     "colors": [
-      "Ecru",
-      "Black",
-      "Olive"
+      "BLACK",
+      "CREAM",
+      "CHOCKLETE CREAM",
+      "RED",
+      "DARK GREY"
     ],
-    "stock": 12,
+    "stock": 6,
     "description": "An easy everyday tee with a soft crew neckline, a relaxed silhouette and a clean finish. Designed to pair with denim or your favourite joggers.",
     "tags": [
       "new-arrival",
@@ -331,30 +391,91 @@
     "createdAt": "2026-08-30",
     "material": "100% cotton jersey, 220 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "INACTIVE",
+    "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
-        "name": "Ecru",
+        "id": "colour-1",
+        "name": "BLACK",
         "image": "images/tshirt6.jpeg",
         "images": [
           "images/tshirt6.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 0,
+          "L": 0,
+          "XL": 2,
+          "XXL": 0
+        },
+        "stock": 2
       },
       {
-        "name": "Black",
+        "id": "colour-2",
+        "name": "CREAM",
         "image": "images/tshirt6.jpeg",
         "images": [
           "images/tshirt6.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 0,
+          "L": 0,
+          "XL": 1,
+          "XXL": 0
+        },
+        "stock": 1
       },
       {
-        "name": "Olive",
+        "id": "colour-3",
+        "name": "CHOCKLETE CREAM",
         "image": "images/tshirt6.jpeg",
         "images": [
           "images/tshirt6.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 0,
+          "L": 0,
+          "XL": 1,
+          "XXL": 0
+        },
+        "stock": 1
+      },
+      {
+        "id": "colour-4",
+        "name": "RED",
+        "image": "images/tshirt6.jpeg",
+        "images": [
+          "images/tshirt6.jpeg"
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 0,
+          "L": 0,
+          "XL": 1,
+          "XXL": 0
+        },
+        "stock": 1
+      },
+      {
+        "id": "colour-5",
+        "name": "DARK GREY",
+        "image": "images/tshirt6.jpeg",
+        "images": [
+          "images/tshirt6.jpeg"
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 0,
+          "L": 0,
+          "XL": 1,
+          "XXL": 0
+        },
+        "stock": 1
       }
-    ]
+    ],
+    "campaignImage": "images/tshirt6.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt7",
@@ -880,7 +1001,7 @@
     "colors": [
       "White"
     ],
-    "stock": 15,
+    "stock": 8,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
     "tags": [
       "main-index",
@@ -895,6 +1016,7 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
+        "id": "colour-1",
         "name": "White",
         "image": "images/AMGDTFPRINTWHITERLXTSHIRT1.jpeg",
         "images": [
@@ -902,9 +1024,19 @@
           "images/AMGDTFPRINTWHITERLXTSHIRT2.jpeg",
           "images/AMGDTFPRINTWHITERLXTSHIRT3.jpeg",
           "images/AMGDTFPRINTWHITERLXTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 2,
+          "XL": 3,
+          "XXL": 2
+        },
+        "stock": 8
       }
-    ]
+    ],
+    "campaignImage": "images/AMGDTFPRINTWHITERLXTSHIRT1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt17",
@@ -935,7 +1067,7 @@
       "BLACK",
       "RED"
     ],
-    "stock": 22,
+    "stock": 21,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
     "tags": [
       "main-index",
@@ -950,6 +1082,7 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
+        "id": "colour-1",
         "name": "BLACK",
         "image": "images/BALLUCCIDTFPRINTBLACKOVERTSHIRT1.jpeg",
         "images": [
@@ -957,9 +1090,18 @@
           "images/BALLUCCIDTFPRINTBLACKOVERTSHIRT2.jpeg",
           "images/BALLUCCIDTFPRINTBLACKOVERTSHIRT3.jpeg",
           "images/BALLUCCIDTFPRINTBLACKOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 2,
+          "M": 2,
+          "L": 3,
+          "XL": 2,
+          "XXL": 3
+        },
+        "stock": 12
       },
       {
+        "id": "colour-2",
         "name": "RED",
         "image": "images/BALLUCCIDTFPRINTREDOVERTSHIRT1.jpeg",
         "images": [
@@ -967,9 +1109,19 @@
           "images/BALLUCCIDTFPRINTREDOVERTSHIRT2.jpeg",
           "images/BALLUCCIDTFPRINTREDOVERTSHIRT3.jpeg",
           "images/BALLUCCIDTFPRINTREDOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 3,
+          "L": 3,
+          "XL": 1,
+          "XXL": 2
+        },
+        "stock": 9
       }
-    ]
+    ],
+    "campaignImage": "images/BALLUCCIDTFPRINTBLACKOVERTSHIRT1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt18",
@@ -1000,7 +1152,7 @@
       "RED",
       "WHITE"
     ],
-    "stock": 29,
+    "stock": 14,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
     "tags": [
       "new-arrival",
@@ -1014,6 +1166,7 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
+        "id": "colour-1",
         "name": "RED",
         "image": "images/SPIDERDTFPRINTREDOVERTSHIRT1.jpeg",
         "images": [
@@ -1021,9 +1174,18 @@
           "images/SPIDERDTFPRINTREDOVERTSHIRT2.jpeg",
           "images/SPIDERDTFPRINTREDOVERTSHIRT3.jpeg",
           "images/SPIDERDTFPRINTREDOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 2,
+          "L": 1,
+          "XL": 1,
+          "XXL": 3
+        },
+        "stock": 7
       },
       {
+        "id": "colour-2",
         "name": "WHITE",
         "image": "images/SPIDERDTFPRINTWHITEOVERTSHIRT1.jpeg",
         "images": [
@@ -1031,9 +1193,19 @@
           "images/SPIDERDTFPRINTWHITEOVERTSHIRT2.jpeg",
           "images/SPIDERDTFPRINTWHITEOVERTSHIRT3.jpeg",
           "images/SPIDERDTFPRINTWHITEOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 2,
+          "XXL": 3
+        },
+        "stock": 7
       }
-    ]
+    ],
+    "campaignImage": "images/SPIDERDTFPRINTREDOVERTSHIRT1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt19",
@@ -1060,14 +1232,16 @@
     "sizes": [
       "S",
       "M",
-      "L"
+      "L",
+      "XL",
+      "XXL"
     ],
     "colors": [
       "BLACK",
       "RED",
       "LIGHT BLUE"
     ],
-    "stock": 36,
+    "stock": 33,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
     "tags": [
       "new-arrival",
@@ -1080,6 +1254,7 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
+        "id": "colour-1",
         "name": "BLACK",
         "image": "images/FERRARIDTFPRINTBLACKOVERTSHIRT1.jpeg",
         "images": [
@@ -1087,9 +1262,18 @@
           "images/FERRARIDTFPRINTBLACKOVERTSHIRT2.jpeg",
           "images/FERRARIDTFPRINTBLACKOVERTSHIRT3.jpeg",
           "images/FERRARIDTFPRINTBLACKOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 2,
+          "M": 2,
+          "L": 1,
+          "XL": 3,
+          "XXL": 2
+        },
+        "stock": 10
       },
       {
+        "id": "colour-2",
         "name": "RED",
         "image": "images/FERRARIDTFPRINTREDOVERTSHIRT1.jpeg",
         "images": [
@@ -1097,9 +1281,18 @@
           "images/FERRARIDTFPRINTREDOVERTSHIRT2.jpeg",
           "images/FERRARIDTFPRINTREDOVERTSHIRT3.jpeg",
           "images/FERRARIDTFPRINTREDOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 3,
+          "M": 3,
+          "L": 2,
+          "XL": 2,
+          "XXL": 3
+        },
+        "stock": 13
       },
       {
+        "id": "colour-3",
         "name": "LIGHT BLUE",
         "image": "images/FERRARIFTDPRINTLIGHTBLUEOVERTSHIRT1.jpeg",
         "images": [
@@ -1107,9 +1300,19 @@
           "images/FERRARIFTDPRINTLIGHTBLUEOVERTSHIRT2.jpeg",
           "images/FERRARIFTDPRINTLIGHTBLUEOVERTSHIRT3.jpeg",
           "images/FERRARIFTDPRINTLIGHTBLUEOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 3,
+          "L": 2,
+          "XL": 3,
+          "XXL": 2
+        },
+        "stock": 10
       }
-    ]
+    ],
+    "campaignImage": "images/FERRARIDTFPRINTBLACKOVERTSHIRT1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt20",
@@ -1134,16 +1337,18 @@
     "price": 1579,
     "originalPrice": 1799,
     "sizes": [
+      "S",
       "M",
       "L",
-      "XL"
+      "XL",
+      "XXL"
     ],
     "colors": [
       "WHITE",
       "BLACK",
       "RED"
     ],
-    "stock": 43,
+    "stock": 32,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
     "tags": [
       "new-arrival",
@@ -1156,6 +1361,7 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
+        "id": "colour-1",
         "name": "WHITE",
         "image": "images/GTRNISAANDTFPRINTWHITEOVERTSHIRT1.jpeg",
         "images": [
@@ -1163,9 +1369,18 @@
           "images/GTRNISAANDTFPRINTWHITEOVERTSHIRT2.jpeg",
           "images/GTRNISAANDTFPRINTWHITEOVERTSHIRT3.jpeg",
           "images/GTRNISAANDTFPRINTWHITEOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 2,
+          "XL": 3,
+          "XXL": 2
+        },
+        "stock": 8
       },
       {
+        "id": "colour-2",
         "name": "BLACK",
         "image": "images/GTRNISSANDTFPRINTBLACKOVERTSHIRT1.jpeg",
         "images": [
@@ -1173,9 +1388,18 @@
           "images/GTRNISSANDTFPRINTBLACKOVERTSHIRT2.jpeg",
           "images/GTRNISSANDTFPRINTBLACKOVERTSHIRT3.jpeg",
           "images/GTRNISSANDTFPRINTBLACKOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 3,
+          "M": 2,
+          "L": 3,
+          "XL": 2,
+          "XXL": 3
+        },
+        "stock": 13
       },
       {
+        "id": "colour-3",
         "name": "RED",
         "image": "images/GTRNISSANDTFPRINTREDOVERTSHIRT1.jpeg",
         "images": [
@@ -1183,9 +1407,19 @@
           "images/GTRNISSANDTFPRINTREDOVERTSHIRT2.jpeg",
           "images/GTRNISSANDTFPRINTREDOVERTSHIRT3.jpeg",
           "images/GTRNISSANDTFPRINTREDOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 2,
+          "M": 3,
+          "L": 3,
+          "XL": 1,
+          "XXL": 2
+        },
+        "stock": 11
       }
-    ]
+    ],
+    "campaignImage": "images/GTRNISAANDTFPRINTWHITEOVERTSHIRT1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt21",
@@ -1216,7 +1450,7 @@
       "BLACK",
       "WHITE"
     ],
-    "stock": 15,
+    "stock": 14,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
     "tags": [
       "new-arrival",
@@ -1229,6 +1463,7 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
+        "id": "colour-1",
         "name": "BLACK",
         "image": "images/INFINITEPETALSDTFPRTBLACKOVERTSHIRT1.jpeg",
         "images": [
@@ -1236,9 +1471,18 @@
           "images/INFINITEPETALSDTFPRTBLACKOVERTSHIRT2.jpeg",
           "images/INFINITEPETALSDTFPRTBLACKOVERTSHIRT3.jpeg",
           "images/INFINITEPETALSDTFPRTBLACKOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 2,
+          "L": 1,
+          "XL": 1,
+          "XXL": 3
+        },
+        "stock": 7
       },
       {
+        "id": "colour-2",
         "name": "WHITE",
         "image": "images/INFINITEPETALSDTFPRTWHITEOVERTSHIRT1.jpeg",
         "images": [
@@ -1246,9 +1490,19 @@
           "images/INFINITEPETALSDTFPRTWHITEOVERTSHIRT2.jpeg",
           "images/INFINITEPETALSDTFPRTWHITEOVERTSHIRT3.jpeg",
           "images/INFINITEPETALSDTFPRTWHITEOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 2,
+          "XXL": 3
+        },
+        "stock": 7
       }
-    ]
+    ],
+    "campaignImage": "images/INFINITEPETALSDTFPRTBLACKOVERTSHIRT1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt22",
@@ -1284,7 +1538,7 @@
       "BROWN",
       "RED"
     ],
-    "stock": 22,
+    "stock": 35,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
     "tags": [
       "product-image"
@@ -1296,6 +1550,7 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
+        "id": "colour-1",
         "name": "BLACK",
         "image": "images/JAPANDTFPRINTBLACKOVERTSHIRT1.jpeg",
         "images": [
@@ -1303,9 +1558,18 @@
           "images/JAPANDTFPRINTBLACKOVERTSHIRT2.jpeg",
           "images/JAPANDTFPRINTBLACKOVERTSHIRT3.jpeg",
           "images/JAPANDTFPRINTBLACKOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 4,
+          "M": 1,
+          "L": 2,
+          "XL": 3,
+          "XXL": 2
+        },
+        "stock": 12
       },
       {
+        "id": "colour-2",
         "name": "BROWN",
         "image": "images/JAPANDTFPRINTBROWNOVERTSHIRT1.jpeg",
         "images": [
@@ -1313,9 +1577,18 @@
           "images/JAPANDTFPRINTBROWNOVERTSHIRT2.jpeg",
           "images/JAPANDTFPRINTBROWNOVERTSHIRT3.jpeg",
           "images/JAPANDTFPRINTBROWNOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 4,
+          "M": 2,
+          "L": 3,
+          "XL": 2,
+          "XXL": 3
+        },
+        "stock": 14
       },
       {
+        "id": "colour-3",
         "name": "RED",
         "image": "images/JAPANDTFPRINTREDOVERTSHIRT1.jpeg",
         "images": [
@@ -1323,9 +1596,19 @@
           "images/JAPANDTFPRINTREDOVERTSHIRT2.jpeg",
           "images/JAPANDTFPRINTREDOVERTSHIRT3.jpeg",
           "images/JAPANDTFPRINTREDOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 3,
+          "L": 3,
+          "XL": 1,
+          "XXL": 2
+        },
+        "stock": 9
       }
-    ]
+    ],
+    "campaignImage": "images/JAPANDTFPRINTBLACKOVERTSHIRT1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt23",
@@ -1366,7 +1649,7 @@
       "RED",
       "WHITE"
     ],
-    "stock": 29,
+    "stock": 39,
     "description": "A substantial cotton tee with dropped shoulders and a generous, boxy fit. An effortless foundation for a thoughtfully considered everyday wardrobe.",
     "tags": [
       "product-image"
@@ -1378,6 +1661,7 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
+        "id": "colour-1",
         "name": "BLACK",
         "image": "images/MCLARENDTFPRINTBLACKOVERTSHIRT1.jpeg",
         "images": [
@@ -1385,9 +1669,18 @@
           "images/MCLARENDTFPRINTBLACKOVERTSHIRT2.jpeg",
           "images/MCLARENDTFPRINTBLACKOVERTSHIRT3.jpeg",
           "images/MCLARENDTFPRINTBLACKOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 2,
+          "L": 1,
+          "XL": 1,
+          "XXL": 3
+        },
+        "stock": 7
       },
       {
+        "id": "colour-2",
         "name": "ORANGE",
         "image": "images/MCLARENDTFPRINTORANGEOVERTSHIRT1.jpeg",
         "images": [
@@ -1395,9 +1688,18 @@
           "images/MCLARENDTFPRINTORANGEOVERTSHIRT2.jpeg",
           "images/MCLARENDTFPRINTORANGEOVERTSHIRT3.jpeg",
           "images/MCLARENDTFPRINTORANGEOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 2,
+          "M": 1,
+          "L": 1,
+          "XL": 2,
+          "XXL": 3
+        },
+        "stock": 9
       },
       {
+        "id": "colour-3",
         "name": "RED",
         "image": "images/MCLARENDTFPRINTREDOVERTSHIRT1.jpeg",
         "images": [
@@ -1405,9 +1707,18 @@
           "images/MCLARENDTFPRINTREDOVERTSHIRT2.jpeg",
           "images/MCLARENDTFPRINTREDOVERTSHIRT3.jpeg",
           "images/MCLARENDTFPRINTREDOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 1,
+          "M": 2,
+          "L": 1,
+          "XL": 3,
+          "XXL": 2
+        },
+        "stock": 9
       },
       {
+        "id": "colour-4",
         "name": "WHITE",
         "image": "images/MCLARENDTFPRINTWHITEOVERTSHIRT1.jpeg",
         "images": [
@@ -1415,9 +1726,19 @@
           "images/MCLARENDTFPRINTWHITEOVERTSHIRT2.jpeg",
           "images/MCLARENDTFPRINTWHITEOVERTSHIRT3.jpeg",
           "images/MCLARENDTFPRINTWHITEOVERTSHIRT4.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 4,
+          "M": 3,
+          "L": 2,
+          "XL": 2,
+          "XXL": 3
+        },
+        "stock": 14
       }
-    ]
+    ],
+    "campaignImage": "images/MCLARENDTFPRINTBLACKOVERTSHIRT1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "tshirt24",
@@ -1839,7 +2160,7 @@
     "createdAt": "2026-09-12",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -1898,7 +2219,7 @@
     "createdAt": "2026-09-09",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -1957,7 +2278,7 @@
     "createdAt": "2026-09-06",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2013,7 +2334,7 @@
     "createdAt": "2026-09-03",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2069,7 +2390,7 @@
     "createdAt": "2026-08-31",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2127,7 +2448,7 @@
     "createdAt": "2026-08-28",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2184,7 +2505,7 @@
     "createdAt": "2026-08-25",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2241,7 +2562,7 @@
     "createdAt": "2026-08-22",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2296,7 +2617,7 @@
     "createdAt": "2026-08-19",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2351,7 +2672,7 @@
     "createdAt": "2026-08-16",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2408,7 +2729,7 @@
     "createdAt": "2026-08-13",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2465,7 +2786,7 @@
     "createdAt": "2026-08-10",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2520,7 +2841,7 @@
     "createdAt": "2026-08-07",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2573,7 +2894,7 @@
     "createdAt": "2026-08-04",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2626,7 +2947,7 @@
     "createdAt": "2026-08-01",
     "material": "80% cotton, 20% polyester French terry",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Charcoal",
@@ -2684,7 +3005,7 @@
     "createdAt": "2026-09-11",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -2735,7 +3056,7 @@
     "createdAt": "2026-09-08",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -2786,7 +3107,7 @@
     "createdAt": "2026-09-05",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -2834,7 +3155,7 @@
     "createdAt": "2026-09-02",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -2882,7 +3203,7 @@
     "createdAt": "2026-08-30",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -2932,7 +3253,7 @@
     "createdAt": "2026-08-27",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -2981,7 +3302,7 @@
     "createdAt": "2026-08-24",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3030,7 +3351,7 @@
     "createdAt": "2026-08-21",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3077,7 +3398,7 @@
     "createdAt": "2026-08-18",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3124,7 +3445,7 @@
     "createdAt": "2026-08-15",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3173,7 +3494,7 @@
     "createdAt": "2026-08-12",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3222,7 +3543,7 @@
     "createdAt": "2026-08-09",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3269,7 +3590,7 @@
     "createdAt": "2026-08-06",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3314,7 +3635,7 @@
     "createdAt": "2026-08-03",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3359,7 +3680,7 @@
     "createdAt": "2026-07-31",
     "material": "99% cotton denim, 1% elastane",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Indigo",
@@ -3379,7 +3700,7 @@
   },
   {
     "id": "hoodie1",
-    "name": "Cloud Fleece Hoodie",
+    "name": "ZIPPER",
     "category": "winter-wear",
     "subcategory": "hoodies",
     "image": "images/hoodie1.jpeg",
@@ -3396,11 +3717,9 @@
       "XXL"
     ],
     "colors": [
-      "Stone",
-      "Charcoal",
-      "Olive"
+      "DARK GREY"
     ],
-    "stock": 24,
+    "stock": 3,
     "description": "A soft pullover layer with a roomy hood, ribbed cuffs and a kangaroo pocket. The relaxed shape leaves comfortable space for your favourite tee underneath.",
     "tags": [
       "main-index",
@@ -3415,27 +3734,24 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
-        "name": "Stone",
+        "id": "colour-1",
+        "name": "DARK GREY",
         "image": "images/hoodie1.jpeg",
         "images": [
           "images/hoodie1.jpeg"
-        ]
-      },
-      {
-        "name": "Charcoal",
-        "image": "images/hoodie1.jpeg",
-        "images": [
-          "images/hoodie1.jpeg"
-        ]
-      },
-      {
-        "name": "Olive",
-        "image": "images/hoodie1.jpeg",
-        "images": [
-          "images/hoodie1.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 0,
+          "XL": 1,
+          "XXL": 1
+        },
+        "stock": 3
       }
-    ]
+    ],
+    "campaignImage": "images/hoodie1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "hoodie2",
@@ -3471,7 +3787,7 @@
     "createdAt": "2026-09-07",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3530,7 +3846,7 @@
     "createdAt": "2026-09-04",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3586,7 +3902,7 @@
     "createdAt": "2026-09-01",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3642,7 +3958,7 @@
     "createdAt": "2026-08-29",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3700,7 +4016,7 @@
     "createdAt": "2026-08-26",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3757,7 +4073,7 @@
     "createdAt": "2026-08-23",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3814,7 +4130,7 @@
     "createdAt": "2026-08-20",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3869,7 +4185,7 @@
     "createdAt": "2026-08-17",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3924,7 +4240,7 @@
     "createdAt": "2026-08-14",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -3981,7 +4297,7 @@
     "createdAt": "2026-08-11",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -4038,7 +4354,7 @@
     "createdAt": "2026-08-08",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -4093,7 +4409,7 @@
     "createdAt": "2026-08-05",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -4146,7 +4462,7 @@
     "createdAt": "2026-08-02",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -4199,7 +4515,7 @@
     "createdAt": "2026-07-30",
     "material": "80% cotton, 20% polyester brushed fleece, 320 GSM",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Stone",
@@ -4226,7 +4542,7 @@
   },
   {
     "id": "jacket1",
-    "name": "Everyday Bomber Jacket",
+    "name": "JACKET",
     "category": "winter-wear",
     "subcategory": "jackets",
     "image": "images/jacket1.jpeg",
@@ -4243,10 +4559,11 @@
       "XXL"
     ],
     "colors": [
-      "Black",
-      "Olive"
+      "BROWN",
+      "LIGHT GREY",
+      "BLACK"
     ],
-    "stock": 27,
+    "stock": 12,
     "description": "A clean zip-front bomber with a lightly structured silhouette, ribbed collar and practical side pockets. An understated outer layer for cooler days.",
     "tags": [
       "new-arrival",
@@ -4260,20 +4577,56 @@
     "catalogueStatus": "ACTIVE",
     "colorVariants": [
       {
-        "name": "Black",
+        "id": "colour-1",
+        "name": "BROWN",
         "image": "images/jacket1.jpeg",
         "images": [
           "images/jacket1.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 1,
+          "XXL": 1
+        },
+        "stock": 4
       },
       {
-        "name": "Olive",
+        "id": "colour-2",
+        "name": "LIGHT GREY",
         "image": "images/jacket1.jpeg",
         "images": [
           "images/jacket1.jpeg"
-        ]
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 1,
+          "XXL": 1
+        },
+        "stock": 4
+      },
+      {
+        "id": "colour-3",
+        "name": "BLACK",
+        "image": "images/jacket1.jpeg",
+        "images": [
+          "images/jacket1.jpeg"
+        ],
+        "stockBySize": {
+          "S": 0,
+          "M": 1,
+          "L": 1,
+          "XL": 1,
+          "XXL": 1
+        },
+        "stock": 4
       }
-    ]
+    ],
+    "campaignImage": "images/jacket1.jpeg",
+    "inventorySchemaVersion": 1
   },
   {
     "id": "jacket2",
@@ -4308,7 +4661,7 @@
     "createdAt": "2026-09-06",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4359,7 +4712,7 @@
     "createdAt": "2026-09-03",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4407,7 +4760,7 @@
     "createdAt": "2026-08-31",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4455,7 +4808,7 @@
     "createdAt": "2026-08-28",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4505,7 +4858,7 @@
     "createdAt": "2026-08-25",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4554,7 +4907,7 @@
     "createdAt": "2026-08-22",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4603,7 +4956,7 @@
     "createdAt": "2026-08-19",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4650,7 +5003,7 @@
     "createdAt": "2026-08-16",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4697,7 +5050,7 @@
     "createdAt": "2026-08-13",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4746,7 +5099,7 @@
     "createdAt": "2026-08-10",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4795,7 +5148,7 @@
     "createdAt": "2026-08-07",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4842,7 +5195,7 @@
     "createdAt": "2026-08-04",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4887,7 +5240,7 @@
     "createdAt": "2026-08-01",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4932,7 +5285,7 @@
     "createdAt": "2026-07-29",
     "material": "100% nylon outer; 100% polyester lining",
     "care": "Cold gentle wash with similar colours. Do not bleach. Air dry. Follow the garment care label.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Black",
@@ -4983,7 +5336,7 @@
     "createdAt": "2026-09-08",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5034,7 +5387,7 @@
     "createdAt": "2026-09-05",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5085,7 +5438,7 @@
     "createdAt": "2026-09-02",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5133,7 +5486,7 @@
     "createdAt": "2026-08-30",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5181,7 +5534,7 @@
     "createdAt": "2026-08-27",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5231,7 +5584,7 @@
     "createdAt": "2026-08-24",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5280,7 +5633,7 @@
     "createdAt": "2026-08-21",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5329,7 +5682,7 @@
     "createdAt": "2026-08-18",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5376,7 +5729,7 @@
     "createdAt": "2026-08-15",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5423,7 +5776,7 @@
     "createdAt": "2026-08-12",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5472,7 +5825,7 @@
     "createdAt": "2026-08-09",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5521,7 +5874,7 @@
     "createdAt": "2026-08-06",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5568,7 +5921,7 @@
     "createdAt": "2026-08-03",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5613,7 +5966,7 @@
     "createdAt": "2026-07-31",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5658,7 +6011,7 @@
     "createdAt": "2026-07-28",
     "material": "100% cotton woven fabric",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru Print",
@@ -5711,7 +6064,7 @@
     "createdAt": "2026-09-07",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -5770,7 +6123,7 @@
     "createdAt": "2026-09-04",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -5829,7 +6182,7 @@
     "createdAt": "2026-09-01",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -5885,7 +6238,7 @@
     "createdAt": "2026-08-29",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -5941,7 +6294,7 @@
     "createdAt": "2026-08-26",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -5999,7 +6352,7 @@
     "createdAt": "2026-08-23",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6056,7 +6409,7 @@
     "createdAt": "2026-08-20",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6113,7 +6466,7 @@
     "createdAt": "2026-08-17",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6168,7 +6521,7 @@
     "createdAt": "2026-08-14",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6223,7 +6576,7 @@
     "createdAt": "2026-08-11",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6280,7 +6633,7 @@
     "createdAt": "2026-08-08",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6337,7 +6690,7 @@
     "createdAt": "2026-08-05",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6392,7 +6745,7 @@
     "createdAt": "2026-08-02",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6445,7 +6798,7 @@
     "createdAt": "2026-07-30",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6498,7 +6851,7 @@
     "createdAt": "2026-07-27",
     "material": "55% linen, 45% cotton",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Ecru",
@@ -6556,7 +6909,7 @@
     "createdAt": "2026-09-06",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6607,7 +6960,7 @@
     "createdAt": "2026-09-03",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6658,7 +7011,7 @@
     "createdAt": "2026-08-31",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6706,7 +7059,7 @@
     "createdAt": "2026-08-28",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6754,7 +7107,7 @@
     "createdAt": "2026-08-25",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6804,7 +7157,7 @@
     "createdAt": "2026-08-22",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6853,7 +7206,7 @@
     "createdAt": "2026-08-19",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6902,7 +7255,7 @@
     "createdAt": "2026-08-16",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6949,7 +7302,7 @@
     "createdAt": "2026-08-13",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -6996,7 +7349,7 @@
     "createdAt": "2026-08-10",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -7045,7 +7398,7 @@
     "createdAt": "2026-08-07",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -7094,7 +7447,7 @@
     "createdAt": "2026-08-04",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -7141,7 +7494,7 @@
     "createdAt": "2026-08-01",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -7186,7 +7539,7 @@
     "createdAt": "2026-07-29",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
@@ -7231,7 +7584,7 @@
     "createdAt": "2026-07-26",
     "material": "100% cotton poplin",
     "care": "Machine wash cold with similar colours. Wash inside out. Do not bleach. Line dry in shade. Cool iron if needed.",
-    "catalogueStatus": "ACTIVE",
+    "catalogueStatus": "INACTIVE",
     "colorVariants": [
       {
         "name": "Sky Blue",
