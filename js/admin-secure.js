@@ -40,6 +40,7 @@ async function renderInventory() {
     if(!authorized)return;
     const byId=new Map(masters.docs.map(d=>[d.id,d.data()]));
     const bySku=new Map(sku.docs.map(d=>[d.id,d.data()]));
+    const openPanels=new Set([...root.querySelectorAll('details[open][data-product-id]')].map(p=>p.dataset.productId));
     root.replaceChildren();
     if(!products.length){root.textContent='Publish the validated V5 catalogue to dev first. Legacy sample stock is not shown.';return;}
     function control(product,variant,size,label,parent){
@@ -74,7 +75,7 @@ async function renderInventory() {
       });
     }
     for(const product of products){
-      const panel=document.createElement('details');panel.className='sku-admin-product';
+      const panel=document.createElement('details');panel.className='sku-admin-product';panel.dataset.productId=product.id;panel.open=openPanels.has(product.id);
       const summary=document.createElement('summary');summary.textContent=product.name+' · '+product.physicalStock+' physical / '+product.stock+' available';panel.append(summary);
       control(product,null,'ALL','Entire product',panel);
       for(const v of product.colorVariants){

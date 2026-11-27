@@ -73,7 +73,7 @@
 
 .collection-strip {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(var(--tc-collection-count,4),minmax(0,1fr));
   border-block: 1px solid var(--line);
   padding-inline: var(--space);
 }
@@ -243,7 +243,7 @@
   }
 
   .collection-strip {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(var(--tc-mobile-collection-count,2),minmax(0,1fr));
     padding-inline: 20px;
   }
 

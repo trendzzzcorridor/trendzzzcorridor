@@ -49,7 +49,8 @@ async function initializeHome() {
     const strip=document.querySelector('.collection-strip');
     strip.querySelectorAll('a').forEach(a=>{const entry=Object.entries(categoryConfig).find(([,c])=>a.getAttribute('href')===c.page);if(entry&&!products.some(p=>p.category===entry[0]))a.remove();});
     strip.querySelectorAll('a>span:first-child').forEach((span,i)=>span.textContent=String(i+1).padStart(2,'0'));
-    strip.style.gridTemplateColumns='repeat('+Math.max(1,strip.children.length)+',minmax(0,1fr))';
+    strip.style.setProperty('--tc-collection-count',String(Math.max(1,strip.children.length)));
+    strip.style.setProperty('--tc-mobile-collection-count',String(Math.max(1,Math.min(2,strip.children.length))));
     strip.hidden=!strip.children.length;
     const arrivals=balancedArrivals(cards,settings.NEW_ARRIVALS_TOTAL);
     const shop=document.querySelector('#shop-collection');
