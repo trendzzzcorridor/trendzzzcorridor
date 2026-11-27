@@ -44,17 +44,9 @@ service cloud.firestore {
         && request.resource.data.keys().hasOnly(['productId','variantId','colour','size','status','updatedAt'])
         && request.resource.data.keys().hasAll(['productId','variantId','colour','size','status','updatedAt'])
         && request.resource.data.productId is string
-        && request.resource.data.productId.matches('^[a-z][a-z0-9-]{0,59}
-    match /{document=**} { allow read, write: if false; }
-  }
-}
-)
+        && request.resource.data.productId.matches('^[a-z][a-z0-9-]{0,59}$')
         && request.resource.data.variantId is string
-        && request.resource.data.variantId.matches('^colour-([1-9]|10)
-    match /{document=**} { allow read, write: if false; }
-  }
-}
-)
+        && request.resource.data.variantId.matches('^colour-([1-9]|10)$')
         && request.resource.data.colour is string
         && request.resource.data.colour.size() >= 1
         && request.resource.data.colour.size() <= 100
