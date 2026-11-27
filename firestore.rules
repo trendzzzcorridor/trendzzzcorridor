@@ -56,6 +56,32 @@ service cloud.firestore {
         && request.resource.data.updatedAt is string;
       allow delete: if false;
     }
+
+    // Remaining physical pieces are separate from manual status overrides.
+    // The published catalogue also clamps counts to its current physical ceiling.
+    match /skuRemaining/{remainingId} {
+      allow get, list: if true;
+      allow create, update: if isAdmin()
+        && request.resource.data.keys().hasOnly(['productId','variantId','colour','size','remainingQuantity','physicalCeiling','updatedAt'])
+        && request.resource.data.keys().hasAll(['productId','variantId','colour','size','remainingQuantity','physicalCeiling','updatedAt'])
+        && request.resource.data.productId is string
+        && request.resource.data.productId.matches('^[a-z][a-z0-9-]{0,59}$')
+        && request.resource.data.variantId is string
+        && request.resource.data.variantId.matches('^colour-([1-9]|10)$')
+        && request.resource.data.colour is string
+        && request.resource.data.colour.size() >= 1
+        && request.resource.data.colour.size() <= 100
+        && request.resource.data.size in ['S','M','L','XL','XXL']
+        && remainingId == request.resource.data.productId + '--' + request.resource.data.variantId + '--' + request.resource.data.size
+        && request.resource.data.remainingQuantity is int
+        && request.resource.data.physicalCeiling is int
+        && request.resource.data.remainingQuantity >= 0
+        && request.resource.data.physicalCeiling >= 0
+        && request.resource.data.remainingQuantity <= request.resource.data.physicalCeiling
+        && request.resource.data.physicalCeiling <= 9007199254740991
+        && request.resource.data.updatedAt is string;
+      allow delete: if false;
+    }
     // Orders and other collections remain locked until a secure backend exists.
     match /{document=**} { allow read, write: if false; }
   }

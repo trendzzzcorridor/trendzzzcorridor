@@ -167,7 +167,7 @@ function bindPurchaseForm(product) {
     if (!await requireCustomer()) return;
     const values = new FormData(form);
     const quantity = Number(values.get('quantity'));
-    if (!Number.isInteger(quantity) || quantity < 1 || quantity > availableQuantity(product)) {
+    if (!Number.isInteger(quantity) || quantity < 1 || quantity > availableQuantity(currentProduct)) {
       feedback.textContent = 'Choose a valid quantity within the available stock.';
       refreshPurchaseLimits();
       return;

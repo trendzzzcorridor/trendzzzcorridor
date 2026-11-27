@@ -10,6 +10,7 @@ let productsById = new Map();
 let cartItems = [];
 let isSavingCart = false;
 let cartReady = false;
+let quantityUpdating = false;
 
 function setNotice(message) {
   cartNotice.textContent = message;
@@ -79,9 +80,18 @@ function renderCart() {
 // ==================== CART RENDERING END ====================
 
 // ==================== CART INTERACTIONS START ====================
-function updateQuantity(index, requestedQuantity, focusSelector) {
-  const item = cartItems[index];
-  if (!item) return;
+async function updateQuantity(index, requestedQuantity, focusSelector) {
+  const originalItem=cartItems[index];
+  if(!originalItem||quantityUpdating)return;
+  quantityUpdating=true;
+  try {
+    const fresh=await getProducts({refresh:true});
+    if(!fresh.length||fresh.some(p=>!p.inventoryVerified))throw Error('Availability cannot be verified. Your saved bag has not been changed.');
+    productsById=new Map(fresh.map(p=>[p.id,p]));
+    reconcileCart();
+    index=cartItems.findIndex(item=>skuLineKey(item)===skuLineKey(originalItem));
+    if(index<0){renderCart();return;}
+  const item=cartItems[index];
   const maximum = maximumForItem(item);
   const validQuantity = Number.isInteger(requestedQuantity) && requestedQuantity >= 1 && requestedQuantity <= maximum;
   const quantity = Math.max(1, Math.min(maximum, Math.floor(Number(requestedQuantity) || 1)));
@@ -92,9 +102,12 @@ function updateQuantity(index, requestedQuantity, focusSelector) {
   cartItems = nextItems;
   renderCart();
   if (focusSelector) cartContainer.querySelector(focusSelector)?.focus();
+  }catch(error){setNotice(error.message);renderCart();}
+  finally{quantityUpdating=false;}
 }
 
 cartContainer.addEventListener('click', event => {
+  if(quantityUpdating)return;
   const checkoutButton = event.target.closest('#open-checkout');
   if (checkoutButton) { openCheckout(); return; }
   const button = event.target.closest('[data-cart-action]');

@@ -36,16 +36,17 @@ export async function getProducts({refresh=false}={}) {
   if(!productRequest)productRequest=fetch('data/products.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('The collection could not load. Please try again.');return r.json();}).then(async data=>{
     if(!Array.isArray(data))throw Error('The product catalogue format is invalid.');
     const ids=new Set();
-    let availability=new Map(),overrides=new Map(),verified=true;
+    let availability=new Map(),overrides=new Map(),remaining=new Map(),verified=true;
     try{
-      const [master,sku]=await Promise.all([getDocsFromServer(collection(inventoryDb,'inventory')),getDocsFromServer(collection(inventoryDb,'skuAvailability'))]);
+      const [master,sku,quantities]=await Promise.all([getDocsFromServer(collection(inventoryDb,'inventory')),getDocsFromServer(collection(inventoryDb,'skuAvailability')),getDocsFromServer(collection(inventoryDb,'skuRemaining'))]);
       availability=new Map(master.docs.map(d=>[d.id,d.data().status]));
       overrides=new Map(sku.docs.map(d=>[d.id,d.data()]));
+      remaining=new Map(quantities.docs.map(d=>[d.id,d.data()]));
     }catch(error){console.warn('Inventory verification unavailable; purchasing disabled.',error);verified=false;}
     return data.filter(p=>{
       const valid=p&&p.catalogueStatus==='ACTIVE'&&p.inventorySchemaVersion===1&&typeof p.id==='string'&&!ids.has(p.id)&&typeof p.name==='string'&&categoryConfig[p.category]?.subcategories.some(sub=>sub.id===p.subcategory)&&Number.isFinite(p.price)&&p.price>=0;
       if(valid)ids.add(p.id);return valid;
-    }).map(p=>normalizeInventoryProduct({...p,tags:Array.isArray(p.tags)?p.tags:[],images:Array.isArray(p.images)?p.images:[p.image],description:String(p.description||''),originalPrice:Number(p.originalPrice)>p.price?Number(p.originalPrice):null},availability.get(p.id),overrides,verified)).filter(Boolean);
+    }).map(p=>normalizeInventoryProduct({...p,tags:Array.isArray(p.tags)?p.tags:[],images:Array.isArray(p.images)?p.images:[p.image],description:String(p.description||''),originalPrice:Number(p.originalPrice)>p.price?Number(p.originalPrice):null},availability.get(p.id),overrides,verified,remaining)).filter(Boolean);
   }).catch(error=>{productRequest=undefined;throw error;});
   return productRequest;
 }
