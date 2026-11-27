@@ -37,6 +37,33 @@ service cloud.firestore {
         && request.resource.data.updatedAt is string;
       allow delete: if false;
     }
+    // Separate colour/size availability overrides. No customer or administrator PII.
+    match /skuAvailability/{overrideId} {
+      allow get, list: if true;
+      allow create, update: if isAdmin()
+        && request.resource.data.keys().hasOnly(['productId','variantId','colour','size','status','updatedAt'])
+        && request.resource.data.keys().hasAll(['productId','variantId','colour','size','status','updatedAt'])
+        && request.resource.data.productId is string
+        && request.resource.data.productId.matches('^[a-z][a-z0-9-]{0,59}
+    match /{document=**} { allow read, write: if false; }
+  }
+}
+)
+        && request.resource.data.variantId is string
+        && request.resource.data.variantId.matches('^colour-([1-9]|10)
+    match /{document=**} { allow read, write: if false; }
+  }
+}
+)
+        && request.resource.data.colour is string
+        && request.resource.data.colour.size() >= 1
+        && request.resource.data.colour.size() <= 100
+        && request.resource.data.size in ['ALL','S','M','L','XL','XXL']
+        && overrideId == request.resource.data.productId + '--' + request.resource.data.variantId + '--' + request.resource.data.size
+        && request.resource.data.status in ['AVAILABLE','COMING_SOON','SOLD_OUT']
+        && request.resource.data.updatedAt is string;
+      allow delete: if false;
+    }
     // Orders and other collections remain locked until a secure backend exists.
     match /{document=**} { allow read, write: if false; }
   }

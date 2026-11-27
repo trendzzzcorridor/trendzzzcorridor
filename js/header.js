@@ -1,6 +1,6 @@
 import './ux.js';
 import { requireCustomer } from './auth-gate.js';
-import { getCart, CART_KEY, escapeHTML } from './common.js';
+import { getCart, CART_KEY, escapeHTML, getProducts, getDisplaySettings, categoryConfig } from './common.js';
 
 // ==================== SHARED HEADER AND FOOTER LOADING START ====================
 async function loadHeader() {
@@ -10,7 +10,10 @@ async function loadHeader() {
     const response = await fetch('header.html');
     if (!response.ok) throw new Error('Header unavailable');
     container.innerHTML = await response.text();
+    // Keep navigation usable while inventory is loading; only show categories with published V5 products.
+    applyCategoryNavigation(container,[],{SHOW_EMPTY_CATEGORIES:'HIDDEN'});
     setupSidebar();
+    try { const [products,settings]=await Promise.all([getProducts(),getDisplaySettings()]); applyCategoryNavigation(container,products,settings); } catch(error) { console.warn('Category navigation unavailable',error); }
     updateCartBadge();
     container.querySelector('.cart-icon')?.addEventListener('click', async event => { event.preventDefault(); await requireCustomer(() => { location.href = 'cart.html'; }); });
     const currentPage = location.pathname.split('/').pop() || 'index.html';
@@ -20,6 +23,16 @@ async function loadHeader() {
   } catch {
     container.innerHTML = '<nav class="header-main" aria-label="Basic navigation"><a href="product.html">Catalogue</a><a class="brand-name" href="index.html">Trendzzz Corridor</a><a href="cart.html">Bag</a></nav><p class="notice">The full menu could not load. Please run this site through its local server and refresh.</p>';
   }
+}
+function applyCategoryNavigation(container,products,settings) {
+  const active=Object.entries(categoryConfig).filter(([key])=>products.some(p=>p.category===key));
+  const pending=Object.entries(categoryConfig).filter(([key])=>!products.some(p=>p.category===key));
+  const nav=container.querySelector('.desktop-navigation');
+  if(nav)nav.innerHTML='<a href="product.html?new=1">New arrivals <span class="new-dot" aria-hidden="true"></span></a>'+active.map(([,c])=>'<a href="'+c.page+'">'+escapeHTML(c.label)+'</a>').join('')+'<a href="product.html">The catalogue</a>';
+  const sidebar=container.querySelector('#sidebar-collections');
+  if(sidebar)sidebar.innerHTML=active.map(([key,c])=>'<div class="sidebar-category"><a href="'+c.page+'">'+escapeHTML(c.label)+'</a><div>'+c.subcategories.filter(sub=>products.some(p=>p.category===key&&p.subcategory===sub.id)).map(sub=>'<a href="'+c.page+'#'+sub.id+'">'+escapeHTML(sub.label)+'</a>').join('')+'</div></div>').join('')+(settings.SHOW_EMPTY_CATEGORIES==='COMING_SOON'?pending.map(([,c])=>'<div class="sidebar-category"><a href="'+c.page+'">'+escapeHTML(c.label)+' — Coming soon</a></div>').join(''):'');
+  const footer=document.querySelector('[aria-label="Footer collections"]');
+  if(footer)footer.innerHTML=active.map(([,c])=>'<a href="'+c.page+'">'+escapeHTML(c.label)+'</a>').join('')+(settings.SHOW_EMPTY_CATEGORIES==='COMING_SOON'?pending.map(([,c])=>'<a href="'+c.page+'">'+escapeHTML(c.label)+' — Coming soon</a>').join(''):'');
 }
 function loadFooter() {
   const container = document.querySelector('#site-footer');
@@ -59,7 +72,7 @@ function setupSidebar() {
   toggle.addEventListener('click', () => setOpen(true));
   close.addEventListener('click', () => setOpen(false));
   backdrop.addEventListener('click', () => setOpen(false));
-  sidebar.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+  sidebar.addEventListener('click',event=>{if(event.target.closest('a'))setOpen(false);});
   sidebar.addEventListener('keydown', event => {
     if (event.key === 'Escape') { event.preventDefault(); setOpen(false); }
     if (event.key !== 'Tab') return;

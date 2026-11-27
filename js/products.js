@@ -1,4 +1,4 @@
-import { getProducts, categoryConfig, escapeHTML, shuffle, productCard, setupImages, renderError } from './common.js';
+import { getProducts, getDisplaySettings, displayProducts, categoryConfig, escapeHTML, shuffle, productCard, setupImages, renderError } from './common.js';
 import { createSlider } from './slider.js';
 import { createFilters } from './filters.js';
 
@@ -10,7 +10,7 @@ let featuredOrder = new Map();
 
 function sectionGrid(products, preview = false) {
   if (!products.length) return '<div class="collection-empty"><p>No styles match these filters in this collection.</p></div>';
-  const chosen = preview ? products.slice(0, 8) : products;
+  const chosen = products;
   return `<div class="product-grid${preview ? ' preview-grid' : ''}">${chosen.map(productCard).join('')}</div>`;
 }
 function renderCollections(products, filters) {
@@ -22,8 +22,8 @@ function renderCollections(products, filters) {
   const applicable = Object.entries(categoryConfig).filter(([key]) => !category || key === category);
   collection.innerHTML = applicable.map(([key, config]) => {
     const categoryProducts = products.filter(product => product.category === key);
-    if (discovery && !categoryProducts.length) return '';
-    return `<section class="major-collection" aria-label="${config.label}">${discovery ? `<div class="major-collection-heading"><p class="eyebrow">The ${config.label} edit</p><h2>${config.label}</h2><a class="text-link" href="${config.page}">Show all ${config.label} </a></div>` : ''}${config.subcategories.filter(subcategory => !filters.subcategory || filters.subcategory === subcategory.id).map(subcategory => {
+    if (!categoryProducts.length) return '';
+    return `<section class="major-collection" aria-label="${config.label}">${discovery ? `<div class="major-collection-heading"><p class="eyebrow">The ${config.label} edit</p><h2>${config.label}</h2><a class="text-link" href="${config.page}">Show all ${config.label} </a></div>` : ''}${config.subcategories.filter(subcategory => (!filters.subcategory || filters.subcategory === subcategory.id) && categoryProducts.some(p=>p.subcategory===subcategory.id)).map(subcategory => {
       let sectionProducts = categoryProducts.filter(product => product.subcategory === subcategory.id);
       if (discovery && filters.sort === 'featured') {
         // Promotional products are randomized only after category and tag filtering.
@@ -45,13 +45,30 @@ function scrollToRequestedSection() {
 }
 async function initializeProducts() {
   try {
-    const allProducts = await getProducts();
-    const products = allProducts.filter(product => !category || product.category === category);
+    const [allProducts,settings]=await Promise.all([getProducts(),getDisplaySettings()]);
+    const masters=allProducts.filter(p=>!category||p.category===category);
+    const products=displayProducts(masters,discovery?settings.CATALOGUE_DISPLAY_MODE:settings.CATEGORY_DISPLAY_MODE,settings.SHOW_SOLD_OUT_COLOURS);
+    const quick=document.querySelector('.collection-quick-nav');
+    quick?.querySelectorAll('a').forEach(a=>{
+      const href=a.getAttribute('href');
+      const entry=Object.entries(categoryConfig).find(([,c])=>c.page===href);
+      if(href?.startsWith('#')&&!masters.some(p=>p.subcategory===href.slice(1)))a.remove();
+      else if(entry&&!allProducts.some(p=>p.category===entry[0]))a.remove();
+    });
+    if(!masters.length){
+      if(quick)quick.hidden=true;
+      document.querySelector('#collection-filters').innerHTML='';
+      createSlider(document.querySelector('#category-slider'),[]);
+      collection.innerHTML='<section class="empty-state"><p class="eyebrow">The next edit</p><h2>Coming soon.</h2><p>We are preparing this collection.</p><a class="button button-secondary" href="product.html">Shop the available collection</a></section>';
+      return;
+    }
     if (!discovery) {
       const config = categoryConfig[category];
-      createSlider(document.querySelector('#category-slider'), products.filter(product => product.tags.includes(config.tag)));
+      const limit=settings[({'tshirt':'TSHIRT_HEADER_TOTAL','shirts':'SHIRTS_HEADER_TOTAL','bottom-wear':'BOTTOM_WEAR_HEADER_TOTAL','winter-wear':'WINTER_WEAR_HEADER_TOTAL'})[category]];
+      const pool=products.filter(p=>p.tags.includes(config.tag));
+      createSlider(document.querySelector('#category-slider'),shuffle(pool.length?pool:products).slice(0,limit));
     } else {
-      createSlider(document.querySelector('#category-slider'), shuffle(products.filter(product => product.tags.includes('product-image'))).slice(0, 8));
+      createSlider(document.querySelector('#category-slider'), shuffle(products.filter(product => product.tags.includes('product-image'))).slice(0, settings.CATALOGUE_TILES_TOTAL));
     }
     featuredOrder = new Map(shuffle(products.filter(product => product.tags.includes('product-image'))).map((product, index) => [product.id, index]));
     createFilters(document.querySelector('#collection-filters'), products, { category, onChange: renderCollections });

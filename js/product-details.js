@@ -1,5 +1,5 @@
 import { requireCustomer } from './auth-gate.js';
-import { getProducts, formatPrice, escapeHTML, productCard, setupImages, renderError, addToCart, getCartQuantity, showToast, categoryConfig, imageURL } from './common.js';
+import { getProducts, formatPrice, escapeHTML, productCard, setupImages, renderError, addToCart, getCartQuantity, showToast, categoryConfig, imageURL, variantFor, skuQuantity, availabilityFor, displayProducts } from './common.js';
 
 // ==================== PRODUCT DETAILS SETUP START ====================
 const detailContainer = document.querySelector('#product-detail');
@@ -8,7 +8,10 @@ const sizeGuide = document.querySelector('#size-guide');
 let currentProduct = null;
 
 function availableQuantity(product) {
-  return Math.max(0, Math.min(99, Math.floor(Number(product.stock) || 0) - getCartQuantity(product.id)));
+  const color=detailContainer.querySelector('input[name="color"]:checked')?.value;
+  const size=detailContainer.querySelector('input[name="size"]:checked')?.value;
+  const variant=variantFor(product,color);
+  return variant&&size?Math.max(0,Math.min(99,skuQuantity(product,variant.id,size)-getCartQuantity(product.id,variant.id,size))):0;
 }
 
 function showUnavailable() {
@@ -23,7 +26,8 @@ function renderProduct(product) {
     const source = variant?.images?.length ? variant.images : variant?.image ? [variant.image] : [product.image, ...(product.images || [])];
     return [...new Set(source.map(imageURL).filter(Boolean))];
   };
-  const firstColor = product.colors?.[0] || '';
+  const requested=new URLSearchParams(location.search).get('colour');
+  const firstColor=variantFor(product,requested)?.name||product.colors?.[0]||'';
   let images = galleryForColor(firstColor);
   let currentImageIndex = 0;
   let slideTimer = null;
@@ -77,8 +81,8 @@ function renderProduct(product) {
         <p class="pd-stock ${product.stock ? '' : 'is-out'}">${product.availability === 'COMING_SOON' ? 'Coming soon' : product.availability === 'UNAVAILABLE' ? 'Availability temporarily unavailable' : product.availability === 'SOLD_OUT' ? 'Sold out' : product.stock ? `In stock · ${product.stock} available across all options` : 'Currently out of stock'}</p>
         <form id="purchase-form">
           <div class="pd-size-heading"><span>SELECT SIZE</span><button type="button" id="open-size-guide" class="pd-text-button">Size guide</button></div>
-          <fieldset class="pd-option-group"><legend class="sr-only">Choose a size</legend><div class="pd-option-list">${product.sizes.map(size => `<label class="pd-option"><input type="radio" name="size" value="${escapeHTML(size)}" required><span>${escapeHTML(size)}</span></label>`).join('')}</div></fieldset>
-          ${product.colors?.length ? `<fieldset class="pd-option-group"><legend>COLOUR</legend><div class="pd-option-list">${product.colors.map((color, index) => `<label class="pd-option pd-color-option"><input type="radio" name="color" value="${escapeHTML(color)}" ${index === 0 ? 'checked' : ''}><span>${escapeHTML(color)}</span></label>`).join('')}</div></fieldset>` : ''}
+          <fieldset class="pd-option-group"><legend class="sr-only">Choose a size</legend><div class="pd-option-list">${product.sizes.map(size => `<label class="pd-option"><input type="radio" name="size" value="${escapeHTML(size)}" required><span>${escapeHTML(size)}<small class="pd-size-stock"></small></span></label>`).join('')}</div></fieldset>
+          ${product.colors?.length ? `<fieldset class="pd-option-group"><legend>COLOUR</legend><div class="pd-option-list">${product.colors.map((color, index) => `<label class="pd-option pd-color-option"><input type="radio" name="color" value="${escapeHTML(color)}" ${color === firstColor ? 'checked' : ''}><span>${escapeHTML(color)}</span></label>`).join('')}</div></fieldset>` : ''}
           <div class="pd-purchase-row"><div class="pd-quantity"><button type="button" id="quantity-decrease" aria-label="Decrease quantity">−</button><label class="sr-only" for="quantity">Quantity</label><input id="quantity" name="quantity" type="number" min="1" max="${Math.max(1, availableQuantity(product))}" value="1" step="1" inputmode="numeric" required><button type="button" id="quantity-increase" aria-label="Increase quantity">+</button></div><button type="submit" class="pd-primary" id="add-to-cart" name="action" value="add">Add to bag </button></div>
           <button type="submit" class="pd-secondary" id="buy-now" name="action" value="buy">Buy now</button>
           <p id="purchase-feedback" class="pd-feedback" role="status"></p>
@@ -95,7 +99,7 @@ function renderProduct(product) {
   setupImages(detailContainer);
   detailContainer.querySelector('.pd-gallery-prev').addEventListener('click', () => { selectImage(currentImageIndex - 1); startSlideshow(); });
   detailContainer.querySelector('.pd-gallery-next').addEventListener('click', () => { selectImage(currentImageIndex + 1); startSlideshow(); });
-  detailContainer.querySelectorAll('input[name="color"]').forEach(input => input.addEventListener('change', () => { if (input.checked) renderGallery(input.value); }));
+  detailContainer.querySelectorAll('input[name="color"]').forEach(input => input.addEventListener('change', () => { if(input.checked){renderGallery(input.value);const url=new URL(location.href);url.searchParams.set('colour',variantFor(product,input.value).id);history.replaceState(null,'',url);detailContainer.querySelector('#quantity').value='1';refreshPurchaseLimits();} }));
   document.addEventListener('visibilitychange', () => { if (document.hidden) stopSlideshow(); else if (detailContainer.querySelector('#product-main-image')) startSlideshow(); });
   window.addEventListener('pagehide', stopSlideshow);
   renderGallery(firstColor);
@@ -108,7 +112,23 @@ function refreshPurchaseLimits() {
   if (!currentProduct) return;
   const quantityInput = detailContainer.querySelector('#quantity');
   if (!quantityInput) return;
+  const color=detailContainer.querySelector('input[name="color"]:checked')?.value;
+  const variant=variantFor(currentProduct,color);
+  detailContainer.querySelectorAll('input[name="size"]').forEach(input=>{
+    const state=availabilityFor(currentProduct,color,input.value);
+    const count=skuQuantity(currentProduct,color,input.value);
+    input.disabled=state!=='AVAILABLE';
+    if(input.disabled)input.checked=false;
+    const label=input.closest('label');
+    label.classList.toggle('pd-size-unavailable',input.disabled);
+    label.querySelector('.pd-size-stock').textContent=state==='AVAILABLE'?count+' left':state==='NOT_OFFERED'?'N/A':state==='COMING_SOON'?'Coming soon':state==='UNAVAILABLE'?'Check later':'Sold out';
+  });
+  const size=detailContainer.querySelector('input[name="size"]:checked')?.value;
   const available = availableQuantity(currentProduct);
+  const stockLine=detailContainer.querySelector('.pd-stock');
+  const count=size?skuQuantity(currentProduct,color,size):variant?.stock||0;
+  stockLine.textContent=variant?.availability==='UNAVAILABLE'?'Availability temporarily unavailable':variant?.availability==='COMING_SOON'?'Coming soon':variant?.availability==='SOLD_OUT'?'Selected colour sold out':size?count+' pieces available — '+color+' / '+size:count+' pieces available in '+(color||'this colour')+' · select a size';
+  stockLine.classList.toggle('is-out',count===0);
   const quantity = Math.max(1, Math.min(available || 1, Math.floor(Number(quantityInput.value) || 1)));
   quantityInput.max = String(Math.max(1, available));
   quantityInput.value = String(quantity);
@@ -119,7 +139,7 @@ function refreshPurchaseLimits() {
   detailContainer.querySelector('#buy-now').disabled = available === 0;
   const feedback = detailContainer.querySelector('#purchase-feedback');
   if (available === 0) {
-    feedback.textContent = currentProduct.availability === 'COMING_SOON' ? 'Coming soon — purchasing is not available yet.' : currentProduct.availability === 'UNAVAILABLE' ? 'Availability cannot be verified right now. Please try again later.' : currentProduct.stock > 0 ? 'All available stock is already in your bag. Update your bag to change the quantity.' : 'This piece is currently unavailable. Explore the related styles below.';
+    feedback.textContent = variant?.availability==='UNAVAILABLE'?'Availability cannot be verified right now. Refresh and try again.':variant?.availability==='COMING_SOON'?'Coming soon — purchasing is not available yet.':variant?.availability==='SOLD_OUT'?'This colour is sold out. Choose another colour.':!size?'Choose an available size.':'All available pieces for this colour and size are already in your bag.';
     feedback.dataset.stockMessage = 'true';
   } else if (feedback.dataset.stockMessage) {
     feedback.textContent = '';
@@ -140,6 +160,7 @@ function bindPurchaseForm(product) {
     refreshPurchaseLimits();
   });
   quantityInput.addEventListener('change', refreshPurchaseLimits);
+  form.querySelectorAll('input[name="size"]').forEach(input=>input.addEventListener('change',()=>{quantityInput.value='1';refreshPurchaseLimits();}));
   form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
@@ -152,7 +173,12 @@ function bindPurchaseForm(product) {
       return;
     }
     try {
-      const saved = addToCart(product, String(values.get('size') || ''), String(values.get('color') || ''), quantity);
+      const latest=(await getProducts({refresh:true})).find(p=>p.id===product.id);
+      const selected=variantFor(product,String(values.get('color')||''));
+      const latestVariant=variantFor(latest,selected?.id);
+      if(!latest||!latestVariant||latestVariant.name!==selected.name)throw Error('The collection has changed. Refresh before adding this item.');
+      currentProduct=latest;
+      const saved=addToCart(latest,String(values.get('size')||''),latestVariant.id,quantity);
       if (!saved) {
         refreshPurchaseLimits();
         delete feedback.dataset.stockMessage;
@@ -165,6 +191,7 @@ function bindPurchaseForm(product) {
       refreshPurchaseLimits();
       if (event.submitter?.value === 'buy') window.location.href = 'cart.html?checkout=1';
     } catch (error) {
+      refreshPurchaseLimits();
       feedback.textContent = error.message || 'Your bag could not be updated. Please try again.';
     }
   });
@@ -193,7 +220,7 @@ async function initializeProduct() {
       return;
     }
     renderProduct(currentProduct);
-    const related = products.filter(product => product.id !== currentProduct.id && product.category === currentProduct.category)
+    const related = displayProducts(products.filter(product => product.id !== currentProduct.id && product.category === currentProduct.category),'GROUPED_PRODUCTS')
       .sort((first, second) => Number(second.subcategory === currentProduct.subcategory) - Number(first.subcategory === currentProduct.subcategory))
       .slice(0, 4);
     if (related.length) {

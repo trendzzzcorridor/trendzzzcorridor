@@ -1,5 +1,9 @@
 import { auth } from './firebase.js';
-import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
+import { getFirestore, collection, getDocsFromServer } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
+
+import { normalizeInventoryProduct, variantFor, skuQuantity, availabilityFor, displayProducts, inStockForSize, skuLineKey, overrideKey } from './inventory.js';
+export { variantFor, skuQuantity, availabilityFor, displayProducts, inStockForSize, skuLineKey, overrideKey };
+// TZC_SKU_INVENTORY_V1 — V5 publisher compatibility. Legacy sample stock is never sellable.
 
 // ==================== CATALOGUE CONFIGURATION START ====================
 // Product records live ONLY in data/products.json. This describes navigation.
@@ -11,43 +15,38 @@ export const categoryConfig = {
 };
 
 const inventoryDb = getFirestore(auth.app);
-let productRequest;
-export async function getProducts() {
-  if (!productRequest) {
-    productRequest = fetch('data/products.json').then(response => {
-      if (!response.ok) throw new Error('The collection could not load. Please try again.');
-      return response.json();
-    }).then(async data => {
-      if (!Array.isArray(data)) throw new Error('The product catalogue format is invalid.');
-      const ids = new Set();
-      // Read public availability once per catalogue load; never trust a stale default
-      // when the inventory service is unreachable.
-      let availability = new Map();
-      let inventoryAvailable = true;
-      try {
-        const snapshot = await getDocs(collection(inventoryDb, 'inventory'));
-        availability = new Map(snapshot.docs.map(record => [record.id, record.data().status]));
-      } catch (error) {
-        console.warn('Could not read inventory; purchasing temporarily disabled.', error);
-        inventoryAvailable = false;
-      }
-      return data.filter(product => {
-        const valid = product && typeof product.id === 'string' && !ids.has(product.id) && typeof product.name === 'string' && categoryConfig[product.category] && categoryConfig[product.category].subcategories.some(sub => sub.id === product.subcategory) && Number.isFinite(product.price) && product.price >= 0;
-        if (valid) ids.add(product.id);
-        return valid;
-      }).map(product => ({
-        ...product,
-        availability: inventoryAvailable ? (['AVAILABLE', 'COMING_SOON', 'SOLD_OUT'].includes(availability.get(product.id)) ? availability.get(product.id) : 'AVAILABLE') : 'UNAVAILABLE',
-        sizes: Array.isArray(product.sizes) ? product.sizes.filter(size => typeof size === 'string') : [],
-        colors: Array.isArray(product.colors) ? product.colors.filter(color => typeof color === 'string') : [],
-        tags: Array.isArray(product.tags) ? product.tags.filter(tag => typeof tag === 'string') : [],
-        images: Array.isArray(product.images) ? product.images : [product.image],
-        stock: inventoryAvailable && !['COMING_SOON', 'SOLD_OUT'].includes(availability.get(product.id)) ? Math.max(0, Math.floor(Number(product.stock) || 0)) : 0,
-        description: String(product.description || ''),
-        originalPrice: Number(product.originalPrice) > product.price ? Number(product.originalPrice) : null
-      }));
-    }).catch(error => { productRequest = undefined; throw error; });
-  }
+let productRequest, settingsRequest;
+export const displayDefaults = Object.freeze({HOME_HERO_TOTAL:4, HOME_HERO_PER_CATEGORY:1, TSHIRT_HEADER_TOTAL:6, SHIRTS_HEADER_TOTAL:9, BOTTOM_WEAR_HEADER_TOTAL:6, WINTER_WEAR_HEADER_TOTAL:6, NEW_ARRIVALS_TOTAL:16, CATALOGUE_TILES_TOTAL:16, HOME_DISPLAY_MODE:'COLOUR_VARIANTS', CATALOGUE_DISPLAY_MODE:'COLOUR_VARIANTS', CATEGORY_DISPLAY_MODE:'COLOUR_VARIANTS', HOME_COLLECTION_TOTAL:34, SHOW_EMPTY_CATEGORIES:'COMING_SOON', SHOW_SOLD_OUT_COLOURS:'YES'});
+export async function getDisplaySettings() {
+  if (!settingsRequest) settingsRequest = fetch('data/display-settings.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Settings unavailable');return r.json();}).then(data=>{
+    const result={...displayDefaults};
+    for(const [key,value] of Object.entries(displayDefaults)){
+      const next=data[key];
+      if(typeof value==='number'&&Number.isInteger(next)&&next>=1&&next<=200)result[key]=next;
+      else if(key.endsWith('_DISPLAY_MODE')&&['COLOUR_VARIANTS','GROUPED_PRODUCTS'].includes(next))result[key]=next;
+      else if(key==='SHOW_EMPTY_CATEGORIES'&&['COMING_SOON','HIDDEN'].includes(next))result[key]=next;
+      else if(key==='SHOW_SOLD_OUT_COLOURS'&&['YES','NO'].includes(next))result[key]=next;
+    }
+    return result;
+  }).catch(()=>({...displayDefaults}));
+  return settingsRequest;
+}
+export async function getProducts({refresh=false}={}) {
+  if(refresh)productRequest=undefined;
+  if(!productRequest)productRequest=fetch('data/products.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('The collection could not load. Please try again.');return r.json();}).then(async data=>{
+    if(!Array.isArray(data))throw Error('The product catalogue format is invalid.');
+    const ids=new Set();
+    let availability=new Map(),overrides=new Map(),verified=true;
+    try{
+      const [master,sku]=await Promise.all([getDocsFromServer(collection(inventoryDb,'inventory')),getDocsFromServer(collection(inventoryDb,'skuAvailability'))]);
+      availability=new Map(master.docs.map(d=>[d.id,d.data().status]));
+      overrides=new Map(sku.docs.map(d=>[d.id,d.data()]));
+    }catch(error){console.warn('Inventory verification unavailable; purchasing disabled.',error);verified=false;}
+    return data.filter(p=>{
+      const valid=p&&p.catalogueStatus==='ACTIVE'&&p.inventorySchemaVersion===1&&typeof p.id==='string'&&!ids.has(p.id)&&typeof p.name==='string'&&categoryConfig[p.category]?.subcategories.some(sub=>sub.id===p.subcategory)&&Number.isFinite(p.price)&&p.price>=0;
+      if(valid)ids.add(p.id);return valid;
+    }).map(p=>normalizeInventoryProduct({...p,tags:Array.isArray(p.tags)?p.tags:[],images:Array.isArray(p.images)?p.images:[p.image],description:String(p.description||''),originalPrice:Number(p.originalPrice)>p.price?Number(p.originalPrice):null},availability.get(p.id),overrides,verified)).filter(Boolean);
+  }).catch(error=>{productRequest=undefined;throw error;});
   return productRequest;
 }
 // ==================== CATALOGUE CONFIGURATION END ====================
@@ -58,7 +57,7 @@ export function escapeHTML(value = '') {
 }
 export const formatPrice = value => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', minimumFractionDigits: 0, maximumFractionDigits: 2 }).format(Number(value) || 0);
 export const isNewArrival = product => product.tags.includes('new-arrival') || product.newArrival === true;
-export const productURL = product => `product-details.html?id=${encodeURIComponent(product.id)}`;
+export const productURL = product => 'product-details.html?id='+encodeURIComponent(product.id)+(product.selectedVariantId?'&colour='+encodeURIComponent(product.selectedVariantId):'');
 export function shuffle(items) {
   const result = [...items];
   for (let index = result.length - 1; index > 0; index--) {
@@ -127,7 +126,8 @@ export function writeStorage(key, value) {
   try { localStorage.setItem(key, JSON.stringify(value)); unsavedStorageKeys.delete(key); return true; }
   catch { unsavedStorageKeys.add(key); return false; }
 }
-export const CART_KEY = 'forme-cart-v1';
+// Start a new bag namespace: old sample colour names/IDs cannot safely migrate.
+export const CART_KEY = 'tzc-cart-v2';
 export function getCart() {
   const stored = readStorage(CART_KEY, []);
   if (!Array.isArray(stored)) return [];
@@ -135,9 +135,11 @@ export function getCart() {
   stored.forEach(item => {
     if (!item || typeof item.id !== 'string' || typeof item.size !== 'string' || !Number.isInteger(item.quantity) || item.quantity < 1) return;
     const color = typeof item.color === 'string' ? item.color : '';
-    const previous = valid.find(line => line.id === item.id && line.size === item.size && line.color === color);
+    const variantId = typeof item.variantId === 'string' ? item.variantId : '';
+    if (!color || !/^colour-(?:[1-9]|10)$/.test(variantId)) return;
+    const previous = valid.find(line => line.id === item.id && line.variantId === variantId && line.size === item.size && line.color === color);
     if (previous) previous.quantity = Math.min(99, previous.quantity + item.quantity);
-    else valid.push({ id: item.id, size: item.size, color, quantity: Math.min(99, item.quantity) });
+    else valid.push({ id: item.id, variantId, size: item.size, color, quantity: Math.min(99, item.quantity) });
   });
   return valid;
 }
@@ -147,17 +149,17 @@ export function saveCart(items) {
   if (!saved) showToast('Browser storage is unavailable. Your bag is saved for this page only.');
   return saved;
 }
-export const getCartQuantity = id => getCart().filter(item => item.id === id).reduce((sum, item) => sum + item.quantity, 0);
-export function addToCart(product, size, color, quantity) {
-  if (!product.sizes.includes(size)) throw new Error('Please choose an available size.');
-  if (product.colors.length && !product.colors.includes(color)) throw new Error('Please choose an available colour.');
-  if (!Number.isInteger(quantity) || quantity < 1 || quantity > 99) throw new Error('Choose a quantity between 1 and 99.');
-  if (getCartQuantity(product.id) + quantity > product.stock) throw new Error('There is not enough stock for that quantity. Check the items already in your bag.');
-  const items = getCart();
-  const line = items.find(item => item.id === product.id && item.size === size && item.color === (color || ''));
-  if (line && line.quantity + quantity > 99) throw new Error('The maximum quantity for one selection is 99.');
-  if (line) line.quantity += quantity;
-  else items.push({ id: product.id, size, color: color || '', quantity });
+export const getCartQuantity = (id, variantId, size) => getCart().filter(item=>item.id===id&&(!variantId||item.variantId===variantId)&&(!size||item.size===size)).reduce((sum,item)=>sum+item.quantity,0);
+export function addToCart(product,size,color,quantity) {
+  const variant=variantFor(product,color);
+  if(!variant||!Object.hasOwn(variant.stockBySize,size))throw Error('Please choose an offered colour and size.');
+  if(!product.inventoryVerified)throw Error('Availability cannot be verified. Refresh and try again.');
+  if(!Number.isInteger(quantity)||quantity<1||quantity>99)throw Error('Choose a quantity between 1 and 99.');
+  const items=getCart();
+  const key={id:product.id,variantId:variant.id,color:variant.name,size};
+  const line=items.find(item=>skuLineKey(item)===skuLineKey(key));
+  if((line?.quantity||0)+quantity>Math.min(99,skuQuantity(product,variant.id,size)))throw Error('There is not enough stock for this colour and size.');
+  if(line)line.quantity+=quantity;else items.push({...key,quantity});
   return saveCart(items);
 }
 // ==================== SAFE LOCAL STORAGE AND CART END ====================

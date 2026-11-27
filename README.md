@@ -235,3 +235,9 @@ See **`TESTING.md`** for browser checks and the isolated empty-catalogue, failed
 ## Hosting later
 
 The storefront is static. Upload only the root storefront HTML files plus `css/`, `js/`, `data/` and `images/` to a static host. Do not publish the preserved `legacy/`, `.git`, scripts or test folders. Nothing has been deployed by this build. A static host alone does not turn the demo features into real commerce services.
+
+
+## V5 catalogue and SKU availability (development)
+The V5 sheet publisher sets inventorySchemaVersion: 1 and colorVariants with id, name, image, images, stockBySize and stock. Only ACTIVE V5 records are public. Legacy sample records are preserved in JSON but cannot be purchased. Publish the validated sheet only after the updated dev frontend and Firestore rules have been deployed. Empty categories stay in the code, and settings control variant cards and coming-soon navigation. The browser bag uses a new storage key to avoid migrating sample options to regrouped real products.
+
+Deploy the repository's firestore.rules to the existing trendzzz-corridor project, preserving customer and product inventory permissions. The new skuAvailability collection stores colour (size ALL) or size overrides with IDs productId--variantId--size. AVAILABLE clears the manual restriction at that scope; it does not create physical stock or override an ancestor restriction. Public reads fail closed when either availability collection cannot be verified. Do not reset existing inventory documents; review legacy product-level overrides in the admin dashboard. The same Firebase project is used by dev and production, so any admin inventory override affects clients using that project. New rules are additive; avoid altering live customer permissions. Checkout is still a preview; no actual order, atomic reservation, or payment occurs.

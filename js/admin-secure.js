@@ -1,7 +1,7 @@
 import { auth, emailLogin, logout, authMessage } from './firebase.js';
 import { onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
-import { getFirestore, collection, doc, getDocs, setDoc } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
-import { getProducts } from './common.js';
+import { getFirestore, collection, doc, getDocs, getDocsFromServer, setDoc } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
+import { getProducts, overrideKey } from './common.js';
 const db = getFirestore(auth.app);
 const $ = id => document.getElementById(id);
 const status = message => { $('admin-access-message').textContent = message; };
@@ -34,45 +34,59 @@ $('admin-signin-form').addEventListener('submit', async event => {
 });
 $('admin-signout').addEventListener('click', () => logout());
 async function renderInventory() {
-  const root = $('admin-inventory-list');
-  try {
-    const [products, records] = await Promise.all([getProducts(), getDocs(collection(db, 'inventory'))]);
-    if (!authorized) return;
-    const byId = new Map(records.docs.map(d => [d.id, d.data()]));
+  const root=$('admin-inventory-list');
+  try{
+    const [products,masters,sku]=await Promise.all([getProducts({refresh:true}),getDocsFromServer(collection(db,'inventory')),getDocsFromServer(collection(db,'skuAvailability'))]);
+    if(!authorized)return;
+    const byId=new Map(masters.docs.map(d=>[d.id,d.data()]));
+    const bySku=new Map(sku.docs.map(d=>[d.id,d.data()]));
     root.replaceChildren();
-    for (const product of products) {
-      const row = document.createElement('form');
-      row.className = 'admin-stock-form';
-      row.style.padding = '12px';
-      row.style.borderBottom = '1px solid #ddd';
-      const title = document.createElement('span');
-      title.textContent = product.name + ' (' + product.id + ')';
-      title.style.flex = '1';
-      const select = document.createElement('select');
-      select.setAttribute('aria-label', 'Availability for ' + product.name);
-      for (const value of ['AVAILABLE','COMING_SOON','SOLD_OUT']) {
-        const option = document.createElement('option');
-        option.value = value;
-        option.textContent = value.replace('_', ' ');
-        select.append(option);
+    if(!products.length){root.textContent='Publish the validated V5 catalogue to dev first. Legacy sample stock is not shown.';return;}
+    function control(product,variant,size,label,parent){
+      const form=document.createElement('form');
+      form.className='admin-stock-form sku-control';
+      const title=document.createElement('span');title.textContent=label;
+      const select=document.createElement('select');select.setAttribute('aria-label',label);
+      for(const value of ['AVAILABLE','COMING_SOON','SOLD_OUT']){
+        const option=document.createElement('option');option.value=value;option.textContent=value==='AVAILABLE'?'Available (follow physical stock)':value.replace('_',' ');select.append(option);
       }
-      select.value = byId.get(product.id)?.status || 'AVAILABLE';
-      const save = document.createElement('button');
-      save.className = 'button button-secondary'; save.type = 'submit'; save.textContent = 'Save';
-      row.append(title, select, save);
-      row.addEventListener('submit', async e => {
+      const key=variant?overrideKey(product.id,variant.id,size):product.id;
+      const record=variant?bySku.get(key):byId.get(key);
+      select.value=record&&(!variant||record.colour===variant.name)?record.status:'AVAILABLE';
+      if(!select.value)select.value='AVAILABLE';
+      const save=document.createElement('button');save.className='button button-secondary';save.type='submit';save.textContent='Save';
+      form.append(title,select,save);parent.append(form);
+      form.addEventListener('submit',async e=>{
         e.preventDefault();
-        if (!authorized || !auth.currentUser) return;
-        save.disabled = true;
-        try {
-          await setDoc(doc(db,'inventory',product.id), { productId:product.id, status:select.value, updatedAt:new Date().toISOString(), updatedBy:auth.currentUser.uid });
-          status('Saved availability for ' + product.id + '. Refresh the public catalogue to see the updated status.');
-        } catch (error) { status('Unable to save: ' + authMessage(error)); }
-        finally { save.disabled = false; }
+        if(!authorized||!auth.currentUser)return;
+        save.disabled=true;
+        try{
+          const payload={productId:product.id,status:select.value,updatedAt:new Date().toISOString()};
+          if(variant){
+            await setDoc(doc(db,'skuAvailability',key),{...payload,variantId:variant.id,colour:variant.name,size});
+          }else{
+            await setDoc(doc(db,'inventory',product.id),{...payload,updatedBy:auth.currentUser.uid});
+          }
+          status('Saved '+label+'. The store uses the override on its next verified inventory read.');
+          await renderInventory();
+        }catch(error){status('Unable to save: '+authMessage(error));}
+        finally{save.disabled=false;}
       });
-      root.append(row);
     }
-  } catch (error) { root.textContent = 'Inventory unavailable: ' + authMessage(error); }
+    for(const product of products){
+      const panel=document.createElement('details');panel.className='sku-admin-product';
+      const summary=document.createElement('summary');summary.textContent=product.name+' · '+product.physicalStock+' physical / '+product.stock+' available';panel.append(summary);
+      control(product,null,'ALL','Entire product',panel);
+      for(const v of product.colorVariants){
+        const group=document.createElement('section');group.className='sku-admin-colour';
+        const heading=document.createElement('h3');heading.textContent=v.name+' — '+v.physicalStock+' physical / '+v.stock+' available';group.append(heading);
+        control(product,v,'ALL','Entire colour',group);
+        for(const [size,q] of Object.entries(v.stockBySize))control(product,v,size,size+' · '+q+' physical / '+v.availableBySize[size]+' available',group);
+        panel.append(group);
+      }
+      root.append(panel);
+    }
+  }catch(error){root.textContent='Inventory unavailable. Deploy the approved Firestore rules and refresh: '+authMessage(error);}
 }
 async function renderCustomers() {
   const root = $('admin-customers-list');

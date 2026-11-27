@@ -172,3 +172,19 @@ a.account-text-link:hover,.collection-quick-nav a:hover{color:#505764;letter-spa
   .product-card-image img,.product-card-link:hover .product-card-image img{transform:none!important;transition:none!important;}
   .product-badge{height:50px!important;transition:none!important;}
 }
+
+/* V5 inventory, active-collection layout and status details. */
+[hidden]{display:none!important}
+.coming-collections-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.coming-collection{display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;min-height:110px;padding:18px;border:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.coming-collection span{font-size:.75rem;color:var(--muted)}
+.pd-size-stock{display:block;font-size:.6rem;line-height:1.25;font-weight:400;margin-top:4px}
+.pd-option input:disabled+span{opacity:.65;background:#e6e7e9;color:#57595e;text-decoration:line-through;cursor:not-allowed}
+.sku-admin-product{margin:10px 0;border:1px solid var(--line);padding:12px}
+.sku-admin-product>summary{cursor:pointer;font-weight:700;padding:8px}
+.sku-admin-colour{border-top:1px solid var(--line);margin-top:12px;padding:12px}
+.sku-admin-colour h3{margin:8px 0;font-size:.9rem}
+.sku-control{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:8px 0}
+.sku-control>span{flex:1;min-width:130px}
+.sku-control select{max-width:100%;padding:8px;border:1px solid var(--line)}
+.sku-control .button{min-height:36px;padding:8px 12px}

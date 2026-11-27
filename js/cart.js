@@ -1,5 +1,5 @@
 import { requireCustomer } from './auth-gate.js';
-import { getProducts, formatPrice, escapeHTML, setupImages, renderError, getCart, saveCart, showToast, categoryConfig } from './common.js';
+import { getProducts, formatPrice, escapeHTML, setupImages, renderError, getCart, saveCart, showToast, categoryConfig, variantFor, skuQuantity, skuLineKey, productURL } from './common.js';
 
 // ==================== CART DATA AND STOCK START ====================
 const cartContainer = document.querySelector('#cart-content');
@@ -24,25 +24,27 @@ function persistCart(items) {
   return saved;
 }
 
-// Stock belongs to the entire product, so different sizes share the same stock limit.
+// Each bag line is limited independently by product + colour ID + size.
 function reconcileCart() {
   const originalItems = getCart();
   const stockUsed = new Map();
   const reconciled = [];
   for (const item of originalItems) {
     const product = productsById.get(item.id);
-    if (!product || !product.sizes.includes(item.size) || (product.colors?.length ? !product.colors.includes(item.color) : Boolean(item.color))) continue;
-    const availableStock = Math.max(0, Math.floor(Number(product.stock) || 0) - (stockUsed.get(item.id) || 0));
+    const variant=variantFor(product,item.variantId);
+    if (!product || !variant || variant.name!==item.color || !Object.hasOwn(variant.stockBySize,item.size)) continue;
+    const key=skuLineKey(item);
+    const availableStock=Math.max(0,skuQuantity(product,variant.id,item.size)-(stockUsed.get(key)||0));
     const quantity = Math.min(99, availableStock, Math.floor(Number(item.quantity) || 0));
     if (quantity < 1) continue;
-    const existing = reconciled.find(entry => entry.id === item.id && entry.size === item.size && entry.color === (item.color || ''));
+    const existing = reconciled.find(entry => skuLineKey(entry)===key);
     if (existing) {
       const mergedQuantity = Math.min(99, existing.quantity + quantity);
-      stockUsed.set(item.id, (stockUsed.get(item.id) || 0) + mergedQuantity - existing.quantity);
+      stockUsed.set(key, (stockUsed.get(key) || 0) + mergedQuantity - existing.quantity);
       existing.quantity = mergedQuantity;
     } else {
-      reconciled.push({ id: item.id, size: item.size, color: item.color || '', quantity });
-      stockUsed.set(item.id, (stockUsed.get(item.id) || 0) + quantity);
+      reconciled.push({id:item.id,variantId:item.variantId,size:item.size,color:item.color,quantity});
+      stockUsed.set(key, (stockUsed.get(key) || 0) + quantity);
     }
   }
   cartItems = reconciled;
@@ -54,8 +56,8 @@ function reconcileCart() {
 function totalQuantity() { return cartItems.reduce((total, item) => total + item.quantity, 0); }
 function subtotal() { return cartItems.reduce((total, item) => total + productsById.get(item.id).price * item.quantity, 0); }
 function maximumForItem(item) {
-  const otherQuantity = cartItems.filter(entry => entry !== item && entry.id === item.id).reduce((total, entry) => total + entry.quantity, 0);
-  return Math.max(0, Math.min(99, Math.floor(Number(productsById.get(item.id).stock) || 0) - otherQuantity));
+  const otherQuantity = cartItems.filter(entry => entry !== item && skuLineKey(entry)===skuLineKey(item)).reduce((total, entry) => total + entry.quantity, 0);
+  return Math.max(0, Math.min(99, skuQuantity(productsById.get(item.id),item.variantId,item.size)-otherQuantity));
 }
 // ==================== CART DATA AND STOCK END ====================
 
@@ -68,8 +70,9 @@ function renderCart() {
   }
   cartContainer.innerHTML = `<div class="cart-layout"><section class="cart-items" aria-label="Items in your bag"><div class="cart-table-labels"><span>YOUR SELECTION</span><span>TOTAL</span></div>${cartItems.map((item, index) => {
     const product = productsById.get(item.id);
-    const productUrl = `product-details.html?id=${encodeURIComponent(item.id)}`;
-    return `<article class="cart-item" data-cart-index="${index}"><a href="${productUrl}" class="cart-item-image" tabindex="-1" aria-hidden="true"><img src="${escapeHTML(product.image)}" alt="${escapeHTML(product.name)}" width="1200" height="1600" loading="lazy"></a><div class="cart-item-detail"><p class="cart-item-category">${escapeHTML(categoryConfig[product.category]?.label || product.category)}</p><h2><a href="${productUrl}">${escapeHTML(product.name)}</a></h2><p class="cart-item-options">Size: ${escapeHTML(item.size)}${item.color ? ` <span aria-hidden="true">/</span> Colour: ${escapeHTML(item.color)}` : ''}</p><p class="cart-unit-price">${formatPrice(product.price)} each</p><div class="cart-item-bottom"><div class="cart-quantity"><button type="button" data-cart-action="decrease" aria-label="Decrease quantity of ${escapeHTML(product.name)}, size ${escapeHTML(item.size)}" ${item.quantity <= 1 ? 'disabled' : ''}>−</button><label class="sr-only" for="cart-quantity-${index}">Quantity for ${escapeHTML(product.name)}, size ${escapeHTML(item.size)}${item.color ? `, ${escapeHTML(item.color)}` : ''}</label><input id="cart-quantity-${index}" type="number" value="${item.quantity}" min="1" max="${maximumForItem(item)}" step="1" inputmode="numeric" data-cart-quantity><button type="button" data-cart-action="increase" aria-label="Increase quantity of ${escapeHTML(product.name)}, size ${escapeHTML(item.size)}" ${item.quantity >= maximumForItem(item) ? 'disabled' : ''}>+</button></div><button type="button" class="cart-remove" data-cart-action="remove" aria-label="Remove ${escapeHTML(product.name)}, size ${escapeHTML(item.size)} from bag">Remove</button></div></div><p class="cart-line-total">${formatPrice(product.price * item.quantity)}</p></article>`;
+    const variant=variantFor(product,item.variantId);
+    const productUrl=productURL({...product,selectedVariantId:item.variantId});
+    return `<article class="cart-item" data-cart-index="${index}"><a href="${productUrl}" class="cart-item-image" tabindex="-1" aria-hidden="true"><img src="${escapeHTML(variant.image)}" alt="${escapeHTML(product.name)}" width="1200" height="1600" loading="lazy"></a><div class="cart-item-detail"><p class="cart-item-category">${escapeHTML(categoryConfig[product.category]?.label || product.category)}</p><h2><a href="${productUrl}">${escapeHTML(product.name)}</a></h2><p class="cart-item-options">Size: ${escapeHTML(item.size)}${item.color ? ` <span aria-hidden="true">/</span> Colour: ${escapeHTML(item.color)}` : ''}</p><p class="cart-unit-price">${formatPrice(product.price)} each</p><div class="cart-item-bottom"><div class="cart-quantity"><button type="button" data-cart-action="decrease" aria-label="Decrease quantity of ${escapeHTML(product.name)}, size ${escapeHTML(item.size)}" ${item.quantity <= 1 ? 'disabled' : ''}>−</button><label class="sr-only" for="cart-quantity-${index}">Quantity for ${escapeHTML(product.name)}, size ${escapeHTML(item.size)}${item.color ? `, ${escapeHTML(item.color)}` : ''}</label><input id="cart-quantity-${index}" type="number" value="${item.quantity}" min="1" max="${maximumForItem(item)}" step="1" inputmode="numeric" data-cart-quantity><button type="button" data-cart-action="increase" aria-label="Increase quantity of ${escapeHTML(product.name)}, size ${escapeHTML(item.size)}" ${item.quantity >= maximumForItem(item) ? 'disabled' : ''}>+</button></div><button type="button" class="cart-remove" data-cart-action="remove" aria-label="Remove ${escapeHTML(product.name)}, size ${escapeHTML(item.size)} from bag">Remove</button></div></div><p class="cart-line-total">${formatPrice(product.price * item.quantity)}</p></article>`;
   }).join('')}</section><aside class="cart-summary" aria-labelledby="summary-heading"><h2 id="summary-heading">Order summary</h2><dl class="cart-totals"><div><dt>Subtotal (${totalQuantity()} ${totalQuantity() === 1 ? 'item' : 'items'})</dt><dd>${formatPrice(subtotal())}</dd></div><div><dt>Delivery</dt><dd>Set at live checkout</dd></div><div class="cart-total"><dt>Bag total</dt><dd>${formatPrice(subtotal())}</dd></div></dl><p class="cart-summary-note">Sample prices in INR. Delivery, taxes and any final charges must be confirmed when a real checkout is connected.</p><button type="button" class="cart-primary" id="open-checkout">Preview checkout </button><p class="cart-checkout-caption">DEMO STORE · NO PAYMENT TAKEN</p><div class="cart-summary-info"><span aria-hidden="true">⌑</span><p>A considered selection.<small>Your bag stays saved in this browser.</small></p></div></aside></div>`;
   setupImages(cartContainer);
 }
@@ -142,10 +145,13 @@ function renderCheckout() {
 
 async function openCheckout() {
   if (!await requireCustomer()) return;
-  reconcileCart();
-  renderCart();
-  renderCheckout();
-  if (!checkoutDialog.open) checkoutDialog.showModal();
+  try{
+    const fresh=await getProducts({refresh:true});
+    if(!fresh.length||fresh.some(p=>!p.inventoryVerified))throw Error('Availability cannot be verified. Your saved bag has not been changed.');
+    productsById=new Map(fresh.map(p=>[p.id,p]));
+    reconcileCart();renderCart();renderCheckout();
+    if(!checkoutDialog.open)checkoutDialog.showModal();
+  }catch(error){setNotice(error.message);}
 }
 
 checkoutDialog.querySelector('[data-close-checkout]').addEventListener('click', () => checkoutDialog.close());
@@ -167,6 +173,7 @@ async function initializeCart() {
   if (!await requireCustomer()) return;
   try {
     const products = await getProducts();
+    if(!products.length||products.some(p=>!p.inventoryVerified))throw Error('Inventory verification unavailable; preserve saved bag.');
     productsById = new Map(products.map(product => [product.id, product]));
     reconcileCart();
     renderCart();

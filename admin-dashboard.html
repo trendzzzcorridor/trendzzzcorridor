@@ -12,9 +12,9 @@
 <label class="field">Password<input name="password" type="password" autocomplete="current-password" required></label>
 <button type="submit" class="button">Sign in</button></form></section>
 <section id="admin-private" hidden>
-<p class="notice">Product descriptions, prices, sizes and images remain managed in Google Sheets. Inventory status is stored separately in Firestore. Orders will appear only after a secure order backend is implemented.</p>
+<p class="notice">Product descriptions, prices, sizes, physical quantities and images remain managed in Google Sheets. Inventory status is stored separately in Firestore. Orders will appear only after a secure order backend is implemented.</p>
 <p><button id="admin-signout" type="button" class="button button-secondary">Sign out</button></p>
-<h2>Product availability</h2><p class="admin-muted">Only authorised admins can save these changes. Stock labels are not yet connected to the public storefront.</p>
+<h2>Product availability</h2><p class="admin-muted">Only authorised admins can override the entire product, a colour, or one size. Available follows the physical quantity in Google Sheets; it cannot create stock or bypass a parent override. Refresh the customer website after saving.</p>
 <div id="admin-inventory-list" class="admin-table-wrap">Loading products…</div>
 <h2>Customers</h2><p class="admin-muted">Private customer profiles. Do not export or share customer data.</p>
 <div id="admin-customers-list" class="admin-table-wrap">Loading customer profiles…</div>
